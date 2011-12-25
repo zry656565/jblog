@@ -333,16 +333,16 @@ presentPhotos = ^(photos) {
 
 # Cache convenience
 writeAllPhotosToCache = ^{
-  Storage.set 'photos-allPhotos', allPhotos.slice 0, 100
+  #Storage.set 'photos-allPhotos', allPhotos.slice 0, 100
 }
 
 # Get cached?
 #Storage.clear()
-if ( (allPhotos = Storage.get 'photos-allPhotos') && Array.isArray(allPhotos) ) {
+/*if ( (allPhotos = Storage.get 'photos-allPhotos') && Array.isArray(allPhotos) ) {
   presentPhotos allPhotos
-} else {
+} else {*/
   allPhotos = []
-}
+#}
 
 fetchAndUpdateLocationForPhoto = ^(photo) {
   if (!photo.place_id || (photo.location && photo.location.id == photo.place_id))
@@ -371,7 +371,9 @@ fetchPhotos ^(err, rsp) {
   allPhotos.forEach ^(photo) { allPhotosById[photo.id] = photo }
   currentPhotosByIds = {}
   modifiedPhotoCount = removedPhotoCount = 0
-  newPhotos = rsp.photoset.photo.filter ^(photo) {
+  newPhotos = rsp.photoset.photo
+  newPhotos.reverse()
+  newPhotos.filter ^(photo) {
     if (existingPhoto = allPhotosById[photo.id]) {
       currentPhotosByIds[photo.id] = existingPhoto
       if (existingPhoto.lastupdate != photo.lastupdate) {
