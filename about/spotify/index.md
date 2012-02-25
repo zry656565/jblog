@@ -25,7 +25,7 @@ My busy desk in our first office at Riddargatan 20 in Stockholm:
 
 ## Desktop application
 
-The Spotify desktop application come in a dark grey fashion and is used by millions of people every day, on Mac OS, Windows and Linux. Standard user interface treats like window controls and scroolbars obey the host system while we have taken some semi-conservative-but-still-daring steps for other elements.
+The Spotify desktop application come in a dark grey fashion and is used by millions of people every day, on Mac OS, Windows and Linux. Standard user interface treats like window controls and scrollbars obey the host system while we have taken some semi-conservative-but-still-daring steps for other elements.
 
 [![Desktop Ui Intro](http://farm6.static.flickr.com/5283/5382380890_4ab64f90e4_o.png)](http://www.spotify.com/se/about/press/images/#application "More screenshots")
 
