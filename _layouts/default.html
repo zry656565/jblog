@@ -26,8 +26,10 @@
       <meta name="description" content="{{ page.description }}">
       {% endif %}
     {% else %}
-    <meta property="og:image" content="http://rsms.me/res/signature.png">
-    <meta name="description" content="Ramblings by Rasmus Andersson -- a Swedish designer with a passion for technology">
+      <meta name="description" content="Ramblings by Rasmus Andersson -- a Swedish designer with a passion for technology">
+    {% endif %}
+    {% if page.og_image_url %}
+    <meta property="og:image" content="{{ page.og_image_url }}">
     {% endif %}
     <meta property="og:url" content="http://rsms.me{{ page.url | remove_first:'index.html' }}">
     <meta property="og:site_name" content="rsms.me">
