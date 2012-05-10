@@ -77,7 +77,7 @@
     {% if page.fb_comments %}
     <div class="content sub">
       <h2>Comments</h2>
-      <fb:comments href="http://rsms.me{{ page.url }}" num_posts="{{ page.fb_comments }}" width="640"></fb:comments>
+      <div class="fb-comments" data-href="http://rsms.me{{ page.url }}" data-num-posts="{{ page.fb_comments }}" data-width="640" data-font="arial"></div>
     </div>
     {% endif %}
     
