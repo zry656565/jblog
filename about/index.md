@@ -23,7 +23,7 @@ I work for & ♥ [Facebook](http://facebook.com/design).
 You can find me on a variety of social web sites; my username is usually "rsms".
 
 - [Facebook](http://www.facebook.com/rsms) — friends and foes
-- [Flickr](http://www.flickr.com/photos/rsms/) — selected photography (also on [Getty Images](http://www.gettyimages.com/Search/Search.aspx?artist=Rasmus+Andersson))
+- [Flickr](http://www.flickr.com/photos/rsms/) — select photography
 - [GitHub](https://github.com/rsms) — code, juicy code
 - [Stuff](http://hunch.se/stuff/) — pretty, funny and boring things I've found or made
 - [Twitter](http://twitter.com/rsms) — short ramblings and a good way to make contact
