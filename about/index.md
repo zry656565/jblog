@@ -31,4 +31,4 @@ You can find me on a variety of social web sites; my username is usually "rsms".
 
 ## Contact
 
-Get in touch by sending an electronic mail over the internets to rasmus●notion.se
+Get in touch by [sending me a message on Facebook](https://www.facebook.com/messages/rsms) or [Twitter](http://twitter.com/rsms).

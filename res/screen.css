@@ -63,13 +63,13 @@ header {
   header h1 { display:block; height:50px; }
   header h1 a {
     display:inline-block;
-    -webkit-filter: blur(0);
-    -moz-filter: blur(0);
-    -webkit-transition: 160ms -webkit-filter ease-out;
+    -webkit-transform: translate3d(0,0,0);
+    -webkit-transition: 160ms -webkit-transform ease-out;
   }
   header h1 a:hover {
-    -webkit-filter: blur(1px);
-    -moz-filter: blur(1px);
+    -webkit-transform: translate3d(0,2px,0);
+/*    -webkit-filter: blur(1px);
+    -moz-filter: blur(1px);*/
     cursor:pointer;
   }
   header h1 img { display:block; float:left; }
@@ -344,17 +344,6 @@ footer {
   padding-bottom: 30px;
   background: transparent url('end-floral.png') no-repeat scroll bottom center;
 }
-
-/* Carbon ads */
-#carbonads-container {
-  position: fixed;
-  bottom: 10px;
-  right: 10px;
-}
-  #carbonads-container .carbonad { border-width: 1px !important; }
-  #carbonads-container .carbonad-text, #carbonads-container .carbonad-tag {
-    font-family: 'lucida grande', helvetica, sans-serif !important;
-  }
 
 /* device specifics */
 

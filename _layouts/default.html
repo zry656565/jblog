@@ -68,7 +68,7 @@
         <li><a href="/archive/"{% if page.url contains "/archive/" %}class="active"{% endif %} title="Archived articles">Archive</a></li>
         <li><a href="/about/"{% if page.url contains "/about/" %}class="active"{% endif %}>About me</a></li>
       </ul>
-      <h1 class="logo"><a href="/"><img src="/res/signature-2-2.png" width="160" height="50" alt="Signature"></a></h1>
+      <h1 class="logo" onclick="document.location.href='/';"><a href="/"><img src="/res/signature-2-2.png" width="160" height="50" alt="Signature"></a></h1>
     </header>
     <!--div class="wrapper content"-->
       {{ content }}

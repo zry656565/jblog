@@ -1,126 +1,55 @@
 ---
-layout: default
+layout: barebones
 no_footer: true
 wide_layout: true
-include_move: true
 title: Photography
 description: Select photography presented in a simple, dark fashion
 ios_app_name: photo
 ---
-<style type="text/css" media="screen">
-  /* Dark theme */
-  body {
-    background-color: black;
-    color: #999;
-    -webkit-font-smoothing: antialiased;
-  }
-  header { border-bottom-color: #333; color:#555; }
-    header ul.navigation li a { color:#555; }
-    header ul.navigation li a:hover { color: #fff; }
-    header ul.navigation li a.active { color:white; font-weight:bold; }
-  h1,h2,h3,h4 { color:#eee; }
-  
-  #photos-body .incompatible {
-    display: block;
-    margin: 0;
-    font: normal normal normal 40px/18px Helvetica, Arial, sans-serif;
-    color: #FFC2B6;
-    text-align:center;
-    padding:1em 0;
-  }
+<script type="text/javascript" charset="utf-8">(function(){
+// Just redirect this fucker to Flickr until I've written an actually useful photo viewer
 
-  #photos .group {
-    -webkit-transition: opacity 600ms ease;
-    opacity: 0;
-  }
-  #photos .group.appear {
-    opacity: 1;
-  }
-  #photos photo {
-    display: block;
-    margin-bottom: 1em;
-    position: relative;
-    visibility: hidden;
-    background:#111;
-  }
-    #photos photo.woi-inside {
-      visibility: visible;
-    }
-    #photos photo > a {
-      display: block;
-      position: absolute;
-      top:0; left:0;
-      width:100%;
-      height:100%;
-      z-index:1;
-    }
-    #photos photo > a > img {
-      display: block;
-      visibility: hidden;
-      width:100%;
-      height:100%;
-    }
-    
-    #photos photo.loaded { background:inherit; }
-    #photos photo.loaded > a > img { visibility: visible; }
-    
-    #photos photo .meta {
-      display:none;
-      position: absolute;
-      bottom:10px; left:10px;
-      margin: 0;
-      /*height: 18px;*/
-      background-color:#111;
-      opacity:0.7;
-      color:white;
-      z-index:2;
-      font: normal normal bold 14px/18px Helvetica, Arial, sans-serif;
-      padding:4px 8px;
-      -webkit-border-radius:3px;
-      -webkit-transition: opacity 300ms ease;
-    }
-      #photos photo .meta .title { white-space: nowrap; }
-      #photos photo .meta .separator { opacity:0.3; }
-      #photos photo .meta .description { opacity:0.6; font-weight:normal; }
-        #photos photo .meta .description a { color: white; }
-      #photos photo .meta .location { opacity:0.6; white-space: nowrap; }
-        #photos photo .meta .location img { vertical-align: top; }
-        #photos photo .meta .location a { color:#96e3a6; font-weight:normal; opacity:0.9; }
-    #photos photo.with-metadata .meta { display: block; }
-    #photos photo .meta:hover, #photos photo .meta:hover * { opacity:1; }
-  
-  
-  h1 { text-align: center; }
-  .intro, .outro {
-    text-align: center;
-    font-family: helvetica, sans-serif;
-    color: #777;
-    margin-bottom: 4em;
-  }
-  .outro { margin-top:4em; }
-    .outro a { color:inherit; }
-    .outro a:hover { color:white; text-decoration:none; }
-  .intro img {
-    vertical-align: top;
-  }
-  
-  #carbonads-container { display:none; }
-</style>
-<script type="text/javascript" charset="utf-8">
-  // Just redirect this fucker until I've written an actually useful photo viewer
+if (typeof XMLHttpRequest == 'undefined') {
   document.location.href = 'http://www.flickr.com/photos/rsms/show/';
+  return;
+}
+
+function flickrAPI_GET (methodName, queryString, callback) {
+  var url = 'http://api.flickr.com/services/rest/?method='+methodName+
+    '&api_key=adb4222b6011ba080f780b82d85837a5'+
+    '&format=json'+
+    '&nojsoncallback=1'+(queryString || '')
+
+  var xhr = new XMLHttpRequest();
+  var rsp;
+  xhr.onreadystatechange = function () {
+    if (xhr.readyState != 4) return;
+    if (xhr.status == 0) {
+      callback(Error('XHR failed with null status'));
+    } else {
+      rsp = JSON.parse(xhr.responseText);
+      if (!rsp.stat) {
+        var e = Error('Unspecified error');
+        if (callback) callback(e); else throw e;
+      } else if (rsp.stat != 'ok') {
+        var e = Error('Remote error '+rsp.code+': '+rsp.message);
+        if (callback) callback(e); else throw e;
+      } else {
+        if (callback) callback(null, rsp);
+      }
+    }
+  };
+  xhr.open ('GET', url, !!callback);
+  xhr.send (null);
+  return callback ? xhr : rsp;
+}
+
+var rsp = flickrAPI_GET('flickr.people.getPublicPhotos', '&user_id=12281432@N00&per_page=1');
+try {
+  document.location.href = 'http://www.flickr.com/photos/rsms/'+rsp.photos.photo[0].id+'/in/photostream/lightbox/';
+} catch (e) {
+  document.location.href = 'http://www.flickr.com/photos/rsms/show/';
+}
+
+})();
 </script>
-<script type="text/move">
-{% include photos-main.mv %}
-</script>
-<h1>Photography</h1>
-<div id="photos-body">
-  <p class="intro">
-    Use <img src="/res/downarrow.png" title="Press [down arrow] or [right arrow] to jump to the next picture"> and <img src="/res/uparrow.png" title="Press [up arrow] or [left arrow] to jump to the previous picture"> on your keyboard, or just scroll
-  </p>
-  <div id="photos">
-  </div>
-  <p class="outro">
-    <a href="http://www.flickr.com/photos/rsms/">See more photos on Flickr &rarr;</a> &nbsp;&nbsp;or <a href="/photos/" id="photos-jump-to-top-link">start over &uarr;</a>
-  </p>
-</div>
