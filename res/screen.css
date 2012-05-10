@@ -232,7 +232,7 @@ div.post {
     -moz-filter: grayscale(0);
   }
   
-  div.post info.after {
+  div.posts div.post info.after {
     /* Simply occupy whatever space the "after" piece usually occupies */
     border:none;
     visibility:hidden;
