@@ -7,6 +7,7 @@
     {% if page.title != "Archive (sidebar)" %}
     <meta name="viewport" content="width={% if page.wide_layout %}1100{% else %}700{% endif %}">
     {% endif %}
+    <link href='http://fonts.googleapis.com/css?family=Poly:400,400italic' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" media="screen, projection" href="/res/screen.css" type="text/css">
     <link rel="stylesheet" media="print" href="/res/print.css" type="text/css">
     <link rel="alternate" type="application/atom+xml" title="Rasmus Andersson" href="http://feeds.feedburner.com/hunch">
@@ -42,14 +43,23 @@
   </head>
   <body{% if page.wide_layout %} class="wide"{% endif %}>
     <script>
-      if (window.navigator.userAgent.indexOf(' iPad ') != -1) {
+      var s;
+      if (document.location.hostname === 'rsms.me') {
+        s = document.createElement('script');
+        s.async = true;
+        s.src = "http://connect.facebook.net/en_US/all.js#appId=38027689216&xfbml=1";
+        document.getElementsByTagName('head')[0].appendChild(s);
+      }
+      
+      if (window.navigator.userAgent.indexOf('iPad') != -1) {
         document.documentElement.className = 'ios ipad';
         window.rsmsHostIsIOS = 'ipad';
-      } else if (window.navigator.userAgent.indexOf(' iPhone ') != -1) {
+      } else if (window.navigator.userAgent.indexOf('iPhone') != -1) {
         document.documentElement.className = 'ios iphone';
         window.rsmsHostIsIOS = 'iphone';
       }
     </script>
+    <div id="fb-root"></div><script></script>
     <iframe id="sidebar"></iframe>
     <header>
       <ul class="navigation">
@@ -58,19 +68,21 @@
         <li><a href="/archive/"{% if page.url contains "/archive/" %}class="active"{% endif %} title="Archived articles">Archive</a></li>
         <li><a href="/about/"{% if page.url contains "/about/" %}class="active"{% endif %}>About me</a></li>
       </ul>
-      <h1><a href="/"><img src="/res/signature.png" width="81" height="31" alt="Signature"></a></h1>
+      <h1 class="logo"><a href="/"><img src="/res/signature-2-2.png" width="160" height="50" alt="Signature"></a></h1>
     </header>
-    <div class="wrapper content">
+    <!--div class="wrapper content"-->
       {{ content }}
-    </div>
+    <!--/div-->
     
     {% if page.fb_comments %}
-    <h2>Comments</h2>
-    <div id="fb-root"></div><script>var s;if(document.location.hostname === 'rsms.me')s=document.createElement('script');s.async=true;s.src="http://connect.facebook.net/en_US/all.js#appId=38027689216&xfbml=1";document.getElementsByTagName('head')[0].appendChild(s);</script><fb:comments href="http://rsms.me{{ page.url }}" num_posts="{{ page.fb_comments }}" width="640"></fb:comments>
+    <div class="content sub">
+      <h2>Comments</h2>
+      <fb:comments href="http://rsms.me{{ page.url }}" num_posts="{{ page.fb_comments }}" width="640"></fb:comments>
+    </div>
     {% endif %}
     
     {% if paginator.page %}
-    <div id="paginator">
+    <div id="paginator" class="content">
       {% if paginator.next_page %}
       <a href="/page{{ paginator.next_page }}/">Older entries</a>
       {% endif %}

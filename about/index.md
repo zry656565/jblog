@@ -1,11 +1,10 @@
 ---
-layout: default
+layout: page
 fb_comments: 3
 title: About
 ---
 
 <img src="http://farm6.static.flickr.com/5290/5381896075_715a0714dd_m.jpg" align="right">
-# About Rasmus
 
 My name is Rasmus Andersson. I'm a Swedish designer in San Francisco with a passion for technology who have worked with a number of different companies since 1998 — large and small, as a partner or for others — including 
 [Spotify](http://www.spotify.com/),

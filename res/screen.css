@@ -1,12 +1,12 @@
 /* Base */
 * { margin:0; padding:0; font-family:inherit; }
 body {
-  background:white; color:#222;
-  font:14px georgia, serif;
-  line-height:1.4;
+  background:#ddd; color:#222;
+  font:14px 'Helvetica', georgia, serif;
+  line-height:1.5;
   font-weight: lighter;
   margin: 0 auto;
-  width: 640px;
+  width: 760px;
 }
 
 body.wide {
@@ -24,14 +24,15 @@ strong { font-weight:bold; }
 hr { height:1px; border:none; background-color:#ddd; }
 
 h1,h2,h3,h4 {
-  font-family: helvetica, sans-serif;
+  font-family: 'Poly', helvetica, sans-serif;
+  font-weight:normal;
   color:#040404;
   margin: 1.618em 0 1em 0;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizelegibility;
 }
-h1,h3 { font-size: 22px; }
-h2 { font-size: 18px; }
+h1,h3 { font-size: 30px; }
+h2 { font-size: 22px; }
 h4 { font-size: 14px; color:#666; }
 h5,h6 { font-size:12px; color:#888; }
 
@@ -43,7 +44,7 @@ a:visited { color:#7e5494; }
 a:link:hover, a:active:hover, a:visited:hover { text-decoration:underline; }
 a:link:hover, a:active:hover { color:#006be4; }
 a:visited:hover { color:#af00cf; }
-a > img { margin-bottom:-1px; }
+/*a > img { margin-bottom:-1px; }*/
 a.img { border:none; background:transparent !important; }
 
 /* Headlines */
@@ -56,16 +57,22 @@ h1 > a, h2 > a, h3 > a, h4 > a, h5 > a, h6 > a, h1 > a:hover,
 /* header */
 header {
   display: block;
-  border-bottom: 1px solid #eee;
-  /*margin-left:-999em; margin-right:-999em;
-  padding-left:999em; padding-right:999em;*/
-  margin-left:-999em; padding-left:999em;
-  padding-top:1px;
-  padding-bottom:0;
-  height:75px;
+  /*border-bottom: 2px solid #aaa;*/
+  height:80px;
 }
-  header h1 { display:block; height:31px; }
-  header h1 img { display:block; height:31px; }
+  header h1 { display:block; height:50px; }
+  header h1 a {
+    display:inline-block;
+    -webkit-filter: blur(0);
+    -moz-filter: blur(0);
+    -webkit-transition: 160ms -webkit-filter ease-out;
+  }
+  header h1 a:hover {
+    -webkit-filter: blur(1px);
+    -moz-filter: blur(1px);
+    cursor:pointer;
+  }
+  header h1 img { display:block; float:left; }
   header {
     font: 9px/9px 'lucida grande', 'tahoma', sans-serif;
     color: #ccc;
@@ -73,7 +80,7 @@ header {
   header ul.navigation {
     text-align: left;
     float: right;
-    margin-top:52px;
+    margin-top:27px;
   }
   header ul.navigation li {
     display: inline-block;
@@ -93,66 +100,147 @@ header {
 #main { margin-bottom: 3em; }
 
 /* main content */
-body div.content {}
-  body div.content *[align=right] { margin-left:1em; margin-bottom:1em; }
-  body div.content *[align=left] { margin-right:1em; margin-bottom:1em; }
-  body div.content img { max-width:100%; }
+div.content {
+  background:white; padding:70px 60px;
+  margin-bottom:60px;
+}
+  div.content:not(.sub) h1:first-child { margin-top:0; font-size:42px; }
+  
+  div.content img { max-width:100%; margin:20px 0; }
+  div.content *[align=right] { margin:0 0 1em 1em; }
+  div.content *[align=left] { margin:0 1em 1em 0; }
 
   /*div.post strong { font-weight:inherit; background:#FBF4B1; }*/
-  body div.content li { margin-left: 2em; margin-bottom:0.3em; }
-  body div.content ul > li { margin-left:1.4em; }
-  body div.content blockquote {
-      padding-left:30px;
-      background: transparent 
-          url(http://static.tumblr.com/sajzoro/2pUkqr1t1/aster.png) 
-          no-repeat scroll 0 0;
-      font-style:italic;
-    }
-    /*div.post blockquote > p {
-      padding-left:0.6em;
-      border-left:0.4em solid #ddd;
-    }*/
-  body div.content div.quotation blockquote { margin-left:-30px; }
-  body div.content pre {
+  div.content li { margin-left: 2em; margin-bottom:0.3em; }
+  div.content ul > li { margin-left:1.4em; }
+  
+  div.content blockquote {
+    font-family: 'Poly';
+    font-size:16px;
+    font-style:italic;
+    background:#fcfbf9 url(asterix.png) no-repeat scroll 15px 1.25em;
+    padding:0.1em 20px 0.1em 46px;
+    margin:1.618em 0 1.618em -60px;
+    border-left:14px solid #C6F9FC;
+    color: #2D3336;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizelegibility;
+  }
+  /*div.content blockquote {
+    margin-left:-30px;
+    padding-left:30px;
+    background: transparent 
+        url(http://static.tumblr.com/sajzoro/2pUkqr1t1/aster.png) 
+        no-repeat scroll 0 0;
+    font-style:italic;
+  }*/
+  /*div.post blockquote > p {
+    padding-left:0.6em;
+    border-left:0.4em solid #ddd;
+  }*/
+  div.content div.quotation blockquote { margin-left:-30px; }
+  div.content pre {
     background-color:#eee;
     padding:0.4em 1em;
     border-left:2px solid #ddd;
   }
-  body div.content code {
+  div.content code {
     background-color:#eee;
     padding:0 0.1em;
   }
-  body div.content pre > code {
+  div.content pre > code {
     padding:0; background-color:transparent;
   }
-  body div.content :target { background:#fe0; }
-  body div.content sup:target a { padding:2px 5px; }
-  body div.content div.footnotes li { color:#999; }
-  body div.content div.footnotes li:target { background:#ffc; color:inherit; }
+  div.content *:target { background:#fe0; }
+  div.content sup:target a { padding:2px 5px; }
+  div.content div.footnotes li { color:#999; }
+  div.content div.footnotes li:target { background:#ffc; color:inherit; }
+  
+  /* wide objects */
+  div.content *[alt~="fullbleed"] {
+    max-width:760px;
+    margin-left:-60px;
+  }
+  div.content *[alt~="large"] {
+    max-width:1024px;
+    margin-left:-180px;
+  }
 
+div.content {
+  border-bottom:2px solid #D1D1D1;
+}
+
+div.content.sub {
+  margin-top:-50px;
+  padding-top:20px;
+}
 
 /* posts */
+
+div.posts div.post h2 a:hover {
+  color:red !important;
+}
+
 div.post {
-  border-bottom: 2px solid #ddd;
-  margin-top: 1.5em; margin-bottom: 1.5em;
-  padding-bottom: 2em;
-  margin-left:-9000px; padding-left:9000px;
+  padding-bottom: 0em;
+  margin-bottom:-70px;
   page-break-before: always;
 }
   div.post.single, div.post:last-child { border-bottom:none; }
-  div.post h1:first-child { margin-top:0; }
-  div.post h2.title { font-size:22px; }
-  div.post postamble {
-    display:block;
-    margin-bottom:1em;
-    color:#999;
+  /*div.post h1:first-child, div.post h2:first-child { margin-top:0; }
+  div.post h2.title, div.post h1:first-child { font-size:42px; }*/
+  /*div.post h1 { margin-top: 1.618em; }*/
+  
+  div.post actions, div.post info {
+    color: #ccc;
   }
-    postamble a:link, postamble a:active {
-      color:#859FB3;
-    }
-    postamble a:visited {
-      color:#A591AA;
-    }
+  
+  div.post actions {
+    display:inline-block;
+    float:right;
+  }
+  
+  div.post info {
+    display:inline-block;
+    xbackground:#DDF5EB;
+    xborder-left:2px solid rgba(0,0,0,0.2);
+    border:1px solid rgba(0,0,0,0.05);
+    border-left:none; border-right:none;
+    padding:8px 0px 8px 60px;
+    margin-left:-60px;
+    margin-bottom:3em;
+  }
+  
+  div.post info.after {
+    margin-top:30px;
+    margin-right:-60px;
+    margin-bottom:0;
+    padding-top:25px;
+    padding-right:60px;
+    padding-bottom:15px;
+    opacity:0.6;
+    border-color:rgba(0,0,0,0.08);
+    border-bottom:none;
+    -webkit-filter: grayscale(1);
+    -moz-filter: grayscale(1);
+    -webkit-transition: 200ms -webkit-filter ease;
+    -webkit-transition-property: opacity, -webkit-filter;
+  }
+  div.post info.after:hover {
+    opacity:1;
+    -webkit-filter: grayscale(0);
+    -moz-filter: grayscale(0);
+  }
+  
+  div.post info.after {
+    /* Simply occupy whatever space the "after" piece usually occupies */
+    border:none;
+    visibility:hidden;
+  }
+  
+    /*info a:link, info a:active { color:#859FB3; }
+    info a:visited { color:#A591AA; }*/
+  
   div.post div.body {}
     div.post div.body > p.read-more { text-align:center; }
     div.post div.body > p.read-more a {
@@ -254,7 +342,6 @@ footer {
   display: block;
   margin:1em 0 1em 0;
   padding-bottom: 30px;
-  border-top:1px solid #eee;
   background: transparent url('end-floral.png') no-repeat scroll bottom center;
 }
 
@@ -277,6 +364,27 @@ footer {
   html.ios { width:750px; overflow:hidden; }
   html.ios pre { overflow:scroll; white-space:pre-wrap; }
   html.ios pre, code, tt { font-size:0.95em; }
+  
+  header { width:700px; font:inherit; }
+  
+  header ul.navigation { margin-top:17px; }
+  header ul.navigation li a { font-size: 14px; }
+  
+  h1.logo {
+    margin-left:40px;
+  }
+  
+  /*body { background:black; }
+  div.content { border-bottom:none; }
+  header ul.navigation li a:hover { color:white; }
+  header ul.navigation li a.active { color:white; }
+  h1.logo a {
+    display:inline-block;
+    width:200px; height:50;
+    background: url('signature-2-inverted-2.png') no-repeat scroll 40px 0;
+    background-size:160px 50px;
+  }
+  h1.logo img { visibility:hidden; }*/
 }
 
 /* devices like laptops and regular computers (including ipad but not
@@ -301,28 +409,19 @@ footer {
 @media only screen and (min-device-width: 480px) and (max-device-width: 1024px) {
 }
 
-/* medium-res landscape devices (e.g. ipad but not iphone) */
-#sidebar { display:none; }
+/* medium-res devices, landscape orientation (e.g. ipad but not iphone) */
 @media only screen and (min-device-width: 480px) and (max-device-width: 1024px) and (orientation:landscape) {
+  header { display:none; }
   html.ipad #sidebar {
     display:block;
-    width:350px;
+    width:240px;
     height:100%;
     border:none;
-    background-color:#333;
+    background-color:black;
     position:absolute;
     right:0;
     top:0;
   }
-  html.ipad { zoom:60%; }
-  html.ipad #carbonads-container { display: block; }
+  html.ipad { zoom:70%; }
 }
 
-/* iPhone */
-@media only screen and (max-device-width: 1024px) {
-  html.iphone #carbonads-container {
-    display: block;
-    position: relative;
-    margin: 1em auto;
-  }
-}

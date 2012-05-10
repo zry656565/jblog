@@ -5,7 +5,7 @@ tags: apple, stevejobs
 fb_comments: 25
 ---
 
-![Here’s to the crazy ones](http://farm7.static.flickr.com/6045/6215542425_63dbbb8eeb_o.png)
+## Here’s to the crazy ones
 
 > The misfits. The rebels. The troublemakers. The round pegs in the square holes.
 > 

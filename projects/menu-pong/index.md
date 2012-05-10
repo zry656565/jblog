@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: page
 fb_comments: 3
 title: Menu Pong
 ---
@@ -20,13 +20,9 @@ Take a break from work and play a game of classic Pong — in the menu bar. Like
 
 It's pretty awesome.
 
-[![screenshot](http://farm7.static.flickr.com/6044/5902429044_31a8116f80_z.jpg)](http://farm7.static.flickr.com/6044/5902429044_6e8347d11d_o.png)
-
----
+[![fullbleed](http://farm7.static.flickr.com/6044/5902429044_31a8116f80_b.jpg)](http://farm7.static.flickr.com/6044/5902429044_6e8347d11d_o.png)
 
 > Pong is one of the earliest arcade video games, and is a tennis sports game featuring simple two-dimensional graphics. — [Wikipedia/Pong](http://en.wikipedia.org/wiki/Pong)
-
----
 
 
 ## Support
