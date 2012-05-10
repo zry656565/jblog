@@ -1,7 +1,6 @@
 ---
 layout: post
 categories: [doodle, nostalgia, illustration]
-tumblr_id: 1151207869
 date: 2010-09-19 18:32:23 UTC
 title: Film development with Bob
 ---
