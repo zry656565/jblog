@@ -2,6 +2,7 @@
 layout: post
 categories: [release, spotify, monster]
 tumblr_id: 1102106421
+disqus_comments: true
 date: 2010-04-27 07:20:00 UTC
 title: Spotify next generation
 ---

@@ -2,6 +2,7 @@
 layout: post
 categories: [website, muxtape, music, mixtape]
 tumblr_id: 1111980134
+disqus_comments: true
 date: 2008-04-04 15:33:43 UTC
 title: Muxtape für alles
 ---

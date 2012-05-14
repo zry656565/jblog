@@ -1,6 +1,7 @@
 ---
 layout: post
 tumblr_id: 1133086037
+disqus_comments: true
 date: 2007-04-22 14:15:13 UTC
 title: Changing upload path in Wordpress
 ---

@@ -1,6 +1,7 @@
 ---
 layout: post
 tumblr_id: 1133069916
+disqus_comments: true
 date: 2004-03-02 20:34:04 UTC
 title: Engan + more
 ---

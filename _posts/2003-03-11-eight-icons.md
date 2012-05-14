@@ -1,6 +1,7 @@
 ---
 layout: post
 tumblr_id: 1133045277
+disqus_comments: true
 date: 2003-03-11 19:15:55 UTC
 title: eight icons
 ---

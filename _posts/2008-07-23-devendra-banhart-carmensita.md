@@ -2,6 +2,7 @@
 layout: post
 categories: [music, video, humor, natalieportman]
 tumblr_id: 1121195731
+disqus_comments: true
 date: 2008-07-23 11:32:34 UTC
 title: Devendra Banhart – Carmensita
 ---

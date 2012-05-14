@@ -1,6 +1,7 @@
 ---
 layout: post
 tumblr_id: 1133082361
+disqus_comments: true
 date: 2005-02-14 08:04:17 UTC
 title: Death star fo real
 ---

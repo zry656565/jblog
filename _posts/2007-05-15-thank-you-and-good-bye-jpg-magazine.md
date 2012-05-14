@@ -1,6 +1,7 @@
 ---
 layout: post
 tumblr_id: 1133086222
+disqus_comments: true
 date: 2007-05-15 22:06:23 UTC
 title: Thank you and good bye, JPG Magazine
 ---

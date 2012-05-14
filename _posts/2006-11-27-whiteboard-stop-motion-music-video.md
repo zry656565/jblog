@@ -1,6 +1,7 @@
 ---
 layout: post
 tumblr_id: 1133084654
+disqus_comments: true
 date: 2006-11-27 10:00:00 UTC
 title: Whiteboard Stop Motion Music Video
 ---

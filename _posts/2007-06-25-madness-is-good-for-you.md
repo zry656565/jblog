@@ -2,6 +2,7 @@
 layout: post
 categories: [lipsync, connected ventures, lipdub]
 tumblr_id: 1133086711
+disqus_comments: true
 date: 2007-06-25 05:27:20 UTC
 title: Madness is Good For You
 ---

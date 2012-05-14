@@ -1,6 +1,7 @@
 ---
 layout: post
 tumblr_id: 1133047186
+disqus_comments: true
 date: 2003-05-27 15:44:08 UTC
 title: New haircut and wine
 ---

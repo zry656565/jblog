@@ -2,6 +2,7 @@
 layout: post
 category: art
 tumblr_id: 1138077843
+disqus_comments: true
 date: 2010-09-17 16:33:18 UTC
 title: "This painting is not available in your country"
 ---

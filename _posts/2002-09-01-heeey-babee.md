@@ -1,6 +1,7 @@
 ---
 layout: post
 tumblr_id: 1121206364
+disqus_comments: true
 date: 2002-09-01 19:55:34 UTC
 title: Heeey babee!
 ---

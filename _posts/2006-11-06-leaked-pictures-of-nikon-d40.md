@@ -1,6 +1,7 @@
 ---
 layout: post
 tumblr_id: 1133084333
+disqus_comments: true
 date: 2006-11-06 10:00:00 UTC
 title: Leaked Pictures of Nikon D40
 ---

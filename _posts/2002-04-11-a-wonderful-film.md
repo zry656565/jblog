@@ -1,6 +1,7 @@
 ---
 layout: post
 tumblr_id: 1121203204
+disqus_comments: true
 date: 2002-04-11 09:00:00 UTC
 title: A wonderful film!
 ---

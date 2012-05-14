@@ -1,6 +1,7 @@
 ---
 layout: post
 tumblr_id: 1121205707
+disqus_comments: true
 date: 2002-07-13 09:00:00 UTC
 title: Trollhättan
 ---

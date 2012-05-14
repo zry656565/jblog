@@ -1,6 +1,7 @@
 ---
 layout: post
 tumblr_id: 1133044475
+disqus_comments: true
 date: 2003-02-03 11:54:23 UTC
 title: artSweden delayed
 ---

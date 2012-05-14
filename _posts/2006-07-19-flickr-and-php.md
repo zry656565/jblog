@@ -1,6 +1,7 @@
 ---
 layout: post
 tumblr_id: 1133083381
+disqus_comments: true
 date: 2006-07-19 09:00:00 UTC
 title: Flickr and PHP
 ---

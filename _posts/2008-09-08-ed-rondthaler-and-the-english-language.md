@@ -2,6 +2,7 @@
 layout: post
 categories: [movie, video, typography]
 tumblr_id: 1121196484
+disqus_comments: true
 date: 2008-09-08 17:55:23 UTC
 title: Ed Rondthaler and the English language
 ---

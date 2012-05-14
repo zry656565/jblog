@@ -2,6 +2,7 @@
 layout: post
 categories: [typography, art]
 tumblr_id: 1145923128
+disqus_comments: true
 date: 2010-09-18 22:58:57 UTC
 title: Evolution of Type, Exhibits 1-5
 ---

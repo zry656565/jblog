@@ -1,6 +1,7 @@
 ---
 layout: post
 tumblr_id: 1121206257
+disqus_comments: true
 date: 2002-08-16 20:26:04 UTC
 title: Intrusion!
 ---

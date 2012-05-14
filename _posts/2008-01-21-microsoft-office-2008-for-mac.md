@@ -2,6 +2,7 @@
 layout: post
 categories: [os x, mac, microsoft, office]
 tumblr_id: 1111973766
+disqus_comments: true
 date: 2008-01-21 15:15:34 UTC
 title: Microsoft Office 2008 for Mac
 ---

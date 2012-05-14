@@ -1,6 +1,7 @@
 ---
 layout: post
 tumblr_id: 1121207184
+disqus_comments: true
 date: 2002-10-24 20:24:50 UTC
 title: Bafé a la version 4
 ---

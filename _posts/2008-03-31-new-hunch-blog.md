@@ -2,6 +2,7 @@
 layout: post
 categories: [blog, wordpress, hunch]
 tumblr_id: 1111979508
+disqus_comments: true
 date: 2008-03-31 01:47:09 UTC
 title: New Hunch blog
 ---

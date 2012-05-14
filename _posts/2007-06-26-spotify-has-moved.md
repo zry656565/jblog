@@ -2,6 +2,7 @@
 layout: post
 categories: [hgg20, office, spotify, move, riddargatan, humlegårdsgatan]
 tumblr_id: 1133086747
+disqus_comments: true
 date: 2007-06-26 21:36:58 UTC
 title: Spotify has moved
 ---

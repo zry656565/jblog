@@ -1,6 +1,7 @@
 ---
 layout: post
 tumblr_id: 1133069956
+disqus_comments: true
 date: 2004-04-05 16:09:57 UTC
 title: things have happened
 ---

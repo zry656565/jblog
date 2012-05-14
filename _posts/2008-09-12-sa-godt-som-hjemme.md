@@ -2,6 +2,7 @@
 layout: post
 categories: [sas, video, advertising]
 tumblr_id: 1121196583
+disqus_comments: true
 date: 2008-09-12 15:06:18 UTC
 title: Så Godt Som Hjemme
 ---

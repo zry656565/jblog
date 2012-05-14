@@ -2,6 +2,7 @@
 layout: post
 categories: [book, aircraft, airplane]
 tumblr_id: 193606165
+disqus_comments: true
 date: 2009-09-21 20:59:00 UTC
 title: Aircraft identification cards
 ---

@@ -2,6 +2,7 @@
 layout: post
 categories: [movie, junkyard, skateboard, advertising, tvc]
 tumblr_id: 1121195291
+disqus_comments: true
 date: 2008-06-24 06:54:13 UTC
 title: TVC/Junkyard Movie Released
 ---

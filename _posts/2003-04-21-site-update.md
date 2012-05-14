@@ -1,6 +1,7 @@
 ---
 layout: post
 tumblr_id: 1133046566
+disqus_comments: true
 date: 2003-04-21 19:19:45 UTC
 title: site update
 ---

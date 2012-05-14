@@ -1,6 +1,7 @@
 ---
 layout: post
 tumblr_id: 1133071003
+disqus_comments: true
 date: 2004-10-20 17:47:52 UTC
 title: News from Formac
 ---

@@ -2,6 +2,7 @@
 layout: post
 categories: [essay, web, javascript, html5, dropular, software]
 tumblr_id: 1102105292
+disqus_comments: true
 date: 2009-12-16 22:02:14 UTC
 title: Large-scale distributed processing on the web
 ---

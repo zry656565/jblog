@@ -1,6 +1,7 @@
 ---
 layout: post
 tumblr_id: 1133070151
+disqus_comments: true
 date: 2004-05-29 16:46:35 UTC
 title: hi mr everyone
 ---

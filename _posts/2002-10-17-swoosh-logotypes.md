@@ -1,6 +1,7 @@
 ---
 layout: post
 tumblr_id: 1121207032
+disqus_comments: true
 date: 2002-10-17 13:25:04 UTC
 title: Swoosh logotypes
 ---

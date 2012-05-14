@@ -2,6 +2,7 @@
 layout: post
 categories: [website, surfstation]
 tumblr_id: 1121195888
+disqus_comments: true
 date: 2008-08-07 07:53:34 UTC
 title: Surfstation is back
 ---

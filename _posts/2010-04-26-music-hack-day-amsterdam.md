@@ -2,6 +2,7 @@
 layout: post
 categories: [musichackday, spotify, amsterdam]
 tumblr_id: 1102106370
+disqus_comments: true
 date: 2010-04-26 23:40:52 UTC
 title: Music Hack day, Amsterdam
 ---

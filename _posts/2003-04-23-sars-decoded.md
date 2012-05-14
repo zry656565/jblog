@@ -1,6 +1,7 @@
 ---
 layout: post
 tumblr_id: 1133046654
+disqus_comments: true
 date: 2003-04-23 21:21:23 UTC
 title: SARS decoded
 ---

@@ -2,6 +2,7 @@
 layout: post
 categories: [opinion, review, leopard, osx]
 tumblr_id: 1133087173
+disqus_comments: true
 date: 2007-10-27 17:33:15 UTC
 title: Mac OS X v5, aka Leopard
 ---

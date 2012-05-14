@@ -1,6 +1,7 @@
 ---
 layout: post
 tumblr_id: 1121204199
+disqus_comments: true
 date: 2002-05-24 09:00:00 UTC
 title: Embryo Cloning
 ---

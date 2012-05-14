@@ -2,6 +2,7 @@
 layout: post
 categories: [lumbergh, news]
 tumblr_id: 1121197034
+disqus_comments: true
 date: 2008-11-07 08:28:07 UTC
 title: Lumbergh Creative
 ---

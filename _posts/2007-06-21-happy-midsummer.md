@@ -2,6 +2,7 @@
 layout: post
 categories: [advert, ikea, midsummer]
 tumblr_id: 1133086669
+disqus_comments: true
 date: 2007-06-21 18:28:29 UTC
 title: Happy Midsummer!
 ---

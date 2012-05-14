@@ -1,6 +1,7 @@
 ---
 layout: post
 tumblr_id: 1133069715
+disqus_comments: true
 date: 2003-12-11 00:44:55 UTC
 title: did some updatin'
 ---

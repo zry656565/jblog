@@ -1,6 +1,7 @@
 ---
 layout: post
 tumblr_id: 1133071280
+disqus_comments: true
 date: 2004-12-11 11:58:39 UTC
 title: a little catch-up
 ---

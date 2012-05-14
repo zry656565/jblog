@@ -1,6 +1,7 @@
 ---
 layout: post
 tumblr_id: 1121204433
+disqus_comments: true
 date: 2002-05-31 09:00:00 UTC
 title: Nominerad
 ---

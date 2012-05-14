@@ -1,6 +1,7 @@
 ---
 layout: post
 tumblr_id: 1133071143
+disqus_comments: true
 date: 2004-11-05 20:11:59 UTC
 title: milky feeling
 ---

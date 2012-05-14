@@ -2,6 +2,7 @@
 layout: post
 categories: [tv, spotify, video, advertising]
 tumblr_id: 1102104681
+disqus_comments: true
 date: 2009-10-26 13:04:11 UTC
 title: First ever Spotify commercial TV ad
 ---

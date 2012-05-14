@@ -2,6 +2,7 @@
 layout: post
 categories: [sms, technology, humor]
 tumblr_id: 1121195422
+disqus_comments: true
 date: 2008-07-06 16:24:03 UTC
 title: Reliable SMS services?
 ---

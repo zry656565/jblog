@@ -1,6 +1,7 @@
 ---
 layout: post
 tumblr_id: 1133083318
+disqus_comments: true
 date: 2006-07-18 09:00:00 UTC
 title: Vista - a new skin for windows 2000
 ---

@@ -2,6 +2,7 @@
 layout: post
 categories: [cocoa, dropub, programming, software]
 tumblr_id: 1102105505
+disqus_comments: true
 date: 2009-09-20 13:21:00 UTC
 title: How I wrote DroPub in two days
 ---

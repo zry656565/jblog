@@ -1,6 +1,7 @@
 ---
 layout: post
 tumblr_id: 1121206656
+disqus_comments: true
 date: 2002-09-17 09:39:30 UTC
 title: Cool movies
 ---

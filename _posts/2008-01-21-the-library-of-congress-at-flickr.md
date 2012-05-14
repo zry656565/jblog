@@ -2,6 +2,7 @@
 layout: post
 categories: [politics, photography, flickr, archive, history]
 tumblr_id: 1111974109
+disqus_comments: true
 date: 2008-01-21 15:49:12 UTC
 title: The Library of Congress at Flickr
 ---

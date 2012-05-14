@@ -1,6 +1,7 @@
 ---
 layout: post
 tumblr_id: 1133070769
+disqus_comments: true
 date: 2004-09-30 20:24:28 UTC
 title: fresh desk typo
 ---

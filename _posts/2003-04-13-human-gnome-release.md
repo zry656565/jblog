@@ -1,6 +1,7 @@
 ---
 layout: post
 tumblr_id: 1133046346
+disqus_comments: true
 date: 2003-04-13 23:50:31 UTC
 title: human gnome release
 ---

@@ -1,6 +1,7 @@
 ---
 layout: post
 tumblr_id: 1133069065
+disqus_comments: true
 date: 2003-07-31 15:30:53 UTC
 title: kalas & hovden
 ---

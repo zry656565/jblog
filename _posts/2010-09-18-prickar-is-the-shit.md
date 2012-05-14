@@ -2,6 +2,7 @@
 layout: post
 categories: [polka, print, pattern]
 tumblr_id: 1144096893
+disqus_comments: true
 date: 2010-09-18 16:55:42 UTC
 title: Prickar is the shit
 ---

@@ -1,6 +1,7 @@
 ---
 layout: post
 tumblr_id: 1121206695
+disqus_comments: true
 date: 2002-09-18 12:16:14 UTC
 title: Ursäkta Röran
 ---

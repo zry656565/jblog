@@ -2,6 +2,7 @@
 layout: post
 categories: [stuff, hunch, iphone]
 tumblr_id: 1111977692
+disqus_comments: true
 date: 2008-02-27 14:44:03 UTC
 title: Stuff for iPhone
 ---

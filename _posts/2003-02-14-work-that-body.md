@@ -1,6 +1,7 @@
 ---
 layout: post
 tumblr_id: 1133044804
+disqus_comments: true
 date: 2003-02-14 16:28:23 UTC
 title: Work that body
 ---

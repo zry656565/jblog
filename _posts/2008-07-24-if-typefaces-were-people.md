@@ -2,6 +2,7 @@
 layout: post
 categories: [video, humor, typography]
 tumblr_id: 1121195760
+disqus_comments: true
 date: 2008-07-24 13:04:00 UTC
 title: If Typefaces were People
 ---

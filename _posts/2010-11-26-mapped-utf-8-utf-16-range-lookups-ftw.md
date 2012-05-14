@@ -2,6 +2,7 @@
 layout: post
 categories: [programming, cocoa, unicode, kod]
 tumblr_id: 1691630898
+disqus_comments: true
 date: 2010-11-26 15:48:00 UTC
 title: Mapped UTF-8 → UTF-16 range lookups FTW
 ---

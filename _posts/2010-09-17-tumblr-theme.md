@@ -2,6 +2,7 @@
 layout: post
 categories: [tumblr, theme]
 tumblr_id: 1137689240
+disqus_comments: true
 date: 2010-09-17 14:48:00 UTC
 title: Tumblr theme
 ---

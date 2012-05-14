@@ -1,6 +1,7 @@
 ---
 layout: post
 tumblr_id: 1121207303
+disqus_comments: true
 date: 2002-11-09 13:56:14 UTC
 title: Uddevalla's in war
 ---

@@ -2,6 +2,7 @@
 layout: post
 category: flickr
 tumblr_id: 1133086074
+disqus_comments: true
 date: 2007-05-05 10:24:47 UTC
 title: Flickr Uploadr finally Universal Binary
 ---

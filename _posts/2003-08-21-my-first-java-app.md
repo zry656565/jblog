@@ -1,6 +1,7 @@
 ---
 layout: post
 tumblr_id: 1133069287
+disqus_comments: true
 date: 2003-08-21 17:02:01 UTC
 title: my first java app
 ---

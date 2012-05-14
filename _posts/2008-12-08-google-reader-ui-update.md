@@ -2,6 +2,7 @@
 layout: post
 categories: [redesign, ui, google, design, reader]
 tumblr_id: 1121201243
+disqus_comments: true
 date: 2008-12-08 13:30:54 UTC
 title: Google Reader UI update
 ---

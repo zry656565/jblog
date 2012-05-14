@@ -2,6 +2,7 @@
 layout: post
 categories: [johnsphone, review]
 tumblr_id: 2348765800
+disqus_comments: true
 date: 2010-12-17 15:26:00 UTC
 title: A quick review of John's Phone
 ---

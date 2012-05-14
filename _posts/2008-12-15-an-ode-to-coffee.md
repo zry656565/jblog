@@ -2,6 +2,7 @@
 layout: post
 categories: [coffee, humor, nyt, illustration, ode]
 tumblr_id: 1121201285
+disqus_comments: true
 date: 2008-12-15 09:18:34 UTC
 title: An ode to Coffee
 ---

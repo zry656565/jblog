@@ -1,6 +1,7 @@
 ---
 layout: post
 tumblr_id: 1121204508
+disqus_comments: true
 date: 2002-06-02 09:00:00 UTC
 title: Photo Update
 ---

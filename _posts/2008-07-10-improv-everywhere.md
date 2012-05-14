@@ -2,6 +2,7 @@
 layout: post
 categories: [improv everywhere, art, photography, mirror]
 tumblr_id: 1121195467
+disqus_comments: true
 date: 2008-07-10 07:38:56 UTC
 title: Improv Everywhere
 ---

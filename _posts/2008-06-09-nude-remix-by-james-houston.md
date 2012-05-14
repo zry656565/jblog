@@ -2,6 +2,7 @@
 layout: post
 categories: [hardware, video, radiohead, music, remix]
 tumblr_id: 1121195157
+disqus_comments: true
 date: 2008-06-09 12:43:48 UTC
 title: Nude Remix by James Houston
 ---

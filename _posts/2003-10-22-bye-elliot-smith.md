@@ -1,6 +1,7 @@
 ---
 layout: post
 tumblr_id: 1133069528
+disqus_comments: true
 date: 2003-10-22 20:34:22 UTC
 title: bye elliot smith
 ---

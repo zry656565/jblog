@@ -1,6 +1,7 @@
 ---
 layout: post
 tumblr_id: 1133044244
+disqus_comments: true
 date: 2003-01-28 14:18:51 UTC
 title: Wisemoor.com
 ---

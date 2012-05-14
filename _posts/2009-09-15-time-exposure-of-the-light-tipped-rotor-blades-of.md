@@ -2,6 +2,7 @@
 layout: post
 category: photography
 tumblr_id: 188121672
+disqus_comments: true
 date: 2009-09-15 00:58:00 UTC
 title: Time exposure of light tipped rotor blades
 

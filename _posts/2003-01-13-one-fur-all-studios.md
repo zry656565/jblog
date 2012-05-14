@@ -1,6 +1,7 @@
 ---
 layout: post
 tumblr_id: 1133043109
+disqus_comments: true
 date: 2003-01-13 21:27:57 UTC
 title: One Fur All Studios
 ---

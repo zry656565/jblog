@@ -2,6 +2,7 @@
 layout: post
 category: kod
 tumblr_id: 2363521264
+disqus_comments: true
 date: 2010-12-18 20:06:00 UTC
 title: Starting to take shape
 ---

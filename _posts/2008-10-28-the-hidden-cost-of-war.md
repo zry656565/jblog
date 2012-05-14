@@ -2,6 +2,7 @@
 layout: post
 categories: [politics, video, war, visualization]
 tumblr_id: 1121196950
+disqus_comments: true
 date: 2008-10-28 15:30:29 UTC
 title: The Hidden Cost of War
 ---

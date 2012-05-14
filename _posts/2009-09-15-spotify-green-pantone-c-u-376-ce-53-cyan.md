@@ -2,6 +2,7 @@
 layout: post
 categories: [color, spotify]
 tumblr_id: 188537833
+disqus_comments: true
 date: 2009-09-15 13:56:27 UTC
 title: Spotify Green
 ---

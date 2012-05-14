@@ -1,6 +1,7 @@
 ---
 layout: post
 tumblr_id: 1133070252
+disqus_comments: true
 date: 2004-08-17 21:04:03 UTC
 title: clickclick
 ---

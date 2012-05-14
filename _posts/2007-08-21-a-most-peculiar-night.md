@@ -2,6 +2,7 @@
 layout: post
 categories: [text, life, story, stockholm]
 tumblr_id: 1133086929
+disqus_comments: true
 date: 2007-08-21 20:24:53 UTC
 title: A Most Peculiar Night
 ---

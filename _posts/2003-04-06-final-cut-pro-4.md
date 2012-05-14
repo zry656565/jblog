@@ -1,6 +1,7 @@
 ---
 layout: post
 tumblr_id: 1133046171
+disqus_comments: true
 date: 2003-04-06 20:11:43 UTC
 title: final cut pro 4
 ---

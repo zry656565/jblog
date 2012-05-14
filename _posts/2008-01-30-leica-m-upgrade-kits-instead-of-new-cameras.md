@@ -2,6 +2,7 @@
 layout: post
 categories: [leica, photography, camera, accessories]
 tumblr_id: 1111975464
+disqus_comments: true
 date: 2008-01-30 19:42:56 UTC
 title: Leica M upgrade kits instead of new cameras
 ---

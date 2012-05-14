@@ -1,6 +1,7 @@
 ---
 layout: post
 tumblr_id: 1133071582
+disqus_comments: true
 date: 2005-01-31 19:28:37 UTC
 title: steve and the tie
 ---

@@ -1,6 +1,7 @@
 ---
 layout: post
 tumblr_id: 1133084072
+disqus_comments: true
 date: 2006-10-11 09:00:00 UTC
 title: Nikon D200 Unpacking Ceremony
 ---

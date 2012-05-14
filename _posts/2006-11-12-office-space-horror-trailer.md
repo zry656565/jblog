@@ -1,6 +1,7 @@
 ---
 layout: post
 tumblr_id: 1133084363
+disqus_comments: true
 date: 2006-11-12 10:00:00 UTC
 title: Office Space Horror Trailer
 ---

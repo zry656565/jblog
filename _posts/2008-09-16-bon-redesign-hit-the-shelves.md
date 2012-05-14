@@ -2,6 +2,7 @@
 layout: post
 categories: [redesign, magazine, identity, bon]
 tumblr_id: 1121196644
+disqus_comments: true
 date: 2008-09-16 16:31:42 UTC
 title: BON redesign hit the shelves
 ---

@@ -1,6 +1,7 @@
 ---
 layout: post
 tumblr_id: 1133070379
+disqus_comments: true
 date: 2004-08-26 13:10:46 UTC
 title: effect-ive?
 ---

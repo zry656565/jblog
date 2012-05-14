@@ -1,6 +1,7 @@
 ---
 layout: post
 tumblr_id: 1133045583
+disqus_comments: true
 date: 2003-03-15 17:05:00 UTC
 title: More apple rumors
 ---

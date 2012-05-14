@@ -2,6 +2,7 @@
 layout: post
 categories: [conference, spotify, debian]
 tumblr_id: 1133086585
+disqus_comments: true
 date: 2007-06-21 07:34:51 UTC
 title: Debain Day 2007 presents Spotify
 ---

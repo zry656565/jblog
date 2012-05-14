@@ -1,6 +1,7 @@
 ---
 layout: post
 tumblr_id: 1133045309
+disqus_comments: true
 date: 2003-03-11 14:48:49 UTC
 title: i'm a switcher
 ---

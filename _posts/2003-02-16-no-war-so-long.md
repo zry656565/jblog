@@ -1,6 +1,7 @@
 ---
 layout: post
 tumblr_id: 1133044845
+disqus_comments: true
 date: 2003-02-16 22:39:12 UTC
 title: No war so long...
 ---

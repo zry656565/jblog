@@ -1,6 +1,7 @@
 ---
 layout: post
 tumblr_id: 1121204919
+disqus_comments: true
 date: 2002-06-22 09:00:00 UTC
 title: Midsummer
 ---

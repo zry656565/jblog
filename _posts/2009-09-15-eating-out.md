@@ -2,6 +2,7 @@
 layout: post
 categories: [life, creativity]
 tumblr_id: 188448194
+disqus_comments: true
 date: 2009-09-15 10:50:00 UTC
 title: Eating out
 ---

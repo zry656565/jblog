@@ -2,6 +2,7 @@
 layout: post
 categories: [magnum, photography, chernobyl]
 tumblr_id: 1111978088
+disqus_comments: true
 date: 2008-03-13 21:22:44 UTC
 title: Chernobyl Legacy
 ---

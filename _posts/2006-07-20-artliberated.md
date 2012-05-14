@@ -1,6 +1,7 @@
 ---
 layout: post
 tumblr_id: 1133083499
+disqus_comments: true
 date: 2006-07-20 09:00:00 UTC
 title: Artliberated
 ---

@@ -1,6 +1,7 @@
 ---
 layout: post
 tumblr_id: 1133082407
+disqus_comments: true
 date: 2005-03-07 19:40:38 UTC
 title: andreas/hacked/fly
 ---

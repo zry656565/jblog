@@ -2,6 +2,7 @@
 layout: post
 categories: [aperture, application, photography, apple]
 tumblr_id: 1133085686
+disqus_comments: true
 date: 2007-04-21 12:43:18 UTC
 title: Aperture 1.5.3 Released
 ---

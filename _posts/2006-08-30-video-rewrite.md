@@ -1,6 +1,7 @@
 ---
 layout: post
 tumblr_id: 1133083983
+disqus_comments: true
 date: 2006-08-30 09:00:00 UTC
 title: Video Rewrite
 ---

@@ -1,6 +1,7 @@
 ---
 layout: post
 tumblr_id: 1133068645
+disqus_comments: true
 date: 2003-06-19 11:01:32 UTC
 title: tiny sony computers
 ---

@@ -1,6 +1,7 @@
 ---
 layout: post
 tumblr_id: 1133044586
+disqus_comments: true
 date: 2003-02-10 17:25:13 UTC
 title: daily reminder
 ---

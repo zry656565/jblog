@@ -2,6 +2,7 @@
 layout: post
 categories: [north korea, noko jeans, friends, clothes]
 tumblr_id: 1121196264
+disqus_comments: true
 date: 2008-08-15 08:41:04 UTC
 title: There Will Be Jeans
 ---

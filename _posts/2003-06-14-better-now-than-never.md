@@ -1,6 +1,7 @@
 ---
 layout: post
 tumblr_id: 1133068432
+disqus_comments: true
 date: 2003-06-14 21:44:06 UTC
 title: better now than never
 ---

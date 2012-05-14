@@ -2,6 +2,7 @@
 layout: post
 categories: [spotify, iphone, software]
 tumblr_id: 1133604685
+disqus_comments: true
 date: 2009-07-01 00:00:00 UTC
 title: Spotify for the iPhone
 ---

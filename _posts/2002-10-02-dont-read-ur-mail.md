@@ -1,6 +1,7 @@
 ---
 layout: post
 tumblr_id: 1121206803
+disqus_comments: true
 date: 2002-10-02 14:41:51 UTC
 title: Dont read ur mail
 ---

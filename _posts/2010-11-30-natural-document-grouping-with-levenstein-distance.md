@@ -2,6 +2,7 @@
 layout: post
 categories: [programming, kod, ux]
 tumblr_id: 2051094800
+disqus_comments: true
 date: 2010-11-30 20:11:49 UTC
 title: Natural document grouping with Levenstein distance
 ---

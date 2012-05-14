@@ -2,6 +2,7 @@
 layout: post
 categories: [web, gitblog, ui, software]
 tumblr_id: 1133605197
+disqus_comments: true
 date: 2009-08-11 02:03:00 UTC
 title: Gitblog admin user interface
 ---

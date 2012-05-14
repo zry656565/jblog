@@ -1,6 +1,7 @@
 ---
 layout: post
 tumblr_id: 1121208143
+disqus_comments: true
 date: 2002-12-03 22:04:45 UTC
 title: Congratulations
 ---

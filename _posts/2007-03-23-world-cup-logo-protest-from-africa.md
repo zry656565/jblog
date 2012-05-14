@@ -1,6 +1,7 @@
 ---
 layout: post
 tumblr_id: 1133084981
+disqus_comments: true
 date: 2007-03-23 09:52:05 UTC
 title: World Cup logo protest from Africa
 ---

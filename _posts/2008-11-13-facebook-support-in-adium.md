@@ -2,6 +2,7 @@
 layout: post
 categories: [adium, facebook, software]
 tumblr_id: 1121197068
+disqus_comments: true
 date: 2008-11-13 09:52:52 UTC
 title: Facebook support in Adium
 ---

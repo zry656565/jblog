@@ -2,6 +2,7 @@
 layout: post
 categories: [kod, rambling, ux]
 tumblr_id: 2843044421
+disqus_comments: true
 date: 2011-01-20 16:17:00 UTC
 title: Why I wrote a programmer's text editor
 ---

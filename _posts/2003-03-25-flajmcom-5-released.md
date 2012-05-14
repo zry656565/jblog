@@ -1,6 +1,7 @@
 ---
 layout: post
 tumblr_id: 1133045949
+disqus_comments: true
 date: 2003-03-25 01:19:29 UTC
 title: Flajm.com 5 released
 ---

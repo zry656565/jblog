@@ -2,6 +2,7 @@
 layout: post
 categories: [sture street, work, identity]
 tumblr_id: 1133083072
+disqus_comments: true
 date: 2006-05-10 09:00:00 UTC
 title: Sture Street Business cards
 ---

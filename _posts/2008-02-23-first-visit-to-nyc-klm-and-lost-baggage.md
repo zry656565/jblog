@@ -2,6 +2,7 @@
 layout: post
 categories: [travel, new york]
 tumblr_id: 1111977278
+disqus_comments: true
 date: 2008-02-23 04:36:35 UTC
 title: First visit to NYC, KLM and lost baggage
 ---

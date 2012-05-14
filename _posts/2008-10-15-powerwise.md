@@ -2,6 +2,7 @@
 layout: post
 categories: [design, furniture]
 tumblr_id: 1121196829
+disqus_comments: true
 date: 2008-10-15 15:17:40 UTC
 title: Powerwise
 ---

@@ -2,6 +2,7 @@
 layout: post
 categories: [math, nature, photography, art]
 tumblr_id: 189429599
+disqus_comments: true
 date: 2009-09-16 15:35:04 UTC
 title: Found Functions by Nikki Graziano
 ---

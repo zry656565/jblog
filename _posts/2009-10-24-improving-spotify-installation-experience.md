@@ -2,6 +2,7 @@
 layout: post
 categories: [spotify, mac, ux, software]
 tumblr_id: 1102105108
+disqus_comments: true
 date: 2009-10-24 12:10:44 UTC
 title: Improving the Spotify installation experience
 ---

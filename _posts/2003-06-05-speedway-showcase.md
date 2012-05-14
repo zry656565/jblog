@@ -1,6 +1,7 @@
 ---
 layout: post
 tumblr_id: 1133047330
+disqus_comments: true
 date: 2003-06-05 21:35:47 UTC
 title: speedway + showcase
 ---

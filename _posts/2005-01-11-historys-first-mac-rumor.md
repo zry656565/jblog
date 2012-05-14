@@ -1,6 +1,7 @@
 ---
 layout: post
 tumblr_id: 1133071399
+disqus_comments: true
 date: 2005-01-11 07:22:20 UTC
 title: historys first mac rumor
 ---

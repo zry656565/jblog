@@ -1,6 +1,7 @@
 ---
 layout: post
 tumblr_id: 188541802
+disqus_comments: true
 date: 2009-09-15 14:03:00 UTC
 title: The Personas art experiment
 ---

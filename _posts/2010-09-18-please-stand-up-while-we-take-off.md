@@ -2,6 +2,7 @@
 layout: post
 categories: [airplane, economy]
 tumblr_id: 1143300482
+disqus_comments: true
 date: 2010-09-18 14:08:40 UTC
 title: Please stand up while we take off
 ---

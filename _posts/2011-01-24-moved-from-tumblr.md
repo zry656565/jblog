@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Moved from Tumblr to Jekyll+GitHub
+disqus_comments: true
 ---
 
 As many other people running their blogs on [Tumblr](http://www.tumblr.com/) I've become painfully aware of their failures to provide an acceptable service. Hours and sometimes days of downtime is unacceptable, even for a free service, when one of the most important parts of the service is availability.

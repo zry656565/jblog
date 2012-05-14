@@ -1,6 +1,7 @@
 ---
 layout: post
 tumblr_id: 1133082842
+disqus_comments: true
 date: 2006-04-26 09:00:00 UTC
 title: Hello + Welcome
 ---

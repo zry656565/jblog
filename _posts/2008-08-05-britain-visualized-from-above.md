@@ -2,6 +2,7 @@
 layout: post
 categories: [visualization, britain, bbc]
 tumblr_id: 1121195850
+disqus_comments: true
 date: 2008-08-05 08:44:11 UTC
 title: Britain visualized from above
 ---

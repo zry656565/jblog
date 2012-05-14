@@ -2,6 +2,7 @@
 layout: post
 categories: [architecture, history]
 tumblr_id: 1121195994
+disqus_comments: true
 date: 2008-08-11 16:32:31 UTC
 title: The Old House and the Sea
 ---

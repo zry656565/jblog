@@ -2,6 +2,7 @@
 layout: post
 category: photography
 tumblr_id: 1121196348
+disqus_comments: true
 date: 2008-08-28 22:23:00 UTC
 title: Reading a Book
 ---

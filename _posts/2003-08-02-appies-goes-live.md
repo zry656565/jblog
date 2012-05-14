@@ -1,6 +1,7 @@
 ---
 layout: post
 tumblr_id: 1133069117
+disqus_comments: true
 date: 2003-08-02 00:10:17 UTC
 title: appies goes live
 ---

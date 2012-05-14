@@ -2,6 +2,7 @@
 layout: post
 categories: [church and bass, video, music]
 tumblr_id: 1121196712
+disqus_comments: true
 date: 2008-09-29 17:24:10 UTC
 title: Church and Bass
 ---

@@ -1,6 +1,7 @@
 ---
 layout: post
 tumblr_id: 1121203458
+disqus_comments: true
 date: 2002-05-02 09:00:00 UTC
 title: Flajm.com update
 ---

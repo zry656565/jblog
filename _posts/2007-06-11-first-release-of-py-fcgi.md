@@ -2,6 +2,7 @@
 layout: post
 categories: [python, fcgi, fastcgi]
 tumblr_id: 1133086484
+disqus_comments: true
 date: 2007-06-11 15:03:46 UTC
 title: First release of py-fcgi
 ---

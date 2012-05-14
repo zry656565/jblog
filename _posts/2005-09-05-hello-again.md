@@ -1,6 +1,7 @@
 ---
 layout: post
 tumblr_id: 1133082750
+disqus_comments: true
 date: 2005-09-05 12:21:47 UTC
 title: Hello, again
 ---

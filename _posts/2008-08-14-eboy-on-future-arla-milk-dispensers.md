@@ -2,6 +2,7 @@
 layout: post
 categories: [art, eboy, milk, sweden, arla, pixel]
 tumblr_id: 1121196182
+disqus_comments: true
 date: 2008-08-14 16:10:13 UTC
 title: eBoy on future Arla milk dispensers
 ---

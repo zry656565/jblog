@@ -1,6 +1,7 @@
 ---
 layout: post
 tumblr_id: 1133083206
+disqus_comments: true
 date: 2006-07-05 09:00:00 UTC
 title: Threads in ActionScript
 ---

@@ -1,6 +1,7 @@
 ---
 layout: post
 tumblr_id: 1133070192
+disqus_comments: true
 date: 2004-06-07 12:15:28 UTC
 title: Le Projects
 ---

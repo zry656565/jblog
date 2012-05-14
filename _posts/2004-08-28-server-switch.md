@@ -1,6 +1,7 @@
 ---
 layout: post
 tumblr_id: 1133070542
+disqus_comments: true
 date: 2004-08-28 21:19:43 UTC
 title: server switch
 ---

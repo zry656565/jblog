@@ -2,6 +2,7 @@
 layout: post
 categories: [tv, skydiving, live, honda, advertising]
 tumblr_id: 1121194918
+disqus_comments: true
 date: 2008-05-30 15:49:29 UTC
 title: Live Advertising on TV
 ---

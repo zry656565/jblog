@@ -2,6 +2,7 @@
 layout: post
 categories: [tedx, event]
 tumblr_id: 1102106454
+disqus_comments: true
 date: 2010-04-07 09:21:34 UTC
 title: TEDx in Stockholm on visual impact
 ---

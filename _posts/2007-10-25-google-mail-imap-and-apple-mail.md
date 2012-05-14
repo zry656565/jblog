@@ -2,6 +2,7 @@
 layout: post
 categories: [google, work, functional, sought-after, connectivity, mail, imap, gmail]
 tumblr_id: 1133087113
+disqus_comments: true
 date: 2007-10-25 09:32:26 UTC
 title: Google Mail, IMAP and Apple Mail
 ---

@@ -2,6 +2,7 @@
 layout: post
 categories: [challenge, max ernst, art, competition, martin nicolausson]
 tumblr_id: 1121201185
+disqus_comments: true
 date: 2008-12-03 16:46:56 UTC
 title: Typographical interpretation of Max Ernst
 ---

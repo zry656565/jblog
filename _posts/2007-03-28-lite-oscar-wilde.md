@@ -1,6 +1,7 @@
 ---
 layout: post
 tumblr_id: 1133085126
+disqus_comments: true
 date: 2007-03-28 10:54:31 UTC
 title: Lite Oscar Wilde
 ---

@@ -2,6 +2,7 @@
 layout: post
 categories: [art, architecture]
 tumblr_id: 1102106327
+disqus_comments: true
 date: 2010-04-26 22:02:00 UTC
 title: Ephemicropolis
 ---

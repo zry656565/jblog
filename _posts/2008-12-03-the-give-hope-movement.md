@@ -2,6 +2,7 @@
 layout: post
 categories: [cause, barncancerrfonden, advertising, viral]
 tumblr_id: 1121201110
+disqus_comments: true
 date: 2008-12-03 13:28:01 UTC
 title: The Give Hope Movement
 ---

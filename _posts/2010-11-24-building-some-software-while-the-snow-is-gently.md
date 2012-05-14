@@ -2,6 +2,7 @@
 layout: post
 category: kod
 tumblr_id: 1669339986
+disqus_comments: true
 date: 2010-11-24 13:44:00 UTC
 title: The snow is gently falling
 ---

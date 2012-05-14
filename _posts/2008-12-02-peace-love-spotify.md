@@ -2,6 +2,7 @@
 layout: post
 categories: [festival, spotify, partnership, music, deal]
 tumblr_id: 1121200903
+disqus_comments: true
 date: 2008-12-02 17:07:51 UTC
 title: Peace & Love & Spotify
 ---

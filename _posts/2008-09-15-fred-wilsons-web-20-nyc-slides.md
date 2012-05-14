@@ -2,6 +2,7 @@
 layout: post
 categories: [slides, presentation, design, identity]
 tumblr_id: 1121196619
+disqus_comments: true
 date: 2008-09-15 10:59:07 UTC
 title: Fred Wilsons Web 2.0 NYC Slides
 ---

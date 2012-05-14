@@ -1,6 +1,7 @@
 ---
 layout: post
 tumblr_id: 1133069826
+disqus_comments: true
 date: 2003-12-18 14:35:59 UTC
 title: Hylander update
 ---

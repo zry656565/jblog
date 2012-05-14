@@ -2,6 +2,7 @@
 layout: post
 categories: [gitblog, ui, ux, software]
 tumblr_id: 1102105142
+disqus_comments: true
 date: 2009-10-12 00:11:46 UTC
 title: Manage posts in Gitblog web admin UI
 ---

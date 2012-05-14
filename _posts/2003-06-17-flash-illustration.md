@@ -1,6 +1,7 @@
 ---
 layout: post
 tumblr_id: 1133068558
+disqus_comments: true
 date: 2003-06-17 00:21:30 UTC
 title: flash illustration
 ---

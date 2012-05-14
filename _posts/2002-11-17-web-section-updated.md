@@ -1,6 +1,7 @@
 ---
 layout: post
 tumblr_id: 1121207336
+disqus_comments: true
 date: 2002-11-17 14:45:17 UTC
 title: Web-section updated
 ---

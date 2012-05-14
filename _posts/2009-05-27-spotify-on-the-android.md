@@ -2,6 +2,7 @@
 layout: post
 categories: [android, software, spotify, video]
 tumblr_id: 1102106232
+disqus_comments: true
 date: 2009-05-27 14:59:00 UTC
 title: Spotify on the Android
 ---

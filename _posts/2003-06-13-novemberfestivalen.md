@@ -1,6 +1,7 @@
 ---
 layout: post
 tumblr_id: 1133047374
+disqus_comments: true
 date: 2003-06-13 16:59:22 UTC
 title: Novemberfestivalen
 ---

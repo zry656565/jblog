@@ -1,6 +1,7 @@
 ---
 layout: post
 tumblr_id: 1121207395
+disqus_comments: true
 date: 2002-11-18 22:59:09 UTC
 title: Hiptothehop...
 ---

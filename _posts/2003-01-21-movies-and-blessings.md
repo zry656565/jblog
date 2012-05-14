@@ -1,6 +1,7 @@
 ---
 layout: post
 tumblr_id: 1133043330
+disqus_comments: true
 date: 2003-01-21 23:46:23 UTC
 title: Movies and Blessings
 ---

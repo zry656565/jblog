@@ -1,6 +1,7 @@
 ---
 layout: post
 tumblr_id: 1133046125
+disqus_comments: true
 date: 2003-04-02 19:07:13 UTC
 title: programmatic goodies
 ---

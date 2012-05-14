@@ -1,6 +1,7 @@
 ---
 layout: post
 tumblr_id: 1133070868
+disqus_comments: true
 date: 2004-10-04 13:55:29 UTC
 title: twentyfour supreme
 ---

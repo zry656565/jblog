@@ -2,6 +2,7 @@
 layout: post
 categories: [typography, pixel, creative]
 tumblr_id: 189625761
+disqus_comments: true
 date: 2009-09-16 20:59:00 UTC
 title: First subpixel typeface, ever
 ---

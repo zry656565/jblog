@@ -1,6 +1,7 @@
 ---
 layout: post
 tumblr_id: 1121204034
+disqus_comments: true
 date: 2002-05-20 09:00:00 UTC
 title: Crazy Videos
 ---

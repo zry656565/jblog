@@ -2,6 +2,7 @@
 layout: post
 categories: [work, old, illustration]
 tumblr_id: 1133082912
+disqus_comments: true
 date: 2006-05-06 09:00:00 UTC
 title: Collected Illustrations
 ---

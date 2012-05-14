@@ -1,6 +1,7 @@
 ---
 layout: post
 tumblr_id: 1121205033
+disqus_comments: true
 date: 2002-06-25 09:00:00 UTC
 title: No Tragedy
 ---

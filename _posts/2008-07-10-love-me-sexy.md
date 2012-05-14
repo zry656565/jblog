@@ -2,6 +2,7 @@
 layout: post
 categories: [video, humor, mattadams]
 tumblr_id: 1121195504
+disqus_comments: true
 date: 2008-07-10 10:58:04 UTC
 title: Love Me Sexy
 ---

@@ -1,6 +1,7 @@
 ---
 layout: post
 tumblr_id: 1121206397
+disqus_comments: true
 date: 2002-09-08 12:47:25 UTC
 title: Whos your daddy
 ---

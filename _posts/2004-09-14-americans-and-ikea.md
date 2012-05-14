@@ -1,6 +1,7 @@
 ---
 layout: post
 tumblr_id: 1133070719
+disqus_comments: true
 date: 2004-09-14 06:24:02 UTC
 title: Americans and Ikea
 ---

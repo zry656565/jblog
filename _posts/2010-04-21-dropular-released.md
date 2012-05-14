@@ -2,6 +2,7 @@
 layout: post
 categories: [release, dropular, software]
 tumblr_id: 1102106282
+disqus_comments: true
 date: 2010-04-21 07:24:07 UTC
 title: New Dropular released
 ---

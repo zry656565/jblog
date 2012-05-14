@@ -2,6 +2,7 @@
 layout: post
 categories: [summer, sweden, midsummer, video, celebration]
 tumblr_id: 1121195186
+disqus_comments: true
 date: 2008-06-19 15:35:33 UTC
 title: Swedish Midsummer
 ---

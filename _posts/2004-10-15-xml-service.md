@@ -1,6 +1,7 @@
 ---
 layout: post
 tumblr_id: 1133070969
+disqus_comments: true
 date: 2004-10-15 11:30:28 UTC
 title: xml service
 ---

@@ -2,6 +2,7 @@
 layout: post
 categories: [osx, rsync, security, ssh]
 tumblr_id: 1133084935
+disqus_comments: true
 date: 2007-03-22 15:18:05 UTC
 title: Remote Backup Using rsync
 ---

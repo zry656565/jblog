@@ -2,6 +2,7 @@
 layout: post
 categories: [spotify, adium, software]
 tumblr_id: 1121196304
+disqus_comments: true
 date: 2008-08-26 12:12:28 UTC
 title: Adium 1.3 with Spotify-support
 ---

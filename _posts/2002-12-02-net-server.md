@@ -1,6 +1,7 @@
 ---
 layout: post
 tumblr_id: 1121207986
+disqus_comments: true
 date: 2002-12-02 21:03:36 UTC
 title: .Net Server
 ---

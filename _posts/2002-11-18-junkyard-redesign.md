@@ -1,6 +1,7 @@
 ---
 layout: post
 tumblr_id: 1121207504
+disqus_comments: true
 date: 2002-11-18 11:59:48 UTC
 title: Junkyard redesign
 ---

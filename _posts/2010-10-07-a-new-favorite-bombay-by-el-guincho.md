@@ -2,6 +2,7 @@
 layout: post
 category: music
 tumblr_id: 1261110987
+disqus_comments: true
 date: 2010-10-07 06:58:15 UTC
 title: "A new favorite: Bombay by El Guincho"
 ---

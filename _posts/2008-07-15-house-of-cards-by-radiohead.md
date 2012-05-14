@@ -2,6 +2,7 @@
 layout: post
 categories: [technology, radiohead, music, video]
 tumblr_id: 1121195695
+disqus_comments: true
 date: 2008-07-15 13:26:01 UTC
 title: House of Cards by Radiohead
 ---

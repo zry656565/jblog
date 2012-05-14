@@ -1,6 +1,7 @@
 ---
 layout: post
 tumblr_id: 1133044289
+disqus_comments: true
 date: 2003-01-29 21:10:55 UTC
 title: Grafisk Forum update
 ---

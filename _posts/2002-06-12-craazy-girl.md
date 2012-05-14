@@ -1,6 +1,7 @@
 ---
 layout: post
 tumblr_id: 1121204715
+disqus_comments: true
 date: 2002-06-12 09:00:00 UTC
 title: Craazy Girl
 ---

@@ -1,6 +1,7 @@
 ---
 layout: post
 tumblr_id: 1133083559
+disqus_comments: true
 date: 2006-07-25 09:00:00 UTC
 title: Clean retarded fun frum Finland
 ---

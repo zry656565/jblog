@@ -2,6 +2,7 @@
 layout: post
 categories: [archive, creatives, design]
 tumblr_id: 1144850634
+disqus_comments: true
 date: 2010-09-18 19:21:46 UTC
 title: Creations from the archive
 ---

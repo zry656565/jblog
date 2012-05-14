@@ -1,6 +1,7 @@
 ---
 layout: post
 tumblr_id: 1121205816
+disqus_comments: true
 date: 2002-07-27 06:57:18 UTC
 title: World Premiere
 ---

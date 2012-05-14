@@ -2,6 +2,7 @@
 layout: post
 categories: [url, spotify, link, uri, links]
 tumblr_id: 1133086804
+disqus_comments: true
 date: 2007-07-18 08:02:39 UTC
 title: An Introduction to Spotify URI:s
 ---

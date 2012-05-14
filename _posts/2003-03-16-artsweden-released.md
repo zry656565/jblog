@@ -1,6 +1,7 @@
 ---
 layout: post
 tumblr_id: 1133045616
+disqus_comments: true
 date: 2003-03-16 23:46:45 UTC
 title: artsweden released
 ---

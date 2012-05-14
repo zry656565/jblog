@@ -1,6 +1,7 @@
 ---
 layout: post
 tumblr_id: 1133046918
+disqus_comments: true
 date: 2003-05-04 15:24:20 UTC
 title: thnx lookom
 ---

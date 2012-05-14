@@ -2,6 +2,7 @@
 layout: post
 categories: [life, random, music, illustration]
 tumblr_id: 1121194954
+disqus_comments: true
 date: 2008-06-01 20:29:00 UTC
 title: Life, I love you
 ---

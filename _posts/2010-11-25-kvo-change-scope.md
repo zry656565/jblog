@@ -2,6 +2,7 @@
 layout: post
 categories: [programming, cocoa, kvo]
 tumblr_id: 1675311839
+disqus_comments: true
 date: 2010-11-25 01:48:00 UTC
 title: A more convenient approach to manual KVO notifications
 ---

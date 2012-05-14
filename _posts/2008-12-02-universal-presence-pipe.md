@@ -2,6 +2,7 @@
 layout: post
 categories: [feed, presence, pipes, yahoo pipes, atom, tool, rss]
 tumblr_id: 1121200959
+disqus_comments: true
 date: 2008-12-02 17:36:02 UTC
 title: Universal presence pipe
 ---
