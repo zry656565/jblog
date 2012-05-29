@@ -33,7 +33,7 @@ title: Projects
 - [node-couchdb-min](https://github.com/rsms/node-couchdb-min) — Minimalistic but fully-featured CouchDB module for Node.js
 - [js-object-merge](https://github.com/rsms/js-object-merge) — 3-way JavaScript object merging
 - [js-lru](https://github.com/rsms/js-lru) — a fast, simple & universal Least Recently Used (LRU) cache in JavaScript
-- [Node.js](http://nodejs.org/) — evented I/O for v8 javascript
+- [Node.js](http://nodejs.org/) — evented I/O for v8 javascript (core dev 2010-2011)
 - [Go.tmbundle](https://github.com/rsms/Go.tmbundle) — TextMate bundle for the Go! programming language
 - [hunch-upload](https://github.com/rsms/hunch-upload) — HTML file uploads with support for multiple uploads and progress indication
 - [Smisk](http://python-smisk.org/) — high performance web service framework, written in C but controlled by Python
