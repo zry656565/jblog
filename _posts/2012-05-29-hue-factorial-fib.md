@@ -119,3 +119,5 @@ Let's have look at what Hue does with the `fib` example function (from earlier i
 We didn't get the royal unroll treatment, but the calls became tail recursive and the true-branch of the conditional expression was short-circuited into the end of the conditional ("endif"), saving us a "PHI" virtual instruction. This code is also very efficient and has linear time complexity.
 
 [Hue](https://github.com/rsms/hue) continues to be my computer programming muse (and TV substitute) as a low intensity hobby project. The intention is to experiment with performant functional programming and to learn stuff, of course. Hue's source code is free and open at [https://github.com/rsms/hue](https://github.com/rsms/hue).
+
+See previous introduction to Hue: ["Hue — a functional programming language for fun & play"](http://rsms.me/2012/05/14/hue.html).
