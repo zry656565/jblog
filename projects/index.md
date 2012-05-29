@@ -6,7 +6,8 @@ title: Projects
 
 <small>*Not in any sane or particular order*</small>
 
-- [PeerTalk](http://rsms.me/peertalk/) — A small iOS and OS X Cocoa library for communicating over USB and TCP.
+- [Hue](https://github.com/rsms/hue) — a functional programming language.
+- [PeerTalk](http://rsms.me/peertalk/) — a small iOS and OS X Cocoa library for communicating over USB and TCP.
 - [UILayer](http://rsms.me/uilayer/) — an API on top of the WebKit DOM for working with the concept of layers. High performance UI rendering and animation.
 - [Move](http://movelang.org/) — a simple programming language intended for the young generation
 - [Fnews](/projects/fnews/) — dust off your iPad and use it as a pretty Facebook news feed "photo frame"
@@ -36,6 +37,7 @@ title: Projects
 - [Go.tmbundle](https://github.com/rsms/Go.tmbundle) — TextMate bundle for the Go! programming language
 - [hunch-upload](https://github.com/rsms/hunch-upload) — HTML file uploads with support for multiple uploads and progress indication
 - [Smisk](http://python-smisk.org/) — high performance web service framework, written in C but controlled by Python
+- [Abstract Base](https://github.com/rsms/phpab) — PHP runtime library that has been in heavy production for many years
 - [eLUA](https://github.com/rsms/elua) — embedded LUA (e.g. for serving web sites)
 - [PyCA](https://github.com/rsms/pyca) — Python C extension Assistant
 - [lsreg](https://github.com/rsms/lsreg) — OS X Launch Services registry C library
