@@ -339,7 +339,7 @@ That's it for a summary of the Lexer design. I suggest you look through the code
 
 I've left one part unimplemented for you to write: Reading Text literals. Run the `lexer-demo.js`:
 
-{% highlight plain-text %}
+{% highlight plaintext %}
 $ node lexer-demo.js
 read_tokens(L)
 L.next() -> SYMBOL 'Hello' at 0:0
