@@ -41,47 +41,44 @@ A language like C does not care about whitespace at all, except for separating k
 
 Here's a BNF-style sketch of the language I have in mind for this tutorial. Feel free to make up your own version.
 
-{% highlight none %}
-Expression           = ExpressionGroup | Number | Text | Path | List | Map
-ExpressionGroup      = "(" Expression* ")"
-Line                 = Linebreak Space*
+    Expression           = ExpressionGroup | Number | Text | Path | List | Map
+    ExpressionGroup      = "(" Expression* ")"
+    Line                 = Linebreak Space*
 
-Whitespace           = Linebreak | Space
-Linebreak            = U+000A..U+000D | U+0085 | U+2028 | U+2029
-Space                = U+0009 | U+0020 | U+00A0 | U+180E | U+2000..U+200B
-                     | U+202F | U+205F | U+3000 | U+FEFF
+    Whitespace           = Linebreak | Space
+    Linebreak            = U+000A..U+000D | U+0085 | U+2028 | U+2029
+    Space                = U+0009 | U+0020 | U+00A0 | U+180E | U+2000..U+200B
+                         | U+202F | U+205F | U+3000 | U+FEFF
 
-Number               = IntegerNumber | HexIntegerNumber | FractionalNumber
-IntegerNumber        = DecimalDigit+
-DecimalDigit         = 0..9
-HexIntegerNumber     = "0x" HexDigit+
-HexDigit             = 0..9 | A..F | a..f
-FractionalNumber     = DecimalDigit+ "." DecimalDigit* FractionExponent?
-FractionalExponent   = ("E" | "e") ("-" | "+")? DecimalDigit+
+    Number               = IntegerNumber | HexIntegerNumber | FractionalNumber
+    IntegerNumber        = DecimalDigit+
+    DecimalDigit         = 0..9
+    HexIntegerNumber     = "0x" HexDigit+
+    HexDigit             = 0..9 | A..F | a..f
+    FractionalNumber     = DecimalDigit+ "." DecimalDigit* FractionExponent?
+    FractionalExponent   = ("E" | "e") ("-" | "+")? DecimalDigit+
 
-Text                 = "'" TextCharacter* "'"
-TextCharacter        = U+0021..U+0026
-                     | U+0028..U+005B
-                     | "\" TextEscCharacter
-                     | U+005D..U+FFEE
-TextEscCharacter     = "\" | "'" | "t" | "n" | "r" | UnicodeValue
-UnicodeValue         = "u" HexDigit{4} | "U" HexDigit{8}
+    Text                 = "'" TextCharacter* "'"
+    TextCharacter        = U+0021..U+0026
+                         | U+0028..U+005B
+                         | "\" TextEscCharacter
+                         | U+005D..U+FFEE
+    TextEscCharacter     = "\" | "'" | "t" | "n" | "r" | UnicodeValue
+    UnicodeValue         = "u" HexDigit{4} | "U" HexDigit{8}
 
-Path                 = Symbol ("." Symbol)*
-Symbol               = <SymbolCharacter except 0..9> SymbolCharacter*
-SymbolCharacter      = <VisibleCharacter except SingleTerminator>
-VisibleCharacter     = <UnicodeCharacter except Whitespace | ControlCharacter>
-UnicodeCharacter     = U+0000..U+FFFE
-ControlCharacter     = U+0000..U+0020 | U+007F..00A0 | U+FFEF..U+FFFF
-SingleTerminator     = "(" | ")" | "." | ":" | "[" | "]" | "{" | "}"
+    Path                 = Symbol ("." Symbol)*
+    Symbol               = <SymbolCharacter except 0..9> SymbolCharacter*
+    SymbolCharacter      = <VisibleCharacter except SingleTerminator>
+    VisibleCharacter     = <UnicodeCharacter except Whitespace | ControlCharacter>
+    UnicodeCharacter     = U+0000..U+FFFE
+    ControlCharacter     = U+0000..U+0020 | U+007F..00A0 | U+FFEF..U+FFFF
+    SingleTerminator     = "(" | ")" | "." | ":" | "[" | "]" | "{" | "}"
 
-List                 = "[" Expression* "]"
+    List                 = "[" Expression* "]"
 
-Map                  = "{" MapPair* "}"
-MapPair              = MapKey ":" Expression
-MapKey               = Symbol | Text
-{% endhighlight %}
-
+    Map                  = "{" MapPair* "}"
+    MapPair              = MapKey ":" Expression
+    MapKey               = Symbol | Text
 
 This format, usually referred to as BNF (although not actual strict BNF), is a way of expressing a syntax in terms of simple reductions. A quick guide to general BNF format:
 
@@ -339,15 +336,13 @@ That's it for a summary of the Lexer design. I suggest you look through the code
 
 I've left one part unimplemented for you to write: Reading Text literals. Run the `lexer-demo.js`:
 
-{% highlight none %}
-$ node lexer-demo.js
-read_tokens(L)
-L.next() -> SYMBOL 'Hello' at 0:0
-L.next() -> SYMBOL '=' at 0:6
-...
-Error: Lesson 1: Implement reading of Text tokens
-;)
-{% endhighlight %}
+    $ node lexer-demo.js
+    read_tokens(L)
+    L.next() -> SYMBOL 'Hello' at 0:0
+    L.next() -> SYMBOL '=' at 0:6
+    ...
+    Error: Lesson 1: Implement reading of Text tokens
+    ;)
 
 Again, the source is available at <https://github.com/rsms/prog-lang-tutorial>.
 
