@@ -39,7 +39,7 @@ A language like C does not care about whitespace at all, except for separating k
 
 ### Syntax
 
-Here's a BNF-style sketch of the language I have in mind for this tutorial. Feel free to make up your own version.
+Here's a [BNF](http://en.wikipedia.org/wiki/Backus%E2%80%93Naur_Form)-style sketch of the language I have in mind for this tutorial. Feel free to make up your own version.
 
     #!-none
     Expression           = ExpressionGroup | Number | Text | Path | List | Map
