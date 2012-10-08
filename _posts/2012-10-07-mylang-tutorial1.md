@@ -6,7 +6,7 @@ tags: programming
 category: languages
 ---
 
-Let's write our own programming language. It'll be fun and we will learn some key tools for processing structured data, performing semantic analysis how to make a computer execute code, and all this using modern JavaScript.
+Let's write our own programming language. It'll be fun and we will learn some key tools for processing structured data, performing semantic analysis, how to make a computer execute code, and all this using modern JavaScript.
 
 We will create five major components, each outlined in a separate article:
 
