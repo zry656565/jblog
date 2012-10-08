@@ -41,7 +41,7 @@ A language like C does not care about whitespace at all, except for separating k
 
 Here's a BNF-style sketch of the language I have in mind for this tutorial. Feel free to make up your own version.
 
-{% highlight none %}
+{% highlight text %}
 Expression           = ExpressionGroup | Number | Text | Path | List | Map
 ExpressionGroup      = "(" Expression* ")"
 Line                 = Linebreak Space*
