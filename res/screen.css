@@ -140,16 +140,21 @@ div.content {
   }*/
   div.content div.quotation blockquote { margin-left:-30px; }
   div.content pre {
-    background-color:#eee;
-    padding:0.4em 1em;
+    background-color:#fff;
+    padding:0.4em 0 0.4em 1em;
     border-left:2px solid #ddd;
   }
   div.content code {
-    background-color:#eee;
-    padding:0 0.1em;
+    background-color: #f8f8f8;
+    border: 1px solid #eaeaea;
+    border-radius: 3px;
+    padding:0 0.2em;
   }
   div.content pre > code {
-    padding:0; background-color:transparent;
+    padding:0;
+    background-color:transparent;
+    border:none;
+    border-radius: none;
   }
   div.content *:target { background:#fe0; }
   div.content sup:target a { padding:2px 5px; }
@@ -261,10 +266,11 @@ div.post {
     }
 
 /* prettyprint */
+pre { color:black; }
 pre .str { color: #080; }
-pre .kwd { color: #295AA4; }
-pre .com { color: #999; }
-pre .typ { color: #808; }
+pre .kwd { color: #000; font-weight: 500; }
+pre .com { color: #999; font-style: italic; }
+pre .typ { color: #349; }
 pre .lit { color: #066; }
 pre .pun, div.post pre .opn, div.post pre .clo { color: #660; }
 pre .pln { color: #000; }
@@ -382,15 +388,31 @@ footer {
    480x230px rather than the actual 960x480 pixels. This is a good thing.
 */
 @media only screen and (min-device-width: 480px) {
-  @font-face {
-    font-family: 'M+ 1m';
+  /*@font-face {
+    font-family: 'M+ 1mn';
     font-style: normal;
     font-weight: 300;
-    src: local('M+ 1m light'), local('mplus-1m-light'),
-         url('http://hunch.se/style/fonts/mplus-1m-light.ttf') 
-         format('truetype');
+    src: local('mplus-1mn-regular'), local('M+ 1mn regular'), url('/res/mplus-1mn-regular.ttf')  format('truetype');
   }
-  pre, code, tt { font-family: 'M+ 1m', monospace; font-size:13px; }
+  @font-face {
+    font-family: 'M+ 1mn';
+    font-style: normal;
+    font-weight: 500;
+    src: local('mplus-1mn-bold'), local('M+ 1mn bold'), url('/res/mplus-1mn-bold.ttf') format('truetype');
+  }*/
+  @font-face {
+    font-family: 'M+ 1mn';
+    font-style: normal;
+    font-weight: 300;
+    src: local('mplus-1mn-light'), local('M+ 1mn light'), url('/res/mplus-1mn-light.ttf')  format('truetype');
+  }
+  @font-face {
+    font-family: 'M+ 1mn';
+    font-style: normal;
+    font-weight: 500;
+    src: local('mplus-1mn-regular'), local('M+ 1mn regular'), url('/res/mplus-1mn-regular.ttf') format('truetype');
+  }
+  pre, code, tt { font-family: 'M+ 1mn', 'Consolas', monospace; font-size: 1em; font-weight:300; }
 }
 
 /* medium-res devices (e.g. ipad but not iphone) */
