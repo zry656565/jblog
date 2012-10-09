@@ -16,7 +16,7 @@ We will create five major components, each outlined in a separate article:
 1. Management and support
 1. Runtime library
 
-Today we will actually do two things: Define a first version of our language' lexicon, and write a a lexical analyzer, or _lexer_, which performs _lexical analysis_ of our language. From [Wikipedia](http://en.wikipedia.org/wiki/Lexical_analysis):
+Today we will actually do two things: Define a first version of our language' lexicon, and write a lexical analyzer—or _lexer_—which performs _lexical analysis_ of our language. From [Wikipedia](http://en.wikipedia.org/wiki/Lexical_analysis):
 
 > lexical analysis is the process of converting a sequence of characters into a sequence of tokens. A program or function which performs lexical analysis is called a lexical analyzer, lexer, or scanner.
 
