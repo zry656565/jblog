@@ -6,7 +6,7 @@ tags: programming
 category: languages
 ---
 
-During this weekend, together with a few evenings earler this week, I created a rather simple [virtual machine](http://en.wikipedia.org/wiki/Virtual_machine) dubbed ["Sol"](https://github.com/rsms/sol), after the Swedish word for "sun". I've read a lot about VM design and I'm into stuff like OS design, programming languages and other seeminlgy obscure and nerdy stuff surrounding the concept of a computer as a generic tool.
+During this weekend, together with a few evenings earlier this week, I created a rather simple [virtual machine](http://en.wikipedia.org/wiki/Virtual_machine) dubbed ["Sol"](https://github.com/rsms/sol), after the Swedish word for "sun". I've read a lot about VM design and I'm into stuff like OS design, programming languages and other seeminlgy obscure and nerdy stuff surrounding the concept of a computer as a generic tool.
 
 > A virtual machine (VM) is a software implementation of a machine (i.e. a computer) that executes programs like a physical machine. — [Wikipedia](http://en.wikipedia.org/wiki/Virtual_machine)
 
