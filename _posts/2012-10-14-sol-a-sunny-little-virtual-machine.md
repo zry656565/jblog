@@ -269,9 +269,9 @@ The code below is expressed in a simplified assembly language that is almost 1:1
 
 - In the output, lines starting with "..." are comments and/or simplifications and not part of the actual output.
 
-- In assembly comments ("; ..."), `R(x)` means "Register x", `RK(x)` means "Register x if x is less than k else Constant (x-k)" where k is a special value, `K(x)` means "Constant x".
+- In assembly comments, `R(x)` means "Register x", `RK(x)` means "Register x if x is less than k else Constant (x-k)" where k is a special value, `K(x)` means "Constant x".
 
-- In assembly comments ("; ..."), `PC` signifies the "program counter" which is sort of a cursor to the instructions of a program. It is incremented by one for each instruction executed. Some instructions will further modify this counter, like for instance the `JUMP` instruction.
+- In assembly comments, `PC` signifies the "program counter" which is sort of a cursor to the instructions of a program. It is incremented by one for each instruction executed. Some instructions will further modify this counter, like for instance the `JUMP` instruction.
 
 ### Example 1: while x > 0 yield ...
 
@@ -290,17 +290,17 @@ Assembly:
 
     #!-asm
     define main 0
-      CONST 5           ; K(0) = 5
-      CONST 0           ; K(1) = 0
-      CONST 1           ; K(2) = 1
+      CONST 5           # K(0) = 5
+      CONST 0           # K(1) = 0
+      CONST 1           # K(2) = 1
       entry:
-      LOADK  0  0       ; R(0) = K(0)
-      LE     0  0  256  ; (0 == RK(k+1) < RK(0)) ? continue else PC++
-      JUMP   3          ; PC += 3 to RETURN
-      SUB    0  0  257  ; R(0) = R(0) - RK(k+1)
-      YIELD  0  0  0    ; yield A=type=sched
-      JUMP   -5         ; PC -= 5 to LE
-      RETURN 0  0       ; return
+      LOADK  0  0       # R(0) = K(0)
+      LE     0  0  256  # (0 == RK(k+1) < RK(0)) ? continue else PC++
+      JUMP   3          # PC += 3 to RETURN
+      SUB    0  0  257  # R(0) = R(0) - RK(k+1)
+      YIELD  0  0  0    # yield A=type=sched
+      JUMP   -5         # PC -= 5 to LE
+      RETURN 0  0       # return
 
 Output when running in debug mode:
 
@@ -339,22 +339,22 @@ finally returns, causing the task to exit and subsequently the scheduler and the
 Assembly:
 
     #!-asm
-    define kitten 1     ; Arguments: (R(0)=sleep_ms)
-      CONST  123        ; K(0) = 123
+    define kitten 1     # Arguments: (R(0)=sleep_ms)
+      CONST  123        # K(0) = 123
       entry:
-      YIELD  1  0  0    ; yield A=type=timer, RK(B)=R(0)=arg0
-      LOADK  0  0       ; R(0) = K(0) = 123
-      RETURN 0  1       ; return R(0)..R(0) = R(0) = 123
+      YIELD  1  0  0    # yield A=type=timer, RK(B)=R(0)=arg0
+      LOADK  0  0       # R(0) = K(0) = 123
+      RETURN 0  1       # return R(0)..R(0) = R(0) = 123
 
-    define main 0       ; Arguments: ()
-      CONST  @kitten    ; K(0) = <func kitten>
-      CONST  500        ; K(1) = 500
+    define main 0       # Arguments: ()
+      CONST  @kitten    # K(0) = <func kitten>
+      CONST  500        # K(1) = 500
       entry:
-      LOADK  0  0       ; R(0) = K(0) = the kitten function
-      LOADK  1  1       ; R(1) = K(1) = 500
-      CALL   0  1  1    ; R(0)..R(0) = R(0)(R(1)..R(1)) = a(R(1))
-      DBGREG 0  1  0    ; VM debug function that dumps register values
-      RETURN 0  0       ; return
+      LOADK  0  0       # R(0) = K(0) = the kitten function
+      LOADK  1  1       # R(1) = K(1) = 500
+      CALL   0  1  1    # R(0)..R(0) = R(0)(R(1)..R(1)) = a(R(1))
+      DBGREG 0  1  0    # VM debug function that dumps register values
+      RETURN 0  0       # return
 
 Output when running in debug mode:
 
