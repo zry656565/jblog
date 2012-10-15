@@ -133,7 +133,7 @@ Changing and maintaining instructions (operations + operands) is simple in Sol. 
       _(MUL,        ABC) /* R(A) = RK(B) * RK(C) */\
       ...
 
-Sol's source code is setup in such a way that changing this list is all that is required, apart from the actual implementation of each instruction. Adding or renaming an instruction automatically makes convenience symbols and functions available. Say that we add a `DING` instruction which plays a little sound every time it's executed:
+[Sol's source code](https://github.com/rsms/sol) is setup in such a way that changing this list is all that is required, apart from the actual implementation of each instruction. Adding or renaming an instruction automatically makes convenience symbols and functions available. Say that we add a `DING` instruction which plays a little sound every time it's executed:
 
       _(MUL,        ABC) /* R(A) = RK(B) * RK(C) */\
       _(DING,       Buu) /* A = sound number to play */\
