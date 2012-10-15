@@ -1,6 +1,7 @@
 ---
 title: "Sol — a sunny little virtual machine"
 description: "Simple virtual machine in C for the sake of learning"
+og_image_url: http://farm9.staticflickr.com/8468/8089711825_0a2626e84b_z.jpg
 layout: post
 tags: programming
 category: languages
