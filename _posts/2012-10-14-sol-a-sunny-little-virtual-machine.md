@@ -196,7 +196,7 @@ Pling, plong, plong, ding, pling!
 
 No toy VM can be presented without shame unless it's able to [multitask](http://en.wikipedia.org/wiki/Computer_multitasking); perform multiple things at once, or at least give the programmer the illusion of concurrency.
 
-Sol has an operation called "yield" which is able to pause a task in any state and later have that task resumed at the exact same state. 
+Sol has an operation called "yield" which is able to pause a task in any state and later have that task resume at the exact same state. 
 
 ![Sketch of tasks yielding](http://farm9.staticflickr.com/8468/8089711825_e00b434731_o.png)
 
