@@ -51,7 +51,7 @@ The ***registry*** is essentially a region of temporary memory that the executin
       x = x * y
       return x
 
-Here the program needs a way to store the value created by `x * 5` that it can then pass to `x * y` which also needs to store its resulting value somewhere before using it with `return`. All local variables are stored in registers and thus access is very efficient. Something like this happens when executing a "foo" function ("R(x)" means "register x"):
+Here the program needs a way to store the value created by `x * 5` that it can then pass to `x * y` which also needs to store its resulting value somewhere before using it with `return`. All local variables are stored in registers and thus access is very efficient. Something like this happens when executing the "foo" function ("R(x)" means "register x"):
 
     argument 0 and 1 are already in R(0) and R(1)
     load constant "5" into R(2)
