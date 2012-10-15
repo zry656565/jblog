@@ -441,3 +441,6 @@ Here we run three tasks, each running the program in *Example 1*:
     [vm] 0x7fc219403da0 0x7fc2194000e0 6          RETURN  AB:    0,   0
     Scheduler runloop exited.
 
+## Source code
+
+Released free under a very permissive MIT-style license at <https://github.com/rsms/sol>.
