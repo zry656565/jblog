@@ -277,31 +277,29 @@ The code below are expressed in a simplified assembly language that is almost 1:
 While the variable x is greater than zero, decrement `x` by one and yield to the
 scheduler, letting other tasks run. Eventually return.
 
-```py
-def main():
-  x = 5
-  while (x > 0):
-    x = x - 1
-    yield
-  return
-```
+    #!-py
+    def main():
+      x = 5
+      while (x > 0):
+        x = x - 1
+        yield
+      return
 
 Assembly:
 
-```asm
-define main 0
-  CONST 5           ; K(0) = 5
-  CONST 0           ; K(1) = 0
-  CONST 1           ; K(2) = 1
-  entry:
-  LOADK  0  0       ; R(0) = K(0)
-  LE     0  0  256  ; (0 == RK(k+1) < RK(0)) ? continue else PC++
-  JUMP   3          ; PC += 3 to RETURN
-  SUB    0  0  257  ; R(0) = R(0) - RK(k+1)
-  YIELD  0  0  0    ; yield A=type=sched
-  JUMP   -5         ; PC -= 5 to LE
-  RETURN 0  0       ; return
-```
+    #!-asm
+    define main 0
+      CONST 5           ; K(0) = 5
+      CONST 0           ; K(1) = 0
+      CONST 1           ; K(2) = 1
+      entry:
+      LOADK  0  0       ; R(0) = K(0)
+      LE     0  0  256  ; (0 == RK(k+1) < RK(0)) ? continue else PC++
+      JUMP   3          ; PC += 3 to RETURN
+      SUB    0  0  257  ; R(0) = R(0) - RK(k+1)
+      YIELD  0  0  0    ; yield A=type=sched
+      JUMP   -5         ; PC -= 5 to LE
+      RETURN 0  0       ; return
 
 Output when running in debug mode:
 
@@ -339,24 +337,23 @@ finally returns, causing the task to exit and subsequently the scheduler and the
 
 Assembly:
 
-```asm
-define kitten 1     ; Arguments: (R(0)=sleep_ms)
-  CONST  123        ; K(0) = 123
-  entry:
-  YIELD  1  0  0    ; yield A=type=timer, RK(B)=R(0)=arg0
-  LOADK  0  0       ; R(0) = K(0) = 123
-  RETURN 0  1       ; return R(0)..R(0) = R(0) = 123
+    #!-asm
+    define kitten 1     ; Arguments: (R(0)=sleep_ms)
+      CONST  123        ; K(0) = 123
+      entry:
+      YIELD  1  0  0    ; yield A=type=timer, RK(B)=R(0)=arg0
+      LOADK  0  0       ; R(0) = K(0) = 123
+      RETURN 0  1       ; return R(0)..R(0) = R(0) = 123
 
-define main 0       ; Arguments: ()
-  CONST  @kitten    ; K(0) = <func kitten>
-  CONST  500        ; K(1) = 500
-  entry:
-  LOADK  0  0       ; R(0) = K(0) = the kitten function
-  LOADK  1  1       ; R(1) = K(1) = 500
-  CALL   0  1  1    ; R(0)..R(0) = R(0)(R(1)..R(1)) = a(R(1))
-  DBGREG 0  1  0    ; VM debug function that dumps register values
-  RETURN 0  0       ; return
-```
+    define main 0       ; Arguments: ()
+      CONST  @kitten    ; K(0) = <func kitten>
+      CONST  500        ; K(1) = 500
+      entry:
+      LOADK  0  0       ; R(0) = K(0) = the kitten function
+      LOADK  1  1       ; R(1) = K(1) = 500
+      CALL   0  1  1    ; R(0)..R(0) = R(0)(R(1)..R(1)) = a(R(1))
+      DBGREG 0  1  0    ; VM debug function that dumps register values
+      RETURN 0  0       ; return
 
 Output when running in debug mode:
 
