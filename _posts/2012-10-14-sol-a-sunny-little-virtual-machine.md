@@ -237,11 +237,12 @@ Comparing the above synchronous program to an asynchronous version:
       open(name, def (error, f):
         if (error):
           callback(error)
-        read(f, def (read_error, data):
-          close(f, def (error):
-            callback(error, data)
+        else:
+          read(f, def (read_error, data):
+            close(f, def (error):
+              callback(error, data)
+            )
           )
-        )
       )
       # returns here before the file has been opened
 
