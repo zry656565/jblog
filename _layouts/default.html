@@ -36,6 +36,10 @@
     {% endif %}
     <meta property="og:url" content="http://rsms.me{{ page.url | remove_first:'index.html' }}">
     <meta property="og:site_name" content="rsms.me">
+    <meta property="og:type" content="article">
+    {% if page.date %}
+    <meta property="article:published_time" content="{{ page.date | date: "%Y-%m-%d" }}">
+    {% endif %}
     {% if page.title != "Archive (sidebar)" %}
     {% include sidebar_ui_controller.html %}
     {% endif %}
