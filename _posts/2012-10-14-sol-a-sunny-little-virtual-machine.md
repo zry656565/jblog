@@ -200,7 +200,7 @@ Sol has an operation called "yield" which is able to pause a task in any state a
 
 ![Sketch of tasks yielding](http://farm9.staticflickr.com/8468/8089711825_e00b434731_o.png)
 
-From the task's perspective it never knew it was paused and resumed. This is a powerful primitive as we can implement many features on top of this. At the time of writing, Sol already has two different types of *yield*: Yielding for other tasks (so they can run or be scheduled from I/O etc events), and yielding for a timer to expire. At the end of this article there are a few example programs, all of them make use of yield.
+From the task's perspective it never knew it was paused and resumed. This is a powerful primitive as we can implement many features on top of this. At the time of writing, Sol already has two different types of *yield*: Yielding for other tasks (so they can run or be scheduled from I/O etc events), and yielding for a timer to expire. At the end of this article there are a few example programs, all of them making use of yield.
 
 Yield is used to implement [*cooperative multitasking*](http://en.wikipedia.org/wiki/Computer_multitasking#Cooperative_multitasking.2Ftime-sharing) where all tasks cooperate for the use of processing resources. When a task has performed a series of computations and relieves control to another task, one of three things has happened:
 
