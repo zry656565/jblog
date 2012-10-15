@@ -263,7 +263,7 @@ To address this Sol employs an *operation cost counter*. Each task is given a pr
 
 ## Some examples
 
-The code below is expressed in a simplified assembly language that is almost 1:1 with the C API code for defining these programs programatically, and thus the assembly language itself should be considered irrelevant beyond explaining the instructions executed.
+The code below is expressed in a simplified assembly language that is almost 1:1 with the C API for defining these programs programatically, and so the assembly language itself should be considered irrelevant beyond explaining the instructions executed.
 
 - In the output, lines like these: `[vm] ______________ ...` denote whent he scheduler regains control after running a task and the task either returned or yielded. This is one "execution iteration". When running multiple tasks, you will usually see tasks interleved in round-robin order between these "execution iteration" marker lines.
 
