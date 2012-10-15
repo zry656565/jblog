@@ -265,11 +265,11 @@ To address this Sol employs an *operation cost counter*. Each task is given a pr
 
 The code below is expressed in a simplified assembly language that is almost 1:1 with the C API for defining these programs programatically, and so the assembly language itself should be considered irrelevant beyond explaining the instructions executed.
 
-- In the output, lines like these: `[vm] ______________ ...` denote whent he scheduler regains control after running a task and the task either returned or yielded. This is one "execution iteration". When running multiple tasks, you will usually see tasks interleved in round-robin order between these "execution iteration" marker lines.
+- In the output, lines like these: `[vm] ______________ ...` denote when the scheduler regains control after running a task and the task either returned or yielded. This is one "execution iteration". When running multiple tasks, you will usually see tasks interleved in round-robin order between these "execution iteration" marker lines.
 
 - In the output, lines starting with "..." are comments and/or simplifications and not part of the actual output.
 
-- In assembly comments ("; ..."), `R(x)` means "Register x", `RK(x)` means "Register x if x is less than 256 else Constant (x-255)", `K(x)` means "Constant x".
+- In assembly comments ("; ..."), `R(x)` means "Register x", `RK(x)` means "Register x if x is less than k else Constant (x-k)" where k is a special value, `K(x)` means "Constant x".
 
 - In assembly comments ("; ..."), `PC` signifies the "program counter" which is sort of a cursor to the instructions of a program. It is incremented by one for each instruction executed. Some instructions will further modify this counter, like for instance the `JUMP` instruction.
 
