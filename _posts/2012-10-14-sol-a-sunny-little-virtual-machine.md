@@ -81,24 +81,24 @@ Each instruction and its operands is encoded in one of three layouts (Behold, aw
 **OP ABC** — Operation OP with operands A, B and C:
 
     #!-none
-    0         5 | 6          13 | 14           22 | 23            31 
+    0         5 | 6          13 | 14           22 | 23            31   Bit
     ------------|---------------|-----------------|-----------------
-         OP     |       A       |        B        |        C        
+         OP     |       A       |        B        |        C           Field
     ------------|---------------|-----------------------------------
-         6              8                9                 9
-      [0..63]        [0..255]         [0..511]          [0..511]
+         6              8                9                 9           Bits
+      [0..63]        [0..255]         [0..511]          [0..511]       Range
 
 Some operations only need two operands and can be made more efficient if one of those operands is large enough for common values. For this need we define an alternate layout of an instruction:
 
 **OP ABx** — Operation OP with operands A and Bs|Bu:
 
     #!-none
-    0         5 | 6          13 | 14                              31
+    0         5 | 6          13 | 14                              31   Bit
     ------------|---------------|-----------------------------------
-         OP     |       A       |              Bs/Bu                
+         OP     |       A       |              Bs/Bu                   Field
     ------------|---------------|-----------------------------------
-         6              8                        18
-      [0..63]        [0..255]             Bu: [0..262143]
+         6              8                        18                    Bits
+      [0..63]        [0..255]             Bu: [0..262143]              Range
                                           Bu: [-131071..131072]
 
 A third class of operations only use one operand which size has a correlation with efficiency, so we define a third alternate layout of an instruction where the three operands are effectively collapsed into one 26-bit integer value:
@@ -106,12 +106,12 @@ A third class of operations only use one operand which size has a correlation wi
 **OP Bxx** — Operation OP with operand Bss|Buu:
 
     #!-none
-    0         5 | 6                                               31
+    0         5 | 6                                               31   Bit
     ------------|---------------------------------------------------
-         OP     |                     Bss/Buu                       
+         OP     |                     Bss/Buu                          Field
     ------------|---------------------------------------------------
-         6                               26
-      [0..63]                   Buu: [0..67108863]
+         6                               26                            Bits
+      [0..63]                   Buu: [0..67108863]                     Range
                                 Bss: [-33554431..33554432]
     
 A, B, C, Bu and Buu signify unsigned integers whilst Bs and Bss signify signed integers. As we can read above, there's room for 64 operations and 256 registers (OP=6 bits, A=8 bits) with this configuration. More than we need :)
