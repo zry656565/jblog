@@ -5,7 +5,7 @@
     <title>{% if page.title %}{{ page.title }} &mdash; {% endif %}Rasmus Andersson</title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     {% if page.title != "Archive (sidebar)" %}
-    <meta name="viewport" content="width={% if page.wide_layout %}1100{% else %}700{% endif %}">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     {% endif %}
     <link href='http://fonts.googleapis.com/css?family=Poly:400,400italic' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" media="screen, projection" href="/res/screen.css" type="text/css">
@@ -73,13 +73,13 @@
     <div id="fb-root"></div><script></script>
     <iframe id="sidebar"></iframe>
     <header>
+      <h1 class="logo" onclick="document.location.href='/';"><a href="/"><img src="/res/signature-2-2.png" width="160" height="50" alt="Signature"></a></h1>
       <ul class="navigation">
         <li><a href="/photos/"{% if page.url contains "/photos/" %}class="active"{% endif %} title="A selection of recent photography">Photography</a></li>
         <li><a href="/projects/"{% if page.url contains "/projects/" %}class="active"{% endif %} title="Projects I am or was involved in">Projects</a></li>
         <li><a href="/archive/"{% if page.url contains "/archive/" %}class="active"{% endif %} title="Archived articles">Archive</a></li>
         <li><a href="/about/"{% if page.url contains "/about/" %}class="active"{% endif %}>About me</a></li>
       </ul>
-      <h1 class="logo" onclick="document.location.href='/';"><a href="/"><img src="/res/signature-2-2.png" width="160" height="50" alt="Signature"></a></h1>
     </header>
     <!--div class="wrapper content"-->
       {{ content }}
@@ -105,16 +105,11 @@
     
     {% unless page.no_footer %}
     <footer>
-      <form action="http://www.google.com/cse" id="cse-search-box">
-        <p>
-          Older posts can be found in <a href="/archive/">the archive</a> or by searching: &nbsp;
-          <input type="hidden" name="cx" value="006553118601910168903:-x3qflztwei" />
-          <input type="hidden" name="ie" value="UTF-8" />
-          <input type="text" name="q" size="31" />
-          <input type="submit" name="sa" value="Search" />
-        </p>
-      </form>
-      <script type="text/javascript" src="http://www.google.com/cse/brand?form=cse-search-box&amp;lang=en"></script>
+      <p>
+        <a rel="license" href="http://creativecommons.org/licenses/by/3.0/deed.en_US" class="cc"><img src="/res/cc-cc.png" class="cc">
+        <img src="/res/cc-by.png" class="cc"></a>
+        This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/3.0/deed.en_US">Creative Commons License</a>
+      </p>
     </footer>
     {% endunless %}
     
