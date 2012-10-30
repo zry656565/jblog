@@ -259,6 +259,10 @@ div.post {
     visibility:hidden;
   }
 
+  div.post iframe[width="640"] {
+    zoom:0.87;
+  }
+
 
 /* prettyprint */
 pre { color:black; }
