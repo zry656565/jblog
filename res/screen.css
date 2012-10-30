@@ -248,15 +248,9 @@ div.post {
     opacity:0.6;
     border-color:rgba(0,0,0,0.08);
     border-bottom:none;
-    -webkit-filter: grayscale(1);
-    -moz-filter: grayscale(1);
-    -webkit-transition: 200ms -webkit-filter ease;
-    -webkit-transition-property: opacity, -webkit-filter;
   }
   div.post info.after:hover {
     opacity:1;
-    -webkit-filter: grayscale(0);
-    -moz-filter: grayscale(0);
   }
   
   div.posts div.post info.after {
