@@ -11,7 +11,7 @@ category: languages
 
 Pretty much any programming language used today is [a derivative](http://www.levenez.com/lang/) of [Fortran](http://en.wikipedia.org/wiki/Fortran) or [Lisp](http://en.wikipedia.org/wiki/Lisp_%28programming_language%29), both born in the 1950s. Okay, reality check: It's 2013—yes, 60 years later—and we have cars that drive themselves on the street, robots roaming the surface of alien planets and tiny networked devices with interactive surfaces that we keep in our pockets, which are orders of magnitude more powerful than the computers of the 1950s.
 
-This might come as a surprise to readers not into [computer programming](http://en.wikipedia.org/wiki/Computer_programming), but professional and hobbyist programmers alike all ***use the same tools as we did 60 years ago*** — one-dimensional, sequential plain text. It's like writing a single letter in Word *without using any formatting*, to instruct a symphony orchestra to perform a complex musical piece. That app you're using could as well have been built in the 1950s, had we the same powerful hardware back then. We are thoughtlessly using Grandpa's old toolbox to build a spaceship.
+This might come as a surprise to readers not into [computer programming](http://en.wikipedia.org/wiki/Computer_programming), but professional and hobbyist programmers alike all ***use the same tools as we did 60 years ago*** — one-dimensional, sequential plain text. It's like writing a single document in Word *without using any formatting*, with the goal of instructing a large symphony orchestra to perform a complex musical piece. That app you're using could as well have been built in the 1950s, had we the same powerful hardware back then. We are thoughtlessly using Grandpa's old toolbox to build a spaceship.
 
 The [Wikipedia article on computer programming](http://en.wikipedia.org/wiki/Computer_programming) opens up with the following description:
 
@@ -31,7 +31,7 @@ We seem to have reached an upper level of utility with our current toolbox for p
 
 Our current toolbox for software creation has an inherent limitation at its very foundation: low bandwidth. One-dimensional, sequential text utilises only our sense of sight, and is interpreted by a small section of our brains, forming a "bridge" or "proxy" for meaning and expression.
 
-The high-level goal of computer programming is to create highly customised tools: A video player app is a tool for playing specific kinds of moving pictures synchronised with audio. The game on your smartphone that you play on the bus is a tool for creating feelings of accomplishment. The system of a bank is a specialised tool that keeps track of who has what money.
+The high-level goal of computer programming is to enable the creation of highly customised tools: A video player app is a tool for playing specific kinds of moving pictures synchronised with audio. The game on your smartphone that you play on the bus is a tool for creating feelings of accomplishment. The system of a bank is a specialised tool that keeps track of who has what money.
 
 ## What about tomorrow?
 
