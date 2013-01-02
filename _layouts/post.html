@@ -29,8 +29,7 @@ layout: default
   {% endif %}
   </div>
 </div>
-{% if site.local_development %}<!-- foobar -->{% endif %}
-{% if site.auto %}
+{% if site.safe == false %}
 <script type="text/javascript">
 (function() {
 var qs = document.location.search;
