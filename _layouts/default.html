@@ -87,7 +87,7 @@
     
     {% unless page.disqus_comments %}
     <div class="content sub">
-      <h2>Comments</h2>
+      <h2 id="comments">Comments</h2>
       <div class="fb-comments" data-href="http://rsms.me{{ page.url }}" data-num-posts="{{ page.fb_comments }}" data-width="550" data-font="arial"></div>
     </div>
     {% endunless %}
