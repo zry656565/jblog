@@ -9,9 +9,8 @@ title: TEDx Viggbyholm, Stockholm
 
 Spend the Sunday evening in a great way -- speaking (and listening) at [TEDx Viggbyholm](http://www.tedxviggbyholm.com/) in Stockholm. I held a relatively short session on natural beauty, taking the opportunity to speak about something else that "design". Here are my slides:
 
-<a href="http://hunch.se/stuff/patterns-of-beauty/"><img src="http://farm5.static.flickr.com/4011/4532838264_29ff56df7d_o.png"></a>
-
-You can also <a href="http://hunch.se/stuff/patterns-of-beauty/patterns-of-beauty-by-rasmus-andersson-tedx.pdf">grab the PDF version</a> if you like.
+<a href="https://dl.dropbox.com/s/e5gifrzpivteitr/patterns-of-beauty.pdf?dl=1"><img src="http://farm5.static.flickr.com/4011/4532838264_29ff56df7d_o.png"></a>
+<a href="https://dl.dropbox.com/s/e5gifrzpivteitr/patterns-of-beauty.pdf?dl=1">patterns-of-beauty.pdf</a>
 
 These slides where just my visual aid. The actual talk will eventually be available at the [TEDx YouTube channel](http://www.youtube.com/user/TEDxTalks).
 
