@@ -6,50 +6,7 @@ title: Photography
 description: Select photography presented in a simple, dark fashion
 ios_app_name: photo
 ---
-<script type="text/javascript" charset="utf-8">(function(){
-// Just redirect this fucker to Flickr until I've written an actually useful photo viewer
-
-if (typeof XMLHttpRequest == 'undefined') {
-  document.location.href = 'http://rsms.tumblr.com/';
-  return;
-}
-
-function flickrAPI_GET (methodName, queryString, callback) {
-  var url = 'http://api.flickr.com/services/rest/?method='+methodName+
-    '&api_key=adb4222b6011ba080f780b82d85837a5'+
-    '&format=json'+
-    '&nojsoncallback=1'+(queryString || '')
-
-  var xhr = new XMLHttpRequest();
-  var rsp;
-  xhr.onreadystatechange = function () {
-    if (xhr.readyState != 4) return;
-    if (xhr.status == 0) {
-      callback(Error('XHR failed with null status'));
-    } else {
-      rsp = JSON.parse(xhr.responseText);
-      if (!rsp.stat) {
-        var e = Error('Unspecified error');
-        if (callback) callback(e); else throw e;
-      } else if (rsp.stat != 'ok') {
-        var e = Error('Remote error '+rsp.code+': '+rsp.message);
-        if (callback) callback(e); else throw e;
-      } else {
-        if (callback) callback(null, rsp);
-      }
-    }
-  };
-  xhr.open ('GET', url, !!callback);
-  xhr.send (null);
-  return callback ? xhr : rsp;
-}
-
-var rsp = flickrAPI_GET('flickr.people.getPublicPhotos', '&user_id=12281432@N00&per_page=1');
-try {
-  document.location.href = 'http://www.flickr.com/photos/rsms/'+rsp.photos.photo[0].id+'/in/photostream/lightbox/';
-} catch (e) {
-  document.location.href = 'http://www.flickr.com/photos/rsms/show/';
-}
-
-})();
+<script type="text/javascript" charset="utf-8">
+document.location.href = 'http://rsms.tumblr.com/';
 </script>
+<a href="http://rsms.tumblr.com/">Moved to rsms.tumblr.com</a>
