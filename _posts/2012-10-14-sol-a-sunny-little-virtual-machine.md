@@ -5,6 +5,7 @@ og_image_url: http://farm9.staticflickr.com/8468/8089711825_0a2626e84b_z.jpg
 layout: post
 tags: programming
 category: languages
+comments: yes
 ---
 
 During this weekend, together with a few evenings earlier this week, I created a rather simple [virtual machine](http://en.wikipedia.org/wiki/Virtual_machine) dubbed ["Sol"](https://github.com/rsms/sol), after the Swedish word for "sun". I've read a lot about VM design and I'm into stuff like OS design, programming languages and other seeminlgy obscure and nerdy stuff surrounding the concept of a computer as a generic tool.

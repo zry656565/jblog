@@ -5,6 +5,7 @@ og_image_url: "http://farm9.staticflickr.com/8225/8580803186_ccf9d4337b_o.png"
 layout: post
 tags: facebook, dropbox
 category: career
+comments: yes
 ---
 
 <img src="http://farm9.staticflickr.com/8225/8580803186_ccf9d4337b_o.png" width="50%" align="right">I'm very excited to let you know that I'm joining [Dropbox](https://www.dropbox.com/).

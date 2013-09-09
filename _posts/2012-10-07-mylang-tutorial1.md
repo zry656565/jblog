@@ -4,6 +4,7 @@ description: "A tutorial to writing our own programming language"
 layout: post
 tags: programming
 category: languages
+comments: yes
 ---
 
 Let's write our own programming language. It'll be fun and we will learn some key tools for processing structured data, performing semantic analysis, how to make a computer execute code, and all this using modern JavaScript.

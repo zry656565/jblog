@@ -1,19 +1,26 @@
 ---
 layout: default
 ---
+{% if page.photo_url %}
+<div class="content full-bleed photo-post">
+  {{ content }}
+  <p class="datetime"><script>
+  document.write((new Date('{{ page.date | date: "%Y-%m-%d %H:%M:%S%z" }}')).toDateString());
+  </script></p>
+</div>
+{% else %}
 <div class="content">
   <div class="post single">
     <h1>{{ page.title }}</h1>
-
     <info datetime="{{ page.date | date: "%Y-%m-%d" }}">
       {{ page.date | date: "%b %d, %Y" }}
     </info>
     <div class="body">{{ content }}</div>
+    <!-- <div class="breaker"></div> -->
     <div class="breaker"></div>
-
-    <info class="after">
+    <!-- <info class="after">
 <div class="fb-like" data-href="http://rsms.me{{ page.url }}" data-send="false" data-width="550" data-show-faces="false" data-font="arial"></div>
-    </info>
+    </info> -->
 
   {% if page.disqus_comments %}
     <div id="disqus_thread"></div>
@@ -29,7 +36,9 @@ layout: default
   {% endif %}
   </div>
 </div>
+{% endif %}
 {% if site.safe == false %}
+<!-- During authoring, this automatically reloads the post as its changing -->
 <script type="text/javascript">
 (function() {
 var qs = document.location.search;
