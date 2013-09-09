@@ -1,20 +1,14 @@
 ---
 layout: default
 ---
-{% if page.photo_url %}
-<div class="content full-bleed photo-post">
-  {{ content }}
-  <p class="datetime"><script>
-  document.write((new Date('{{ page.date | date: "%Y-%m-%d %H:%M:%S%z" }}')).toDateString());
-  </script></p>
-</div>
-{% else %}
-<div class="content">
+<div class="content{% if page.photo_url %} photo-post{% endif %}">
   <div class="post single">
+    {% unless page.photo_url %}
     <h1>{{ page.title }}</h1>
     <info datetime="{{ page.date | date: "%Y-%m-%d" }}">
       {{ page.date | date: "%b %d, %Y" }}
     </info>
+    {% endunless %}
     <div class="body">{{ content }}</div>
     <!-- <div class="breaker"></div> -->
     <div class="breaker"></div>
@@ -36,7 +30,6 @@ layout: default
   {% endif %}
   </div>
 </div>
-{% endif %}
 {% if site.safe == false %}
 <!-- During authoring, this automatically reloads the post as its changing -->
 <script type="text/javascript">

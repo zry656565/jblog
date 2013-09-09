@@ -143,7 +143,7 @@ div.content.photo {
     margin-top:0; font-size:300%;
   }
   
-  div.content img, div.content iframe { max-width:100%; margin:1em 0; }
+  div.content img, div.content iframe { display:block; max-width:100%; margin:1em 0; }
   div.content *[align=right] { margin:0 0 1em 1em; }
   div.content *[align=left] { margin:0 1em 1em 0; }
 
@@ -344,6 +344,17 @@ a.post-excerpt {
 /* photo post */
 
 div.content.photo-post {
+  padding-top: 60px;
+}
+  div.content.photo-post p:first-child, div.content.photo-post img:first-child {
+    padding-top:0;
+    margin-top:0;
+  }
+  div.content.photo-post p, div.content.photo-post iframe {
+    padding: 40px 0 0 0;
+    margin:0;
+  }
+/*div.content.photo-post {
   padding: 0 0 30px 0;
   margin:0 0 70px 0;
 }
@@ -358,14 +369,14 @@ div.content.photo-post {
   }
   div.content.photo-post p.datetime {
     color:#ccc;
-  }
+  }*/
 
 /* --------------------------------------------------------------------------------------------- */
 /* posts */
 
 div.post {
   padding-bottom: 0em;
-  margin-bottom:-70px;
+  /*margin-bottom:-70px;*/
   page-break-before: always;
 }
   div.post.single, div.post:last-child { border-bottom:none; }
