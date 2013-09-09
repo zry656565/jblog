@@ -37,6 +37,10 @@
     {% endif %}
     {% if page.og_image_url %}
     <meta property="og:image" content="{{ page.og_image_url }}">
+    {% else %}
+    {% if page.photo_url %}
+    <meta property="og:image" content="{{ page.photo_url }}">
+    {% endif %}
     {% endif %}
     <meta property="og:url" content="http://rsms.me{{ page.url | remove_first:'index.html' }}">
     <meta property="og:site_name" content="rsms.me">
