@@ -12,16 +12,17 @@ My name is Rasmus Andersson. I'm a Swedish maker living in San Francisco with a 
 [Spray](http://www.spray.se/),
 [Lear Corporation](http://lear.com/) and
 [Notion](http://notion.se/).
-More information [can be found on LinkedIn](http://www.linkedin.com/in/rasmusandersson) (or in my *outdated* [Résumé](/about/resume/).)
+More information can be found through [LinkedIn](http://www.linkedin.com/in/rasmusandersson).
 
-[Read more about my work with Spotify &rarr;](/about/spotify/)
+I work for & ♥ [Dropbox](http://dropbox.com/)
 
-I work for & ♥ [Dropbox](http://dropbox.com/).
+- [Read more about my work with Spotify &rarr;](/about/spotify/)
+- [Some of my favorite technical papers &rarr;](https://www.dropbox.com/sh/k2m3d7d87lbqqri/qk_8rRM-hY/Favorite%20technical%20papers)
 
 
 ## Elsewhere
 
-You can find me on a variety of social web sites; my username is usually "rsms".
+You can find me on a variety of world wild interweb sites where my username is usually "rsms".
 
 - [Twitter](http://twitter.com/rsms) — a good way to make contact
 - [GitHub](https://github.com/rsms) — code, juicy code
@@ -29,6 +30,4 @@ You can find me on a variety of social web sites; my username is usually "rsms".
 - [Flickr](http://www.flickr.com/photos/rsms/) — photography
 - [Facebook](http://www.facebook.com/rsms) — friends and foes
 
-## Contact
-
-Get in touch by [sending me a message on Facebook](https://www.facebook.com/messages/rsms) or [Twitter](http://twitter.com/rsms).
+### [<img src="/res/twitter.png" width="29" height="20" style="display:inline-block;vertical-align:middle"> @rsms](http://twitter.com/rsms)
