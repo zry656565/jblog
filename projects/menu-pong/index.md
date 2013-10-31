@@ -9,6 +9,8 @@ Take a break from work and play a game of classic Pong — in the menu bar. Like
 
 **[Download version 1.0 (OS X 10.6-10.9)](Menu-Pong-1.0.zip)**
 
+[![fullbleed](http://farm7.static.flickr.com/6044/5902429044_31a8116f80_b.jpg)](http://farm7.static.flickr.com/6044/5902429044_6e8347d11d_o.png)
+
 ### Features
 
 - Play against the computer
@@ -17,11 +19,6 @@ Take a break from work and play a game of classic Pong — in the menu bar. Like
 
 It's pretty awesome.
 
-[![fullbleed](http://farm7.static.flickr.com/6044/5902429044_31a8116f80_b.jpg)](http://farm7.static.flickr.com/6044/5902429044_6e8347d11d_o.png)
-
 > Pong is one of the earliest arcade video games, and is a tennis sports game featuring simple two-dimensional graphics. — [Wikipedia/Pong](http://en.wikipedia.org/wiki/Pong)
-
-
-## Support
 
 Question? Problems? [Twitter @rsms](https://twitter.com/rsms)
