@@ -13,10 +13,8 @@ Take a break from work and play a game of classic Pong — in the menu bar. Like
 ### Features
 
 - Play against the computer
-
 - Play against a friend on the same keyboard (player 2 uses W and S keys to move her paddle)
-
-- Doesn't slow down your computer (tech speak: Uses very few resources)
+- There's a ball involved. And paddles. Feature!
 
 It's pretty awesome.
 
@@ -27,4 +25,4 @@ It's pretty awesome.
 
 ## Support
 
-Question? Problems? Please contact **rasmus+menupong-support@notion.se**
+Question? Problems? [Twitter @rsms](twitter.com/rsms)
