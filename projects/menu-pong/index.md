@@ -1,6 +1,5 @@
 ---
 layout: page
-fb_comments: 3
 title: Menu Pong
 ---
 
