@@ -8,7 +8,7 @@ title: Menu Pong
 
 Take a break from work and play a game of classic Pong — in the menu bar. Like dancing without actually dancing.
 
-***Hopefully soon in a Mac App Store near your menu bar***
+**[Download version 1.0 (OS X 10.6-10.9)](Menu-Pong-1.0.zip)**
 
 ### Features
 
