@@ -25,4 +25,4 @@ It's pretty awesome.
 
 ## Support
 
-Question? Problems? [Twitter @rsms](twitter.com/rsms)
+Question? Problems? [Twitter @rsms](https://twitter.com/rsms)
