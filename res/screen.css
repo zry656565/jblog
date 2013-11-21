@@ -144,6 +144,7 @@ div.content.photo {
   }
   
   div.content img, div.content iframe { display:block; max-width:100%; margin:1em 0; }
+  div.content iframe { border:none; }
   div.content *[align=right] { margin:0 0 1em 1em; }
   div.content *[align=left] { margin:0 1em 1em 0; }
 
