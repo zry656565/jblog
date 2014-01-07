@@ -3,15 +3,21 @@ layout: page
 title: Cars & Driving
 ---
 
-# Automobiles
+# Driving cars
 
-<script type="text/javascript" async src="//assets.pinterest.com/js/pinit.js"></script><a data-pin-do="embedBoard" href="http://www.pinterest.com/rsms/cars/" data-pin-scale-width="106" data-pin-scale-height="320" data-pin-board-width="640">"Cars" on Pinterest</a>
+<script type="text/javascript" async src="//assets.pinterest.com/js/pinit.js"></script><a data-pin-do="embedBoard" href="http://www.pinterest.com/rsms/beautiful-automobiles/" data-pin-scale-width="106" data-pin-scale-height="320" data-pin-board-width="640">"Cars" on Pinterest</a>
 
 ## Favorite routes
 
-Here are some of my favorite routes for joyful driving around the San Francisco Bay Area.
+Some favorite routes for joyful driving around the SF Bay Area.
 
 &nbsp;
+
+<iframe src="https://mapsengine.google.com/map/embed?mid=z-wM5xcLvlBw.kBYIRAqy71gk" width="640" height="320"></iframe>
+
+Skyline loop via 9 and Bear Creek. Takes you onto a crazy bidirectional single-lane section of Skyline (35). Here's a video from a drive along this exact route: [YouTube/BlI88DRsgBQ](http://www.youtube.com/watch?v=BlI88DRsgBQ)
+
+---
 
 <iframe src="https://mapsengine.google.com/map/embed?mid=z-wM5xcLvlBw.k3AomLUHaANk" width="640" height="320"></iframe>
 
