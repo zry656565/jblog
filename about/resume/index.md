@@ -1,5 +1,6 @@
 ---
 layout: page
+encoding: utf-8
 title: Résumé
 ---
 # Rasmus Andersson

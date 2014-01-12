@@ -4,30 +4,18 @@ fb_comments: 3
 title: About
 ---
 
-<img src="http://farm3.staticflickr.com/2849/9337114103_c7cf9c0c0c_c.jpg" width="256" height="170" align="right">
+<img src="../monkey.jpg" width="220" height="220" align="right">
 
-My name is Rasmus Andersson. I'm a Swedish maker living in San Francisco with a passion for art and technology, who have worked with a number of different companies since the 1990s, including 
-[Facebook](http://facebook.com/design),
-[Spotify](http://www.spotify.com/),
-[Spray](http://www.spray.se/),
-[Lear Corporation](http://lear.com/) and
-[Notion](http://notion.se/).
-More information can be found through [LinkedIn](http://www.linkedin.com/in/rasmusandersson).
-
-I work for & ♥ [Dropbox](http://dropbox.com/)
-
-- [Read more about my work with Spotify &rarr;](/about/spotify/)
-- [Some of my favorite technical papers &rarr;](https://www.dropbox.com/sh/k2m3d7d87lbqqri/qk_8rRM-hY/Favorite%20technical%20papers)
+Hello, I'm Jerry Zou, a programmer living in Shanghai. As the title of the index page, programming is my destiny as well as my heaven.<br/><br/>
+I'm studying for a master'degree at **Shanghai Jiao Tong University**.Meanwhile I work for **Microsoft BI** as an intern.<br/><br/>
+My favourite programming language is **javascript**. If we have such a same interest, please tell me!(Because none of my friends likes it! Alas..) <br/><br/>
+If you have any question, e-mail me: [zry656565@gmail.com](mailto:zry656565@gmail.com)<br/>
 
 
 ## Elsewhere
 
-You can find me on a variety of world wild interweb sites where my username is usually "rsms".
+You can find me on a variety of world wild interweb sites.
 
-- [Twitter](http://twitter.com/rsms) — a good way to make contact
-- [GitHub](https://github.com/rsms) — code, juicy code
-- [Instagram](http://instagram.com/rasmusfabbe/) — short stories via photo snapshots
-- [Flickr](http://www.flickr.com/photos/rsms/) — photography
-- [Facebook](http://www.facebook.com/rsms) — friends and foes
-
-### [<img src="/res/twitter.png" width="29" height="20" style="display:inline-block;vertical-align:middle"> @rsms](http://twitter.com/rsms)
+- [GitHub](https://github.com/zry656565)
+- [Weibo](http://weibo.com/u/1943775181)
+- [Linkin](http://www.linkedin.com/profile/view?id=289040657)
