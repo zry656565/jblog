@@ -18,4 +18,5 @@ You can find me on a variety of world wild interweb sites.
 
 - [GitHub](https://github.com/zry656565)
 - [Weibo](http://weibo.com/u/1943775181)
+- [douban](http://www.douban.com/people/jerry_zou/)
 - [LinkedIn](http://www.linkedin.com/profile/view?id=289040657)
