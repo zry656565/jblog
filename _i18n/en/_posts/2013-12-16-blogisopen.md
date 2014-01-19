@@ -3,6 +3,7 @@ layout: post
 disqus_comments: false
 date: 2013-12-16 10:00:00 UTC
 title: Jerry's Blog was established
+categories: en posts
 ---
 
 Jerry's Blog was established. And Thanks to Rasmus Andersson's theme.<br/>
