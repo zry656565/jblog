@@ -3,7 +3,7 @@
   <title>Rasmus Andersson</title>
   <link href="http://rsms.me/atom.xml" rel="self"/>
   <link href="http://rsms.me/"/>
-  <updated>2014-01-19T22:01:56+08:00</updated>
+  <updated>2014-01-19T22:01:57+08:00</updated>
   <id>http://rsms.me/</id>
   <author>
     <name>Rasmus Andersson</name>
@@ -11,12 +11,12 @@
   </author>
   
   <entry>
-    <title>Jerry's Blog Came to the World</title>
+    <title>博客建立</title>
     <link href="http://rsms.me/2013/12/16/blogisopen.html"/>
     <updated>2013-12-16T10:00:00Z</updated>
     <id>http://rsms.me/2013/12/16/blogisopen</id>
-    <content type="html">&lt;p&gt;Jerry&amp;rsquo;s Blog was established. And Thanks to Rasmus Andersson&amp;rsquo;s theme.&lt;br/&gt;
-If you like this blog, you can click &lt;a href=&quot;https://github.com/zry656565/jblog/&quot;&gt;here&lt;/a&gt; for the source code.&lt;/p&gt;
+    <content type="html">&lt;p&gt;今天我的博客终于搞定了，首先要谢谢Rasmus Andersson开源了他的博客代码，我才能把博客做成现在这样。
+如果你喜爱这个博客，可以通过点击&lt;a href=&quot;https://github.com/zry656565/jblog/&quot;&gt;这里&lt;/a&gt;来获取源代码。&lt;/p&gt;
 
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;javascript&quot;&gt;&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;JerryBlog&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
   &lt;span class=&quot;nx&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;

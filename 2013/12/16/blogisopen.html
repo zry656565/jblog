@@ -2,7 +2,7 @@
 <html lang="en" prefix="og: http://ogp.me/ns#">
   <head>
     <meta charset="utf-8">
-    <title>Jerry's Blog</title>
+    <title>Jerry's Blog Came to the World &mdash; Jerry's Blog</title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -17,15 +17,21 @@
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/res/apple-touch-icon-114x114-precomposed.png">
     
     
-      <meta name="description" content="Ramblings by Rasmus Andersson -- a Swedish designer with a passion for technology">
+    <meta property="og:title" content="Jerry's Blog Came to the World">
+      
+      <meta name="description" content="Jerry's Blog Came to the World Dec 16, 2013 Jerry&rsquo;s Blog was established. And Thanks to Rasmus Andersson&rsquo;s theme. If you like this blog, you...">
+      <meta name="og:description" content="Jerry's Blog Came to the World Dec 16, 2013 Jerry&rsquo;s Blog was established. And Thanks to Rasmus Andersson&rsquo;s theme. If you like this blog, you...">
+      
     
     
     
     
-    <meta property="og:url" content="http://rsms.me/">
+    <meta property="og:url" content="http://rsms.me/2013/12/16/blogisopen.html">
     <meta property="og:site_name" content="rsms.me">
     <meta property="og:type" content="article">
     <meta property="og:locale" content="en_GB" />
+    
+    <meta property="article:published_time" content="2013-12-16">
     
     
     <script>
@@ -93,133 +99,78 @@
       </ul>
     </header>
     <!--div class="wrapper content"-->
-      <!-- <div class="content full-bleed intro">
-  Welcome to my homepage!!1
-</div> -->
-<div class="posts">
-  <div class="content full-bleed" id="recent-posts">
-  <a
-    href="/2013/12/16/blogisopen.html" class="post-excerpt">
-      <div class="padded-content">
-        <div class="title">Jerry's Blog Came to the World</div>
-      
-        <!-- <div class="title">Jerry's Blog Came to the World</div> -->
-        <info datetime="">
-          Dec 2013
-        </info>
-        
-        <span class="body">Jerry&rsquo;s Blog was established. And Thanks to Rasmus Andersson&rsquo;s theme.
-If you like this blog, you can click here for the source code.
-</span>
-        
-      <!-- post.photo_url -->
-      </div>
-    </a>
+      <div class="content">
+  <div class="post single">
+    
+    <h1>Jerry's Blog Came to the World</h1>
+    <info datetime="2013-12-16">
+      Dec 16, 2013
+    </info>
+    
+    <div class="body"><p>Jerry&rsquo;s Blog was established. And Thanks to Rasmus Andersson&rsquo;s theme.<br/>
+If you like this blog, you can click <a href="https://github.com/zry656565/jblog/">here</a> for the source code.</p>
+
+<div class="highlight"><pre><code class="javascript"><span class="kd">var</span> <span class="nx">JerryBlog</span> <span class="o">=</span> <span class="p">{</span>
+  <span class="nx">print</span><span class="o">:</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;Hello, world.&quot;</span><span class="p">);</span>
+  <span class="p">}</span>
+<span class="p">};</span>
+<span class="nx">JerryBlog</span><span class="p">.</span><span class="nx">print</span><span class="p">();</span>
+</code></pre></div>
+
+
+
+</div>
+    <!-- <div class="breaker"></div> -->
     <div class="breaker"></div>
-    <div class="end">
-      <a href="/archive/">More...</a>
-    </div>
+    <!-- <info class="after">
+<div class="fb-like" data-href="http://rsms.me/2013/12/16/blogisopen.html" data-send="false" data-width="550" data-show-faces="false" data-font="arial"></div>
+    </info> -->
+
+  
   </div>
 </div>
+
+<!-- During authoring, this automatically reloads the post as its changing -->
 <script type="text/javascript">
-(function(f){
-  var onload = function(f) {
-    if (window.addEventListener) {
-      window.addEventListener('DOMContentLoaded', f, false);
-    } else {
-      window.attachEvent('onload', f);
+(function() {
+var qs = document.location.search;
+var current_etag = qs.match(/etag=("?[a-zA-Z0-9_-]+)/);
+if (current_etag !== null) { current_etag = current_etag[1]; }
+var scrolly = qs.match(/scrolly=([0-9]+)/);
+if (scrolly) {
+  scrolly = parseInt(scrolly[1]);
+  window.scrollTo(window.scrollX, scrolly);
+  setTimeout(function () {
+    window.scrollTo(window.scrollX, scrolly);
+  }, 10);
+}
+
+function check() {
+  var r = new XMLHttpRequest();
+  var url = document.location.href + ((qs && qs !== '') ? '&' : '?') + 'r=' + Math.random();
+  r.open('GET', url, true);
+  r.onreadystatechange = function() {
+    if (r.readyState == 4){
+      var found_etag = r.getResponseHeader('Etag').replace(/^"|"$/g);
+      //console.log('current_etag:', current_etag, 'found_etag:', found_etag);
+      if (current_etag === null) {
+        current_etag = found_etag;
+      } else if (found_etag !== current_etag) {
+        document.location.search =
+          '?etag=' + encodeURIComponent(found_etag) +
+          '&scrolly=' + window.scrollY;
+        return;
+      }
+      setTimeout(check, 500);
     }
   };
-  onload(function(){
-    f();
-    if (window.addEventListener) {
-      window.addEventListener('resize', f, false);
-    } else {
-      window.attachEvent('resize', f);
-    }
-  });
-})(function(){
-  var winw = window.innerWidth, w; //, width_thresholds = [680, 780];
-  w = window.__post_grid_width;
-
-  if ( (w !== undefined) &&
-       ( (w === 680 && winw < 680) ||
-         (w === 780 && winw >= 680 && winw < 780) ||
-         (w === 10000 && winw >= 780)
-       )
-     )
-  {
-    // console.log('noop w:', w+ ', winw:', winw);
-    return;
-  } else {
-    window.__post_grid_width = w =
-      winw > 780 ? 10000 :
-      winw > 680 ? 780 :
-                   680;
-    // console.log('op w:', w);
-  }
-
-  var posts = document.getElementById('recent-posts');
-  var child_nodes = posts.childNodes, k, node, h,
-      col_width, col0_y, col1_y, col1_x,
-      origin = {x:0, y:0}, node_count = 0, is_col0, row0_max_y;
-
-  posts.style.position = (window.__post_grid_width <= 680) ? null : 'relative';
-
-  for (k in child_nodes) {
-    node = child_nodes[k];
-    if (node.nodeType === Node.ELEMENT_NODE) {
-      if (node.className === 'breaker') {
-        if (window.__post_grid_width <= 680) {
-          node.style.height = null;
-        } else {
-          node.style.height = (Math.max(col0_y, col1_y) - row0_max_y) + 'px';
-        }
-        break;
-      }
-      if (col0_y === undefined) {
-        origin.x = node.offsetLeft;
-        origin.y = node.offsetTop;
-        col_width = node.clientWidth;
-        col0_y = origin.y + node.clientHeight;
-        row0_max_y = col0_y;
-      } else {
-        if (col1_y === undefined) {
-          col1_y = origin.y + node.clientHeight;
-          col1_x = origin.x + node.clientWidth;
-          if (col1_y > row0_max_y) {
-            row0_max_y = col1_y;
-          }
-        } else {
-          if (window.__post_grid_width <= 680) {
-            // console.log('Clear');
-            node.style.position = null;
-            node.style.width = null;
-            node.style.left = null;
-            node.style.top = null;
-          } else {
-            is_col0 = (node_count % 2) === 0;
-            node.style.position = 'absolute';
-            node.style.width = col_width + 'px';
-            if (is_col0) {
-              node.style.left = origin.x + 'px';
-              node.style.top = col0_y + 'px';
-              col0_y += node.clientHeight;
-            } else {
-              node.style.left = col1_x + 'px';
-              node.style.top = col1_y + 'px';
-              col1_y += node.clientHeight;
-            }
-          }
-          // console.dir(node);
-        }
-      }
-      ++node_count;
-    }
-  }
-
-});
+  r.send(null);
+}
+check();
+})();
 </script>
+
 
     <!--/div-->
     
