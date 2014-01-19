@@ -2,12 +2,12 @@
 layout: post
 disqus_comments: false
 date: 2013-12-16 10:00:00 UTC
-title: Jerry's Blog was established
-categories: en posts
+title: 博客建立
+categories: zh posts
 ---
 
-Jerry's Blog was established. And Thanks to Rasmus Andersson's theme.<br/>
-If you like this blog, you can click [here](https://github.com/zry656565/jblog/) for the source code.
+今天我的博客终于搞定了，首先要谢谢Rasmus Andersson开源了他的博客代码，我才能把博客做成现在这样。
+如果你喜爱这个博客，可以通过点击[这里](https://github.com/zry656565/jblog/)来获取源代码。
 
 {% highlight javascript %}
 var JerryBlog = {

@@ -2,7 +2,7 @@
 layout: post
 disqus_comments: false
 date: 2013-12-16 10:00:00 UTC
-title: Jerry's Blog was established
+title: Jerry's Blog Came to the World
 categories: en posts
 ---
 
