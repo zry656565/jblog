@@ -6,7 +6,7 @@ title: Projects
 
 <small>*Not in any sane or particular order*</small>
 
-- [**Haijiao Education**](http://www.haijiaoedu.com) -- Web Application for online education
+- **Haijiao Education** -- Web Application for online education
   - Teachers and Students can communicate with each other just by browsers only.
   - Video, Audio, Whiteboard Painter, PDF Reader, all you need just a browser.
   - My first venture project
