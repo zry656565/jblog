@@ -6,7 +6,7 @@ title: About
 
 <img src="/res/images/monkey.jpg" width="220" height="220" align="right">
 
-Hello, I'm Jerry Zou, a programmer living in Shanghai. As the title of the index page, programming is my destiny as well as my heaven.<br/><br/>
+Hello, I'm Jerry Zou, a programmer living in Shanghai. Programming is my destiny as well as my heaven.<br/><br/>
 I'm studying for a master'degree at **Shanghai Jiao Tong University**.Meanwhile I work for **Microsoft BI** as an intern.<br/><br/>
 My favourite programming language is **javascript**. If we have such a same interest, please tell me!(Because none of my friends likes it! Alas..) <br/><br/>
 If you have any question, e-mail me: [zry656565@gmail.com](mailto:zry656565@gmail.com)<br/>
