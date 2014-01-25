@@ -5,14 +5,14 @@
   font-family: 'M+ 1mn';
   font-style: normal;
   font-weight: 300;
-  src: local('mplus-1mn-light'), local('M+ 1mn light'), url('/res/mplus-1mn-light.ttf')
+  src: local('mplus-1mn-light'), local('M+ 1mn light'), url('/res/images/mplus-1mn-light.ttf')
        format('truetype');
 }
 @font-face {
   font-family: 'M+ 1mn';
   font-style: normal;
   font-weight: 500;
-  src: local('mplus-1mn-regular'), local('M+ 1mn regular'), url('/res/mplus-1mn-regular.ttf')
+  src: local('mplus-1mn-regular'), local('M+ 1mn regular'), url('/res/images/mplus-1mn-regular.ttf')
        format('truetype');
 }
 
@@ -156,7 +156,7 @@ div.content.photo {
     font-family: 'Poly', georgia;
     font-style:italic;
     line-height:1.618;
-    background:transparent url(quotation-mark.png) no-repeat scroll 25px 1.4em;
+    background:transparent url(../images/quotation-mark.png) no-repeat scroll 25px 1.4em;
     padding:0.1em 1em 0.1em 60px;
     margin:1.618em 0 1.618em -60px;
     color: #666055;
