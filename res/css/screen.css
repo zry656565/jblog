@@ -5,14 +5,14 @@
   font-family: 'M+ 1mn';
   font-style: normal;
   font-weight: 300;
-  src: local('mplus-1mn-light'), local('M+ 1mn light'), url('/res/images/mplus-1mn-light.ttf')
+  src: local('mplus-1mn-light'), local('M+ 1mn light'), url('/res/font/mplus-1mn-light.ttf')
        format('truetype');
 }
 @font-face {
   font-family: 'M+ 1mn';
   font-style: normal;
   font-weight: 500;
-  src: local('mplus-1mn-regular'), local('M+ 1mn regular'), url('/res/images/mplus-1mn-regular.ttf')
+  src: local('mplus-1mn-regular'), local('M+ 1mn regular'), url('/res/font/mplus-1mn-regular.ttf')
        format('truetype');
 }
 

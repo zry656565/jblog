@@ -1,5 +1,4 @@
 port:             3000
-pygments:         false
 encoding:         utf-8
 lsi:              false
 permalink:        /:year/:month/:day/:title.html
