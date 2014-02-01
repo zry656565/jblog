@@ -4,16 +4,16 @@ layout: default
 <div class="posts">
   <div class="content full-bleed" id="recent-posts">
   {% for post in site.posts limit:25 %}<a
-    href="{{ post.url }}" class="post-excerpt{% if post.photo_url %} photo{% endif %}">
+    href="{% if site.lang == "zh" %}/zh{% endif %}{{ post.url }}" class="post-excerpt{% if post.photo_url %} photo{% endif %}">
       <div class="padded-content">
         <div class="title">{{ post.title }}</div>
       {% if post.photo_url %}
         <div class="image" style="background-image:url('{{ post.photo_url }}')"></div>
       {% else %}
         <!-- <div class="title">{{ post.title }}</div> -->
-        <info datetime="{{ page.date | date: "%Y-%m-%d" }}">
+        <span class="info" datetime="{{ page.date | date: "%Y-%m-%d" }}">
           {{ post.date | date: "%b %Y" }}
-        </info>
+        </span>
         {% if post.description %}
         <span class="body">{{ post.description | strip_html }}</span>
         {% else %}
@@ -24,9 +24,8 @@ layout: default
     </a>{% endfor %}
     <div class="breaker"></div>
     <div class="end">
-      <a href="/archive/">More...</a>
+      <a href="{% if site.lang == "zh" %}/zh{% endif %}/archive/">{% t home.more %}</a>
     </div>
   </div>
 </div>
 
-<script type="text/javascript" src="/res/js/indexOnload.js"></script>

@@ -45,7 +45,7 @@ html.ios #cse-search-button {
 <ul>
 {% for post in site.posts %}
   <li>
-    {{ post.date | date: "%b %d, %Y"  }} -- <a href="{{ post.url }}">{{ post.title }}</a>
+    {{ post.date | date: "%b %d, %Y"  }} -- <a href="{% if site.lang == "zh" %}/zh{% endif %}{{ post.url }}">{{ post.title }}</a>
   </li>
 {% endfor %}
 </ul>
