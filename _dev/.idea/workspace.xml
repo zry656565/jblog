@@ -23,10 +23,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="screen.css" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="screen.css" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/res/css/screen.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="115" column="2" selection-start="2625" selection-end="2625" vertical-scroll-proportion="-3.392857" vertical-offset="1630" max-vertical-offset="7350">
+            <state line="138" column="19" selection-start="3509" selection-end="3509" vertical-scroll-proportion="0.51705563" vertical-offset="1782" max-vertical-offset="7155">
               <folding />
             </state>
           </provider>
@@ -36,7 +36,9 @@
         <entry file="file://$PROJECT_DIR$/_i18n/en.yml">
           <provider selected="true" editor-type-id="text-editor">
             <state line="1" column="40" selection-start="48" selection-end="48" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="150">
-              <folding />
+              <folding>
+                <marker date="1391236523168" expanded="true" signature="50:71" placeholder="home:" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -45,7 +47,9 @@
         <entry file="file://$PROJECT_DIR$/_i18n/zh.yml">
           <provider selected="true" editor-type-id="text-editor">
             <state line="1" column="22" selection-start="30" selection-end="30" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="150">
-              <folding />
+              <folding>
+                <marker date="1391236523176" expanded="true" signature="32:53" placeholder="home:" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -62,10 +66,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/archive/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="47" column="93" selection-start="1032" selection-end="1032" vertical-scroll-proportion="0.7326203" vertical-offset="294" max-vertical-offset="855">
+            <state line="31" column="25" selection-start="715" selection-end="715" vertical-scroll-proportion="-7.7083335" vertical-offset="280" max-vertical-offset="855">
               <folding />
             </state>
           </provider>
@@ -130,10 +134,10 @@
         <option value="$PROJECT_DIR$/_layouts/default.html" />
         <option value="$PROJECT_DIR$/_i18n/en.yml" />
         <option value="$PROJECT_DIR$/_i18n/zh.yml" />
-        <option value="$PROJECT_DIR$/res/css/screen.css" />
         <option value="$PROJECT_DIR$/about/index.md" />
         <option value="$PROJECT_DIR$/projects/index.md" />
         <option value="$PROJECT_DIR$/archive/index.html" />
+        <option value="$PROJECT_DIR$/res/css/screen.css" />
       </list>
     </option>
   </component>
@@ -184,6 +188,38 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="_dev" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="_dev" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="_dev" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="_dev" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="_dev" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -374,7 +410,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1376" height="744" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -466,21 +502,18 @@
     <entry file="file://$PROJECT_DIR$/_i18n/en.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="1" column="40" selection-start="48" selection-end="48" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="150">
-          <folding />
+          <folding>
+            <marker date="1391236523168" expanded="true" signature="50:71" placeholder="home:" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/_i18n/zh.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="1" column="22" selection-start="30" selection-end="30" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="150">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/css/screen.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="115" column="2" selection-start="2625" selection-end="2625" vertical-scroll-proportion="-3.392857" vertical-offset="1630" max-vertical-offset="7350">
-          <folding />
+          <folding>
+            <marker date="1391236523176" expanded="true" signature="32:53" placeholder="home:" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -529,7 +562,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/archive/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="47" column="93" selection-start="1032" selection-end="1032" vertical-scroll-proportion="0.7326203" vertical-offset="294" max-vertical-offset="855">
+        <state line="31" column="25" selection-start="715" selection-end="715" vertical-scroll-proportion="-7.7083335" vertical-offset="280" max-vertical-offset="855">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/css/screen.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="138" column="19" selection-start="3509" selection-end="3509" vertical-scroll-proportion="0.51705563" vertical-offset="1782" max-vertical-offset="7155">
           <folding />
         </state>
       </provider>
