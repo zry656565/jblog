@@ -1,0 +1,159 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Deep Copy in Javascript</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link rel="stylesheet" media="screen, projection" href="/res/css/screen.css" type="text/css">
+    <link rel="shortcut icon" href="/res/images/favicon.ico">
+  </head>
+  <body>
+    <header>
+      <h1 class="logo">
+        <a href="/">
+        <img src='/res/images/jerry_title.png' width="240" height="50" alt="Jerry's Blog"></a>
+      </h1>
+      <ul class="navigation">
+        
+          
+          <li><a href="/projects/" >Projects</a></li>
+          <li><a href="/archive/" >Archive</a></li>
+          <li><a href="/about/" >About me</a></li>
+          <li><a href="/zh/2014/02/04/DeepCopyInJS.html" >中文</a></li>
+        
+      </ul>
+    </header>
+
+    <!--div class="wrapper content"-->
+      <div class="content">
+  <div class="post single">
+    
+    <h1>Deep Copy in Javascript</h1>
+    <span class="info" datetime="2014-02-04">
+      Feb 04, 2014
+    </span>
+    
+    <div class="body"><p>In this article, I will show you how to realize a deep-copy method for javascript.</p>
+
+<p>In the world of javascript，All &ldquo;object&rdquo; variables pass the address not value when assigning. Maybe there is someone asking which variable is a &ldquo;object&rdquo;. illustrate with examples might be better:</p>
+
+<div class="highlight"><pre><code class="javascript"><span class="k">typeof</span><span class="p">(</span><span class="kc">true</span><span class="p">)</span>    <span class="c1">//&quot;boolean&quot;</span>
+<span class="k">typeof</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>       <span class="c1">//&quot;number&quot;</span>
+<span class="k">typeof</span><span class="p">(</span><span class="s2">&quot;1&quot;</span><span class="p">)</span>     <span class="c1">//&quot;string&quot;</span>
+<span class="k">typeof</span><span class="p">({})</span>      <span class="c1">//&quot;object&quot;</span>
+<span class="k">typeof</span><span class="p">([])</span>      <span class="c1">//&quot;object&quot;</span>
+<span class="k">typeof</span><span class="p">(</span><span class="kd">function</span><span class="p">(){})</span>  <span class="c1">//&quot;function&quot;</span>
+</code></pre></div>
+
+
+<p>So in fact, our main problem is the &ldquo;object&rdquo;. To non-&ldquo;object&rdquo;, just do the normal assignment. My thinking of realizing js deep-copy is：</p>
+
+<ul>
+<li>Traverse all the properties of the object,</li>
+<li>If the property is &ldquo;object&rdquo;, it requires special treatment.
+
+<ul>
+<li>If the &ldquo;object&rdquo; is so special to be an Array, then create a new array and copy all the things in it.</li>
+<li>If the &ldquo;object&rdquo; is non-Array, call Deep Copy method recursively.</li>
+<li>Special attention!! Here I haven&rsquo;t done deep-copy for the objects in arrays. If you need this in your practical application,the following code should to be modified.</li>
+</ul>
+</li>
+<li>If non-&ldquo;object&rdquo;, just do the normal assignment.</li>
+</ul>
+
+
+<p>Here is my realization:</p>
+
+<div class="highlight"><pre><code class="javascript"><span class="nb">Object</span><span class="p">.</span><span class="nx">prototype</span><span class="p">.</span><span class="nx">DeepCopy</span> <span class="o">=</span> <span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
+  <span class="kd">var</span> <span class="nx">obj</span><span class="p">,</span> <span class="nx">i</span><span class="p">;</span>
+  <span class="nx">obj</span> <span class="o">=</span> <span class="p">{};</span>
+
+  <span class="k">for</span> <span class="p">(</span><span class="nx">attr</span> <span class="k">in</span> <span class="k">this</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">if</span> <span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="nx">hasOwnProperty</span><span class="p">(</span><span class="nx">attr</span><span class="p">))</span> <span class="p">{</span>
+      <span class="k">if</span> <span class="p">(</span><span class="k">typeof</span><span class="p">(</span><span class="k">this</span><span class="p">[</span><span class="nx">attr</span><span class="p">])</span> <span class="o">===</span> <span class="s2">&quot;object&quot;</span><span class="p">)</span> <span class="p">{</span>
+        <span class="k">if</span> <span class="p">(</span><span class="nb">Object</span><span class="p">.</span><span class="nx">prototype</span><span class="p">.</span><span class="nx">toString</span><span class="p">.</span><span class="nx">call</span><span class="p">(</span><span class="k">this</span><span class="p">[</span><span class="nx">attr</span><span class="p">])</span> <span class="o">===</span> <span class="s1">&#39;[object Array]&#39;</span><span class="p">)</span> <span class="p">{</span>
+          <span class="nx">obj</span><span class="p">[</span><span class="nx">attr</span><span class="p">]</span> <span class="o">=</span> <span class="p">[];</span>
+          <span class="k">for</span> <span class="p">(</span><span class="nx">i</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span> <span class="nx">i</span><span class="o">&lt;</span><span class="k">this</span><span class="p">[</span><span class="nx">attr</span><span class="p">].</span><span class="nx">length</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+            <span class="nx">obj</span><span class="p">[</span><span class="nx">attr</span><span class="p">].</span><span class="nx">push</span><span class="p">(</span><span class="k">this</span><span class="p">[</span><span class="nx">attr</span><span class="p">][</span><span class="nx">i</span><span class="p">]);</span>
+          <span class="p">}</span>
+        <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+          <span class="nx">obj</span><span class="p">[</span><span class="nx">attr</span><span class="p">]</span> <span class="o">=</span> <span class="k">this</span><span class="p">[</span><span class="nx">attr</span><span class="p">].</span><span class="nx">DeepCopy</span><span class="p">();</span>
+        <span class="p">}</span>
+      <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+        <span class="nx">obj</span><span class="p">[</span><span class="nx">attr</span><span class="p">]</span> <span class="o">=</span> <span class="k">this</span><span class="p">[</span><span class="nx">attr</span><span class="p">];</span>
+      <span class="p">}</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
+  <span class="k">return</span> <span class="nx">obj</span><span class="p">;</span>
+<span class="p">};</span>
+</code></pre></div>
+
+
+<p>The advantage of implementing DeepCopy on Object.prototype is that all objects inherit this method. The downside is that some libraries will rewrite Object, so conflicts sometimes occur. And specific usage is as follows:</p>
+
+<div class="highlight"><pre><code class="javascript"><span class="nb">Object</span><span class="p">.</span><span class="nx">prototype</span><span class="p">.</span><span class="nx">DeepCopy</span> <span class="o">=</span> <span class="kd">function</span> <span class="p">()</span> <span class="p">{</span> <span class="p">...</span> <span class="p">}</span>
+<span class="kd">var</span> <span class="nx">a</span> <span class="o">=</span> <span class="p">{</span> <span class="nx">x</span><span class="o">:</span><span class="mi">1</span> <span class="p">};</span>
+<span class="kd">var</span> <span class="nx">b</span> <span class="o">=</span> <span class="nx">a</span><span class="p">;</span>
+<span class="kd">var</span> <span class="nx">c</span> <span class="o">=</span> <span class="nx">a</span><span class="p">.</span><span class="nx">DeepCopy</span><span class="p">();</span>
+<span class="nx">a</span><span class="p">.</span><span class="nx">x</span> <span class="o">=</span> <span class="mi">2</span><span class="p">;</span>
+<span class="nx">b</span><span class="p">.</span><span class="nx">x</span> <span class="o">=</span> <span class="mi">3</span><span class="p">;</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">a</span><span class="p">.</span><span class="nx">x</span><span class="p">);</span>   <span class="c1">//3</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">b</span><span class="p">.</span><span class="nx">x</span><span class="p">);</span>   <span class="c1">//3</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">c</span><span class="p">.</span><span class="nx">x</span><span class="p">);</span>   <span class="c1">//1</span>
+</code></pre></div>
+
+
+<p><br><br><hr>
+<strong>If you publish this article in your blog, please indicate the source：<a href="http://jerryzou.com">jerryzou.com</a></strong></p>
+</div>
+    <!-- <div class="breaker"></div> -->
+    <div class="breaker"></div>
+    <!-- <info class="after">
+<div class="fb-like" data-href="http://rsms.me/2014/02/04/DeepCopyInJS.html" data-send="false" data-width="550" data-show-faces="false" data-font="arial"></div>
+    </info> -->
+  </div>
+</div>
+    <!--/div-->
+    
+    
+    <footer>
+      <p>
+        <a rel="license" href="http://creativecommons.org/licenses/by/3.0/deed.en_US" class="cc">
+            <img src="/res/images/cc-cc.png" class="cc">
+            <img src="/res/images/cc-by.png" class="cc">
+        </a>
+        This work is licensed under a<a rel="license" href="http://creativecommons.org/licenses/by/3.0/deed.en_US">Creative Commons License</a>
+      </p>
+    </footer>
+    
+    
+    <script>
+  // curry pre < code to be able to get prettified
+  // If the first line is
+  //   #!-langname\n
+  // Then that line is removed from the code and "langname" is given to prettify.
+  // If "langname" is "none", that prettify is not applied at all.
+  var n,i,L,cn,lang,v = document.getElementsByTagName('pre');
+  var m,lang_re = /^#\!-([a-zA-Z0-9_-]+)\n/;
+  for (i=0,L=v.length;i<L;++i) {
+    n = v.item(i);
+    if ((cn = n.firstChild) && cn.nodeName == 'CODE') {
+      lang = null;
+      if (cn.firstChild.nodeType === Node.TEXT_NODE) {
+        m = lang_re.exec(cn.firstChild.nodeValue);
+        if (m) {
+          lang = m[1].toLowerCase();
+          cn.firstChild.nodeValue = cn.firstChild.nodeValue.substr(m[0].length);
+          if (lang === 'none') {
+            continue;
+          }
+        }
+      }
+      n.setAttribute('class', 'prettyprint'+(lang ? ' lang-' + lang : ''));
+    }
+  }
+</script>
+<script async src="/res/js/prettify.js"></script>
+
+  </body>
+</html>

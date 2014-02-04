@@ -16,3 +16,6 @@ categories: zh posts
 
 - **解决办法**:注销或重新启动计算机即可解决此问题。
 <img src="/res/images/endlessInitializing_fix.png"/>
+
+<br><br><hr>
+**转载请注明出处：[jerryzou.com](http://jerryzou.com)**
