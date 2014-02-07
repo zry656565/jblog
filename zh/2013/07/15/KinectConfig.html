@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>《炉石传说》无法运行的常见错误</title>
+    <title>Kinect for Windows SDK的环境配置</title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <link rel="stylesheet" media="screen, projection" href="/res/css/screen.css" type="text/css">
     <link rel="shortcut icon" href="/res/images/favicon.ico">
@@ -19,7 +19,7 @@
           <li><a href="/zh/projects/" >项目</a></li>
           <li><a href="/zh/archive/" >文章</a></li>
           <li><a href="/zh/about/" >关于我</a></li>
-          <li><a href="/2014/02/01/HearthStoneTroubleShooting.html" >English</a></li>
+          <li><a href="/2013/07/15/KinectConfig.html" >English</a></li>
         
       </ul>
     </header>
@@ -28,26 +28,55 @@
       <div class="content">
   <div class="post single">
     
-    <h1>《炉石传说》无法运行的常见错误</h1>
-    <span class="info" datetime="2014-02-01">
-      Feb 01, 2014
+    <h1>Kinect for Windows SDK的环境配置</h1>
+    <span class="info" datetime="2013-07-15">
+      Jul 15, 2013
     </span>
     
-    <div class="body"><p><em><small>本文针对炉石传说无法运行的两个常见问题：“无法连接到战网服务”、“正在初始化&hellip;”进行解答。</small></em></p>
+    <div class="body"><p><em><small>本文介绍了Kinect for Windows SDK在Visual Studio 2010中的环境配置（C++版本）的配置方法，所使用的SDK版本为1.7。如果版本不一样可能配置过程有些许差别。</small></em></p>
+
+<p>首先本文是基于Kinect for Windows SDK已经安装好的情况下配置 visual studio 2010的开发环境。<br/>
+我所使用的SDK版本为1.7，如果版本不一样可能配置过程有些许差别。</p>
+
+<p>本文介绍的过程主要配置的是可以运行官方所提供的两个DEMO的运行环境。<br/>
+这两个DEMO分别为：ColorBasics-D2D和DepthBasics-D2D</p>
 
 <ul>
-<li><h5><strong>问题1</strong>: 无法连接到战网服务 BLZBNTBGS80000021(3003)</h5>
+<li>具体过程：
 
-<p><img src="/res/images/BNerror.png"/></p></li>
-<li><p><strong>解决办法</strong>:使用XP兼容模式后，重新启动战网登陆器
-<img src="/res/images/BNerror_fix.png"/></p></li>
-<li><h5><strong>问题2</strong>: 一直初始化不完的"正在初始化&hellip;"</h5>
+<ol>
+<li> 在&lt;解决方案资源管理器>里，右击你的项目名，选择最后一项&lt;属性></li>
+<li> 在跳出的属性页左边栏中选择&lt;VC++目录>
 
-<p><img src="/res/images/endlessInitializing.png"/></p></li>
-<li><p><strong>解决办法</strong>:注销或重新启动计算机即可解决此问题。
-<img src="/res/images/endlessInitializing_fix.png"/></p></li>
+<ol>
+<li> 在右边栏中，选中&lt;包含目录>一行，右边会出现一个小箭头，点击小箭头选择&lt;编辑&hellip;>，双击第一个空行，输入：$(KINECTSDK10_DIR)\inc</li>
+<li> 同样地，在&lt;库目录>一行，加入：$(KINECTSDK10_DIR)\lib\x86</li>
+</ol>
+</li>
+<li> 在左边栏中选择&lt;链接器>，然后在附加依赖项中加入：</li>
+</ol>
+</li>
 </ul>
 
+
+<div class="highlight"><pre><code class="javascript"><span class="nx">kernel32</span><span class="p">.</span><span class="nx">lib</span>
+<span class="nx">user32</span><span class="p">.</span><span class="nx">lib</span>
+<span class="nx">winspool</span><span class="p">.</span><span class="nx">lib</span>
+<span class="nx">comdlg32</span><span class="p">.</span><span class="nx">lib</span>
+<span class="nx">advapi32</span><span class="p">.</span><span class="nx">lib</span>
+<span class="nx">shell32</span><span class="p">.</span><span class="nx">lib</span>
+<span class="nx">ole32</span><span class="p">.</span><span class="nx">lib</span>
+<span class="nx">oleaut32</span><span class="p">.</span><span class="nx">lib</span>
+<span class="nx">uuid</span><span class="p">.</span><span class="nx">lib</span>
+<span class="nx">odbc32</span><span class="p">.</span><span class="nx">lib</span>
+<span class="nx">odbccp32</span><span class="p">.</span><span class="nx">lib</span>
+<span class="nx">Kinect10</span><span class="p">.</span><span class="nx">lib</span>
+</code></pre></div>
+
+
+<p>注意每一个文件为一行，末尾不要加分号。</p>
+
+<p><strong>说明</strong>:本文原发布于我的CSDN博客<a href="http://blog.csdn.net/zry656565">天上之海原</a>。</p>
 
 <hr />
 
@@ -56,7 +85,7 @@
     <!-- <div class="breaker"></div> -->
     <div class="breaker"></div>
     <!-- <info class="after">
-<div class="fb-like" data-href="http://rsms.me/2014/02/01/HearthStoneTroubleShooting.html" data-send="false" data-width="550" data-show-faces="false" data-font="arial"></div>
+<div class="fb-like" data-href="http://rsms.me/2013/07/15/KinectConfig.html" data-send="false" data-width="550" data-show-faces="false" data-font="arial"></div>
     </info> -->
   </div>
 </div>

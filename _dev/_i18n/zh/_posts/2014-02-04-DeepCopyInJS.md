@@ -5,7 +5,7 @@ title: Javascript中的一种深复制实现
 categories: zh posts
 ---
 
-今天我将给大家介绍一种javascript中的深复制实现。
+*<small>本文将给大家详细介绍一种javascript中的深复制实现。</small>*
 
 在javascript中，所有的object变量之间的赋值都是传地址的，可能有同学会问哪些是object对象。举例子来说明可能会比较好：
 

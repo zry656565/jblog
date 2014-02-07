@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>《炉石传说》无法运行的常见错误</title>
+    <title>搞清大数端小数端</title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <link rel="stylesheet" media="screen, projection" href="/res/css/screen.css" type="text/css">
     <link rel="shortcut icon" href="/res/images/favicon.ico">
@@ -19,7 +19,7 @@
           <li><a href="/zh/projects/" >项目</a></li>
           <li><a href="/zh/archive/" >文章</a></li>
           <li><a href="/zh/about/" >关于我</a></li>
-          <li><a href="/2014/02/01/HearthStoneTroubleShooting.html" >English</a></li>
+          <li><a href="/2013/07/15/StorageMethod.html" >English</a></li>
         
       </ul>
     </header>
@@ -28,26 +28,47 @@
       <div class="content">
   <div class="post single">
     
-    <h1>《炉石传说》无法运行的常见错误</h1>
-    <span class="info" datetime="2014-02-01">
-      Feb 01, 2014
+    <h1>搞清大数端小数端</h1>
+    <span class="info" datetime="2013-07-15">
+      Jul 15, 2013
     </span>
     
-    <div class="body"><p><em><small>本文针对炉石传说无法运行的两个常见问题：“无法连接到战网服务”、“正在初始化&hellip;”进行解答。</small></em></p>
+    <div class="body"><p><em><small>我们日常生活中常见的IA-32位体系架构一般都是小数端存储方法。而IA-64则同时采用大数端和小数端的存储方法。究竟什么是大数端，什么是小数端呢？</small></em></p>
+
+<p>对于同样一个数0x123456。</p>
 
 <ul>
-<li><h5><strong>问题1</strong>: 无法连接到战网服务 BLZBNTBGS80000021(3003)</h5>
-
-<p><img src="/res/images/BNerror.png"/></p></li>
-<li><p><strong>解决办法</strong>:使用XP兼容模式后，重新启动战网登陆器
-<img src="/res/images/BNerror_fix.png"/></p></li>
-<li><h5><strong>问题2</strong>: 一直初始化不完的"正在初始化&hellip;"</h5>
-
-<p><img src="/res/images/endlessInitializing.png"/></p></li>
-<li><p><strong>解决办法</strong>:注销或重新启动计算机即可解决此问题。
-<img src="/res/images/endlessInitializing_fix.png"/></p></li>
+<li><p>大数端的存储方法是：
+  <table>
+      <tr><td>地址</td><td>值</td></tr>
+      <tr><td>0x00</td><td>0x12</td></tr>
+      <tr><td>0x01</td><td>0x34</td></tr>
+      <tr><td>0x02</td><td>0x56</td></tr>
+  </table><br/>
+  <strong>大数端记忆方法：低地址存高（大）位</strong></p></li>
+<li><p>而小数端的存储方法是：
+  <table>
+      <tr><td>地址</td><td>值</td></tr>
+      <tr><td>0x00</td><td>0x56</td></tr>
+      <tr><td>0x01</td><td>0x34</td></tr>
+      <tr><td>0x02</td><td>0x12</td></tr>
+  </table><br/>
+  <strong>小数端记忆方法：低地址存低（小）</strong></p></li>
 </ul>
 
+
+<p>另外，</p>
+
+<ul>
+<li>我们日常生活中常见的IA-32位体系架构一般都是小数端存储方法。</li>
+<li>而IA-64则同时采用大数端和小数端的存储方法。</li>
+</ul>
+
+
+<p>但需要注意的是，现在很常见的家装64位的windows系统可不算真正的64位系统。真正的64位体系结构与32位体系结构完全不同，32位体系结构的程序在64位体系结构上的机器上根本运行不了。因为两者根本就使用了完全不同的指令集。<br/>
+其实啊，家装的64位windows系统还是属于32位体系结构EM64T。而EM64T前面的E就是Extended的简称啦（即32位的扩展，实际上是48位系统）。</p>
+
+<p><strong>说明</strong>:本文原发布于我的CSDN博客<a href="http://blog.csdn.net/zry656565">天上之海原</a>。</p>
 
 <hr />
 
@@ -56,7 +77,7 @@
     <!-- <div class="breaker"></div> -->
     <div class="breaker"></div>
     <!-- <info class="after">
-<div class="fb-like" data-href="http://rsms.me/2014/02/01/HearthStoneTroubleShooting.html" data-send="false" data-width="550" data-show-faces="false" data-font="arial"></div>
+<div class="fb-like" data-href="http://rsms.me/2013/07/15/StorageMethod.html" data-send="false" data-width="550" data-show-faces="false" data-font="arial"></div>
     </info> -->
   </div>
 </div>

@@ -1,11 +1,11 @@
 ---
 layout: post
-date: 2013-12-21 15:56:00 UTC
-title: How To Learn Javascript
+date: 2013-07-15 15:37:00 UTC
+title: Big End? or Small End?
 categories: en posts
 ---
 
-*<small>In this article, I will give some suggestions for javascript beginners...</small>*
+*<small>How to judge whether the storage method of your CPU is big-end or small-end? </small>*
 
 Sorry, there is no english version of this article. <br/>
 Click [HERE](/zh{{ page.url }}) or TAG:[中文](/zh{{ page.url }}) to see the Chinese version.

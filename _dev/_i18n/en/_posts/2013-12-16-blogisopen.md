@@ -6,6 +6,8 @@ title: Jerry's Blog Came to the World
 categories: en posts
 ---
 
+*<small>Jerry's Blog was established. And Thanks to Rasmus Andersson's theme...</small>*
+
 Jerry's Blog was established. And Thanks to Rasmus Andersson's theme.<br/>
 If you like this blog, you can click [here](https://github.com/zry656565/jblog/) for the source code.
 
