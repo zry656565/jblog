@@ -1,18 +1,92 @@
 <!DOCTYPE HTML>
-<html lang="en">
+<html>
   <head>
     <meta charset="utf-8">
     <title>Jerry's Blog 404</title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <style type="text/css">
-    body { font-family:sans-serif; margin:4em 10em; }
-  </style>
+    <link rel="stylesheet" media="screen, projection" href="/res/css/screen.css" type="text/css">
+    <link rel="shortcut icon" href="/res/images/favicon.ico">
   </head>
   <body>
-    <div class="content">
-      <a href="/"><img src="/res/images/jerry_title.png"/></a>
-      <h2>404 Not found</h2>
-      <p>Ooops. Looks like you followed a dead link.</p>
-    </div>
+    <header>
+      <h1 class="logo">
+        <a href="/zh/">
+        <img src='/res/images/jerry_title.png' width="240" height="50" alt="Jerry's Blog"></a>
+      </h1>
+      <ul class="navigation">
+        
+          
+          <li><a href="/zh/projects/" >项目</a></li>
+          <li><a href="/zh/archive/" >文章</a></li>
+          <li><a href="/zh/about/" >关于我</a></li>
+          <li><a href="/404.html" >English</a></li>
+        
+      </ul>
+    </header>
+
+    <!--div class="wrapper content"-->
+      <div class="content">
+  <p><strong><big>很遗憾啊，看来你进入了一个已经消失了的页面。</big></strong></p>
+
+<p><big>你可以返回首页：<a href="/zh/">点我</a></big></p>
+
+</div>
+
+    <!--/div-->
+    
+    
+    <footer>
+      <p>
+        <a rel="license" href="http://creativecommons.org/licenses/by/3.0/deed.en_US" class="cc">
+            <img src="/res/images/cc-cc.png" class="cc">
+            <img src="/res/images/cc-by.png" class="cc">
+        </a>
+        本博客遵循的许可证是：<a rel="license" href="http://creativecommons.org/licenses/by/3.0/deed.en_US">Creative Commons License</a>
+      </p>
+    </footer>
+    
+
+    <script type="text/javascript">
+
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-47842677-1']);
+        _gaq.push(['_trackPageview']);
+
+        (function() {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+
+    </script>
+    
+    <script>
+  // curry pre < code to be able to get prettified
+  // If the first line is
+  //   #!-langname\n
+  // Then that line is removed from the code and "langname" is given to prettify.
+  // If "langname" is "none", that prettify is not applied at all.
+  var n,i,L,cn,lang,v = document.getElementsByTagName('pre');
+  var m,lang_re = /^#\!-([a-zA-Z0-9_-]+)\n/;
+  for (i=0,L=v.length;i<L;++i) {
+    n = v.item(i);
+    if ((cn = n.firstChild) && cn.nodeName == 'CODE') {
+      lang = null;
+      if (cn.firstChild.nodeType === Node.TEXT_NODE) {
+        m = lang_re.exec(cn.firstChild.nodeValue);
+        if (m) {
+          lang = m[1].toLowerCase();
+          cn.firstChild.nodeValue = cn.firstChild.nodeValue.substr(m[0].length);
+          if (lang === 'none') {
+            continue;
+          }
+        }
+      }
+      n.setAttribute('class', 'prettyprint'+(lang ? ' lang-' + lang : ''));
+    }
+  }
+</script>
+<script async src="/res/js/prettify.js"></script>
+
   </body>
 </html>
