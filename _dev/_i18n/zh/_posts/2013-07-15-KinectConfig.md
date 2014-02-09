@@ -2,10 +2,10 @@
 layout: post
 date: 2013-07-15 15:37:00 UTC
 title: Kinect for Windows SDK的环境配置
+description: 本文介绍了Kinect for Windows SDK在Visual Studio 2010中的环境配置（C++版本）的配置方法，所使用的SDK版本为1.7。如果版本不一样可能配置过程有些许差别。
+footer: true
 categories: zh posts
 ---
-
-*<small>本文介绍了Kinect for Windows SDK在Visual Studio 2010中的环境配置（C++版本）的配置方法，所使用的SDK版本为1.7。如果版本不一样可能配置过程有些许差别。</small>*
 
 首先本文是基于Kinect for Windows SDK已经安装好的情况下配置 visual studio 2010的开发环境。<br/>
 我所使用的SDK版本为1.7，如果版本不一样可能配置过程有些许差别。
@@ -38,7 +38,3 @@ Kinect10.lib
 注意每一个文件为一行，末尾不要加分号。
 
 **说明**:本文原发布于我的CSDN博客[天上之海原](http://blog.csdn.net/zry656565)。
-
-***
-
-**转载请注明出处：[jerryzou.com](http://jerryzou.com)**

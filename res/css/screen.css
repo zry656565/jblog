@@ -193,7 +193,7 @@ a.post-excerpt {
     }*/
     a.post-excerpt.photo div.title {
       padding:10px 40px;
-      font-size: 300%;
+      font-size: 125%;
       font-weight: 100;
       color: white;
       text-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
@@ -212,7 +212,7 @@ a.post-excerpt {
       position: absolute;
       left:0; top:0; right:0; bottom:0;
       z-index:1;
-      background-size: cover;
+      background-size: 400px 320px;
     }
     a.post-excerpt.photo:hover div.padded-content {
       opacity: 1;
@@ -235,14 +235,14 @@ a.post-excerpt {
       /*-webkit-transform: translate3d(0,0,0);*/
     }
     a.post-excerpt.photo {
-      height:340px;
+      /*height:340px;*/
     }
       a.post-excerpt.photo div.padded-content {
         padding:0;
         width:100%;
         height:100%;
         background: transparent no-repeat center center scroll;
-        background-size: cover;
+        background-size: 400px 320px;
       }
       a.post-excerpt.photo:hover div.padded-content {
         opacity:0.9;

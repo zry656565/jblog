@@ -2,10 +2,11 @@
 layout: post
 date: 2014-02-01 15:56:00 UTC
 title: 《炉石传说》无法运行的常见错误
+description: 本文针对炉石传说无法运行的两个常见问题：“无法连接到战网服务”、“正在初始化...”进行解答。
+photo_url: /res/images/HearthstoneBack.jpg
+footer: true
 categories: zh posts
 ---
-
-*<small>本文针对炉石传说无法运行的两个常见问题：“无法连接到战网服务”、“正在初始化...”进行解答。</small>*
 
 - #####**问题1**: 无法连接到战网服务 BLZBNTBGS80000021(3003)
 <img src="/res/images/BNerror.png"/>
@@ -18,7 +19,3 @@ categories: zh posts
 
 - **解决办法**:注销或重新启动计算机即可解决此问题。
 <img src="/res/images/endlessInitializing_fix.png"/>
-
-***
-
-**转载请注明出处：[jerryzou.com](http://jerryzou.com)**

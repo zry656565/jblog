@@ -2,10 +2,10 @@
 layout: post
 date: 2014-02-04 21:33:00 UTC
 title: Javascript中的一种深复制实现
+description: 本文将给大家详细介绍一种javascript中的深复制实现。
+footer: true
 categories: zh posts
 ---
-
-*<small>本文将给大家详细介绍一种javascript中的深复制实现。</small>*
 
 在javascript中，所有的object变量之间的赋值都是传地址的，可能有同学会问哪些是object对象。举例子来说明可能会比较好：
 
@@ -80,7 +80,3 @@ console.log(a.x);   //3
 console.log(b.x);   //3
 console.log(c.x);   //1
 {% endhighlight %}
-
----
-
-**转载请注明出处：[jerryzou.com](http://jerryzou.com)**

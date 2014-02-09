@@ -2,10 +2,11 @@
 layout: post
 date: 2014-02-04 21:33:00 UTC
 title: Deep Copy in Javascript
+description: In this article, I will show you how to realize a deep-copy method for javascript.
+enVersion: true
+footer: true
 categories: en posts
 ---
-
-*<small>In this article, I will show you how to realize a deep-copy method for javascript.</small>*
 
 In the world of javascript，All "object" variables pass the address not value when assigning. Maybe there is someone asking which variable is a "object". illustrate with examples might be better:
 
@@ -76,7 +77,3 @@ console.log(a.x);   //3
 console.log(b.x);   //3
 console.log(c.x);   //1
 {% endhighlight %}
-
-***
-
-**If you publish this article in your blog, please indicate the source：[jerryzou.com](http://jerryzou.com)**

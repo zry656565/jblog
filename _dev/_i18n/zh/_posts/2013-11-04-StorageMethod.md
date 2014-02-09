@@ -2,10 +2,10 @@
 layout: post
 date: 2013-07-15 15:37:00 UTC
 title: 搞清大数端小数端
+description: 我们日常生活中常见的IA-32位体系架构一般都是小数端存储方法。而IA-64则同时采用大数端和小数端的存储方法。究竟什么是大数端，什么是小数端呢？
+footer: true
 categories: zh posts
 ---
-
-*<small>我们日常生活中常见的IA-32位体系架构一般都是小数端存储方法。而IA-64则同时采用大数端和小数端的存储方法。究竟什么是大数端，什么是小数端呢？</small>*
 
 对于同样一个数0x123456。
 
@@ -36,7 +36,3 @@ categories: zh posts
 其实啊，家装的64位windows系统还是属于32位体系结构EM64T。而EM64T前面的E就是Extended的简称啦（即32位的扩展，实际上是48位系统）。
 
 **说明**:本文原发布于我的CSDN博客[天上之海原](http://blog.csdn.net/zry656565)。
-
-***
-
-**转载请注明出处：[jerryzou.com](http://jerryzou.com)**

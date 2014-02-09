@@ -9,7 +9,20 @@ layout: default
       {{ page.date | date: "%b %d, %Y" }}
     </span>
     {% endunless %}
-    <div class="body">{{ content }}</div>
+    <div class="body">
+        <p>
+            <em><small>
+                {{ page.description }}
+            </small></em>
+        </p>
+        {% if site.lang == "en" && page.enVersion == "false" %}
+            {% include NoEnVersion.html %}
+        {% endif %}
+
+        {{ content }}
+
+        {% include footer.html %}
+    </div>
     <!-- <div class="breaker"></div> -->
     <div class="breaker"></div>
     <!-- <info class="after">
