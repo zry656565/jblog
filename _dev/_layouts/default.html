@@ -6,6 +6,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <script src="/res/js/jquery-1.11.0.min.js"></script>
     <link rel="stylesheet" media="screen, projection" href="/res/css/screen.css" type="text/css">
+    <link rel="stylesheet" href="/res/css/polar-clock.css" type="text/css">
     <link rel="shortcut icon" href="/res/images/favicon.ico">
   </head>
   <body>
@@ -20,12 +21,14 @@
           <li><a href="/projects/" {% if page.url contains "/projects/" %}class="active"{% endif %}>Projects</a></li>
           <li><a href="/archive/" {% if page.url contains "/archive/" %}class="active"{% endif %}>Archive</a></li>
           <li><a href="/about/" {% if page.url contains "/about/" %}class="active"{% endif %}>About me</a></li>
+          <li><a href="/special/" {% if page.url contains "/special/" %}class="active"{% endif %}>Special</a></li>
           <li><a href="{{ link1 }}" >中文</a></li>
         {% else if site.lang == "zh" %}
           {% capture link2 %}{{ page.url  }}{% endcapture %}
           <li><a href="/zh/projects/" {% if page.url contains "/projects/" %}class="active"{% endif %}>项目</a></li>
           <li><a href="/zh/archive/" {% if page.url contains "/archive/" %}class="active"{% endif %}>文章</a></li>
           <li><a href="/zh/about/" {% if page.url contains "/about/" %}class="active"{% endif %}>关于我</a></li>
+          <li><a href="/zh/special/" {% if page.url contains "/special/" %}class="active"{% endif %}>特别</a></li>
           <li><a href="{{ link2 }}" >English</a></li>
         {% endif %}
       </ul>
@@ -42,7 +45,7 @@
             <img src="/res/images/cc-cc.png" class="cc">
             <img src="/res/images/cc-by.png" class="cc">
         </a>
-        {% t global.license %}<a rel="license" href="http://creativecommons.org/licenses/by/3.0/deed.en_US">Creative Commons License</a>
+        {% t global.license %}<a rel="license" href="http://creativecommons.org/licenses/by/3.0/deed.en_US"> Creative Commons License</a>
       </p>
     </footer>
     {% endunless %}
