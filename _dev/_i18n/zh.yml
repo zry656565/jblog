@@ -3,3 +3,7 @@ global:
 
 home:
   more: 更多文章...
+
+archive:
+  search: 搜索标题
+  noResult: 抱歉，针对你输入的关键词没有搜索结果

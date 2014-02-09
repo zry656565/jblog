@@ -3,48 +3,46 @@ layout: page
 title: Archive
 ---
 <img src="/res/images/archive.png" width="64" height="64" align="right" alt="archive">
+<input type="text" id="search_box" placeholder="{% t archive.search %}"/>
 
 <script type="text/javascript">
-var search_field = document.getElementById('cse-search-field');
-search_field.style.background = null;
-if (window.rsmsHostIsIOS) {
-  search_field.type = 'search';
-} else {
-  search_field.select();
-  search_field.focus();
-}
-search_field.addEventListener('blur', function (ev) {
-  this.style.background = null;
-});
-
+$((function($){
+   $('#search_box').keyup(function(){
+      var target = $(this).val();
+      var regexp = new RegExp(target.toLowerCase());
+      var num = $('li.article').length;
+      $('#noResult').remove();
+      $('li.article').each(function(){
+          var el = $(this);
+          if(!el.find('a').html().toLowerCase().match(regexp)){
+              el.hide();
+          }
+          else if(el.find('a').html().toLowerCase().match(regexp)){
+              el.show();
+          }
+          if (el.css("display") === "none") {
+              num--;
+          }
+      })
+      if (num === 0) {
+        $('ul.article').append('<li id="noResult">{% t noResult %}</li>');
+      }
+   });
+})(jQuery));
 </script>
+
 <style type="text/css">
-#cse-search-field {
-  width: 70%;
-  font-size: inherit;
-  font-family: helvetica, sans-serif;
-  padding:0.5em 1em;
-}
-#cse-search-field {
-  border:2px solid #ddd;
-  border-radius: 90px;
-}
-#cse-search-field:focus {
-  outline:none;
-  border-color: #2299ff;
-}
-html.ios #cse-search-field {
-  padding:0.5em 1em;
-  -webkit-appearance: none;
-}
-html.ios #cse-search-button {
-  display: none;
+#search_box {
+    width: 300px;
+    margin-left: 30px;
+    border-radius: 5px;
+    border: 2px solid #ccc;
 }
 </style>
 
-<ul>
+<ul class="article">
 {% for post in site.posts %}
-  <li>
+  <li class="article">
     {{ post.date | date: "%b %d, %Y"  }} -- <a href="{% if site.lang == "zh" %}/zh{% endif %}{{ post.url }}">{{ post.title }}</a>
   </li>
 {% endfor %}
