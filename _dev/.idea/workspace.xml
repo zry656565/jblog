@@ -23,27 +23,27 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="2013-11-18-TipsForC.md" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/_i18n/en/_posts/2013-11-18-TipsForC.md">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="127" selection-start="227" selection-end="227" vertical-scroll-proportion="0.19266056" vertical-offset="0" max-vertical-offset="545">
-              <folding />
-            </state>
-          </provider>
+      <file leaf-file-name="2014-02-04-DeepCopyInJS.md" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/_i18n/zh/_posts/2014-02-04-DeepCopyInJS.md">
           <provider editor-type-id="MarkdownPreviewEditor">
             <state />
+          </provider>
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="66" column="18" selection-start="1371" selection-end="1615" vertical-scroll-proportion="-16.777779" vertical-offset="537" max-vertical-offset="1380">
+              <folding />
+            </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="2013-11-04-StorageMethod.md" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_i18n/en/_posts/2013-11-04-StorageMethod.md">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="0" selection-start="103" selection-end="347" vertical-scroll-proportion="-3.8888888" vertical-offset="0" max-vertical-offset="240">
-              <folding />
-            </state>
-          </provider>
+      <file leaf-file-name="2014-02-04-DeepCopyInJS.md" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/_i18n/en/_posts/2014-02-04-DeepCopyInJS.md">
           <provider editor-type-id="MarkdownPreviewEditor">
             <state />
+          </provider>
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="52" column="2" selection-start="1691" selection-end="1691" vertical-scroll-proportion="0.42201835" vertical-offset="550" max-vertical-offset="1320">
+              <folding />
+            </state>
           </provider>
         </entry>
       </file>
@@ -81,11 +81,9 @@
         <option value="$PROJECT_DIR$/res/css/screen.css" />
         <option value="$PROJECT_DIR$/about/index.md" />
         <option value="$PROJECT_DIR$/_layouts/default.html" />
-        <option value="$PROJECT_DIR$/_i18n/zh/_posts/2014-02-04-DeepCopyInJS.md" />
         <option value="$PROJECT_DIR$/_i18n/en/_posts/2013-12-16-blogisopen.md" />
         <option value="$PROJECT_DIR$/_i18n/en/_posts/2013-12-21-HowToLearnJS.md" />
         <option value="$PROJECT_DIR$/_i18n/en/_posts/2014-02-01-HearthStoneTroubleShooting.md" />
-        <option value="$PROJECT_DIR$/_i18n/en/_posts/2014-02-04-DeepCopyInJS.md" />
         <option value="$PROJECT_DIR$/_i18n/zh/_posts/2013-12-21-HowToLearnJS.md" />
         <option value="$PROJECT_DIR$/_i18n/zh/_posts/2013-12-16-blogisopen.md" />
         <option value="$PROJECT_DIR$/_i18n/en/_posts/2013-07-15-KinectConfig.md" />
@@ -95,6 +93,8 @@
         <option value="$PROJECT_DIR$/_i18n/zh/_posts/2013-11-04-StorageMethod.md" />
         <option value="$PROJECT_DIR$/_i18n/zh/_posts/2013-11-18-TipsForC.md" />
         <option value="$PROJECT_DIR$/_i18n/en/_posts/2013-11-18-TipsForC.md" />
+        <option value="$PROJECT_DIR$/_i18n/zh/_posts/2014-02-04-DeepCopyInJS.md" />
+        <option value="$PROJECT_DIR$/_i18n/en/_posts/2014-02-04-DeepCopyInJS.md" />
       </list>
     </option>
   </component>
@@ -291,6 +291,14 @@
     </key>
   </component>
   <component name="RunManager">
+    <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
+      <option name="VMOptions" />
+      <option name="arguments" />
+      <option name="filePath" />
+      <option name="scope" value="ALL" />
+      <option name="testName" />
+      <method />
+    </configuration>
     <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
       <option name="VMOptions" />
       <option name="arguments" />
@@ -301,23 +309,15 @@
       <option name="showConsoleOnStdOut" value="false" />
       <method />
     </configuration>
-    <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
-      <option name="VMOptions" />
-      <option name="arguments" />
-      <option name="filePath" />
-      <option name="scope" value="ALL" />
-      <option name="testName" />
-      <method />
-    </configuration>
-    <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma" singleton="true" config-file="">
-      <envs />
-      <method />
-    </configuration>
     <configuration default="true" type="JSTestDriver:ConfigurationType" factoryName="JsTestDriver">
       <setting name="configLocationType" value="CONFIG_FILE" />
       <setting name="settingsFile" value="" />
       <setting name="serverType" value="INTERNAL" />
       <setting name="preferredDebugBrowser" value="CHROME" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma" singleton="true" config-file="">
+      <envs />
       <method />
     </configuration>
     <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug" singleton="true">
@@ -360,13 +360,13 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1376" height="744" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32899022" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24962631" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24962631" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -374,11 +374,11 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32626426" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -398,6 +398,26 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/_i18n/en/_posts/2013-11-18-TipsForC.md">
+      <provider editor-type-id="MarkdownPreviewEditor">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="127" selection-start="227" selection-end="227" vertical-scroll-proportion="0.0" vertical-offset="105" max-vertical-offset="240">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_i18n/en/_posts/2013-11-04-StorageMethod.md">
+      <provider editor-type-id="MarkdownPreviewEditor">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="0" selection-start="103" selection-end="347" vertical-scroll-proportion="0.0" vertical-offset="105" max-vertical-offset="240">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/_i18n/en/_posts/2014-02-04-DeepCopyInJS.md">
       <provider selected="true" editor-type-id="text-editor">
         <state line="71" column="44" selection-start="2363" selection-end="2363" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1170">
@@ -407,26 +427,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/_layouts/default.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="60" column="13" selection-start="2741" selection-end="2741" vertical-scroll-proportion="0.0" vertical-offset="323" max-vertical-offset="1065">
-          <folding />
-        </state>
+        <state line="60" column="13" selection-start="2741" selection-end="2741" vertical-scroll-proportion="0.0" vertical-offset="323" max-vertical-offset="1065" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="46" selection-start="1229" selection-end="1229" vertical-scroll-proportion="0.0" vertical-offset="465" max-vertical-offset="555">
-          <folding />
-        </state>
+        <state line="31" column="46" selection-start="1229" selection-end="1229" vertical-scroll-proportion="0.0" vertical-offset="465" max-vertical-offset="555" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/_i18n/en/_posts/2014-02-04-DeepCopyInJS.md">
+      <provider editor-type-id="MarkdownPreviewEditor">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state line="71" column="44" selection-start="2363" selection-end="2363" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1170">
           <folding />
         </state>
-      </provider>
-      <provider editor-type-id="MarkdownPreviewEditor">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/_i18n/zh/_posts/2014-02-01-HearthStoneTroubleShooting.md">
@@ -450,11 +466,11 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/about/index.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="31" selection-start="950" selection-end="950" vertical-scroll-proportion="0.0" vertical-offset="160" max-vertical-offset="705" />
-      </provider>
       <provider editor-type-id="MarkdownPreviewEditor">
         <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="31" selection-start="950" selection-end="950" vertical-scroll-proportion="0.0" vertical-offset="160" max-vertical-offset="705" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/archive/index.html">
@@ -473,11 +489,11 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/projects/index.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="59" column="18" selection-start="1687" selection-end="1687" vertical-scroll-proportion="0.0" vertical-offset="42" max-vertical-offset="1185" />
-      </provider>
       <provider editor-type-id="MarkdownPreviewEditor">
         <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="59" column="18" selection-start="1687" selection-end="1687" vertical-scroll-proportion="0.0" vertical-offset="42" max-vertical-offset="1185" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
@@ -498,11 +514,6 @@
     <entry file="file://$PROJECT_DIR$/_config.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="2" column="23" selection-start="70" selection-end="70" vertical-scroll-proportion="0.077922076" vertical-offset="0" max-vertical-offset="385" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/404.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="18" selection-start="221" selection-end="221" vertical-scroll-proportion="-4.375" vertical-offset="0" max-vertical-offset="345" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/_i18n/zh.yml">
@@ -541,11 +552,11 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/about/index.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="7" selection-start="1245" selection-end="1245" vertical-scroll-proportion="0.5889908" vertical-offset="159" max-vertical-offset="705" />
-      </provider>
       <provider editor-type-id="MarkdownPreviewEditor">
         <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="32" column="7" selection-start="1245" selection-end="1245" vertical-scroll-proportion="0.5889908" vertical-offset="159" max-vertical-offset="705" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/_layouts/page.html">
@@ -559,167 +570,141 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/projects/index.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="0" selection-start="195" selection-end="195" vertical-scroll-proportion="0.24731183" vertical-offset="42" max-vertical-offset="1185">
-          <folding />
-        </state>
-      </provider>
       <provider editor-type-id="MarkdownPreviewEditor">
         <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="0" selection-start="195" selection-end="195" vertical-scroll-proportion="0.24731183" vertical-offset="42" max-vertical-offset="1185" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="46" selection-start="1229" selection-end="1229" vertical-scroll-proportion="-19.375" vertical-offset="0" max-vertical-offset="555">
-          <folding />
-        </state>
+        <state line="31" column="46" selection-start="1229" selection-end="1229" vertical-scroll-proportion="-19.375" vertical-offset="0" max-vertical-offset="555" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/_layouts/default.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="60" column="13" selection-start="2741" selection-end="2741" vertical-scroll-proportion="1.0285205" vertical-offset="323" max-vertical-offset="1065">
-          <folding />
-        </state>
+        <state line="60" column="13" selection-start="2741" selection-end="2741" vertical-scroll-proportion="1.0285205" vertical-offset="323" max-vertical-offset="1065" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/_i18n/en/_posts/2013-12-16-blogisopen.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="79" selection-start="213" selection-end="213" vertical-scroll-proportion="0.21505377" vertical-offset="0" max-vertical-offset="558">
-          <folding />
-        </state>
-      </provider>
       <provider editor-type-id="MarkdownPreviewEditor">
         <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="79" selection-start="213" selection-end="213" vertical-scroll-proportion="0.21505377" vertical-offset="0" max-vertical-offset="558" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/_i18n/en/_posts/2013-12-21-HowToLearnJS.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="83" selection-start="187" selection-end="187" vertical-scroll-proportion="0.18817204" vertical-offset="0" max-vertical-offset="558">
-          <folding />
-        </state>
-      </provider>
       <provider editor-type-id="MarkdownPreviewEditor">
         <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="83" selection-start="187" selection-end="187" vertical-scroll-proportion="0.18817204" vertical-offset="0" max-vertical-offset="558" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/_i18n/en/_posts/2014-02-01-HearthStoneTroubleShooting.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="119" selection-start="229" selection-end="229" vertical-scroll-proportion="0.18817204" vertical-offset="0" max-vertical-offset="558">
-          <folding />
-        </state>
-      </provider>
       <provider editor-type-id="MarkdownPreviewEditor">
         <state />
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_i18n/en/_posts/2014-02-04-DeepCopyInJS.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="70" column="3" selection-start="2326" selection-end="2326" vertical-scroll-proportion="0.7522936" vertical-offset="640" max-vertical-offset="1185">
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="MarkdownPreviewEditor">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_i18n/zh/_posts/2014-02-04-DeepCopyInJS.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="26" selection-start="327" selection-end="327" vertical-scroll-proportion="0.019713262" vertical-offset="199" max-vertical-offset="1170">
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="MarkdownPreviewEditor">
-        <state />
+        <state line="7" column="119" selection-start="229" selection-end="229" vertical-scroll-proportion="0.18817204" vertical-offset="0" max-vertical-offset="558" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/_i18n/zh/_posts/2013-12-16-blogisopen.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="52" selection-start="160" selection-end="160" vertical-scroll-proportion="0.21505377" vertical-offset="0" max-vertical-offset="558">
-          <folding />
-        </state>
-      </provider>
       <provider editor-type-id="MarkdownPreviewEditor">
         <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="52" selection-start="160" selection-end="160" vertical-scroll-proportion="0.21505377" vertical-offset="0" max-vertical-offset="558" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/_i18n/zh/_posts/2013-12-21-HowToLearnJS.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="3" selection-start="1206" selection-end="1206" vertical-scroll-proportion="0.7155963" vertical-offset="0" max-vertical-offset="545">
-          <folding />
-        </state>
-      </provider>
       <provider editor-type-id="MarkdownPreviewEditor">
         <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="26" column="3" selection-start="1206" selection-end="1206" vertical-scroll-proportion="0.7155963" vertical-offset="0" max-vertical-offset="545" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/_i18n/en/_posts/2013-07-15-KinectConfig.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="42" selection-start="237" selection-end="237" vertical-scroll-proportion="0.24193548" vertical-offset="0" max-vertical-offset="558">
-          <folding />
-        </state>
-      </provider>
       <provider editor-type-id="MarkdownPreviewEditor">
         <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="42" selection-start="237" selection-end="237" vertical-scroll-proportion="0.24193548" vertical-offset="0" max-vertical-offset="558" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/_i18n/zh/_posts/2014-02-01-HearthStoneTroubleShooting.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="8" selection-start="55" selection-end="55" vertical-scroll-proportion="0.08064516" vertical-offset="0" max-vertical-offset="558">
-          <folding />
-        </state>
-      </provider>
       <provider editor-type-id="MarkdownPreviewEditor">
         <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="8" selection-start="55" selection-end="55" vertical-scroll-proportion="0.08064516" vertical-offset="0" max-vertical-offset="558" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/_i18n/zh/_posts/2013-07-15-KinectConfig.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="60" selection-start="903" selection-end="942" vertical-scroll-proportion="0.72477067" vertical-offset="190" max-vertical-offset="735">
-          <folding />
-        </state>
-      </provider>
       <provider editor-type-id="MarkdownPreviewEditor">
         <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="39" column="60" selection-start="903" selection-end="942" vertical-scroll-proportion="0.72477067" vertical-offset="190" max-vertical-offset="735" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/_i18n/zh/_posts/2013-11-04-StorageMethod.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="60" selection-start="1010" selection-end="1010" vertical-scroll-proportion="0.72477067" vertical-offset="160" max-vertical-offset="705">
-          <folding />
-        </state>
-      </provider>
       <provider editor-type-id="MarkdownPreviewEditor">
         <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="37" column="60" selection-start="1010" selection-end="1010" vertical-scroll-proportion="0.72477067" vertical-offset="160" max-vertical-offset="705" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/_i18n/zh/_posts/2013-11-18-TipsForC.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="26" selection-start="573" selection-end="573" vertical-scroll-proportion="0.48387095" vertical-offset="0" max-vertical-offset="558">
-          <folding />
-        </state>
-      </provider>
       <provider editor-type-id="MarkdownPreviewEditor">
         <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="26" selection-start="573" selection-end="573" vertical-scroll-proportion="0.48387095" vertical-offset="0" max-vertical-offset="558" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/_i18n/en/_posts/2013-11-04-StorageMethod.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="0" selection-start="103" selection-end="347" vertical-scroll-proportion="-3.8888888" vertical-offset="0" max-vertical-offset="240">
-          <folding />
-        </state>
-      </provider>
       <provider editor-type-id="MarkdownPreviewEditor">
         <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="0" selection-start="103" selection-end="347" vertical-scroll-proportion="0.18783543" vertical-offset="0" max-vertical-offset="559">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/_i18n/en/_posts/2013-11-18-TipsForC.md">
+      <provider editor-type-id="MarkdownPreviewEditor">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="127" selection-start="227" selection-end="227" vertical-scroll-proportion="0.19266056" vertical-offset="0" max-vertical-offset="545">
+        <state line="7" column="127" selection-start="227" selection-end="227" vertical-scroll-proportion="0.1923077" vertical-offset="0" max-vertical-offset="546">
           <folding />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_i18n/zh/_posts/2014-02-04-DeepCopyInJS.md">
       <provider editor-type-id="MarkdownPreviewEditor">
         <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="66" column="18" selection-start="1371" selection-end="1615" vertical-scroll-proportion="-16.777779" vertical-offset="537" max-vertical-offset="1380">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_i18n/en/_posts/2014-02-04-DeepCopyInJS.md">
+      <provider editor-type-id="MarkdownPreviewEditor">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="52" column="2" selection-start="1691" selection-end="1691" vertical-scroll-proportion="0.42201835" vertical-offset="550" max-vertical-offset="1320">
+          <folding />
+        </state>
       </provider>
     </entry>
   </component>

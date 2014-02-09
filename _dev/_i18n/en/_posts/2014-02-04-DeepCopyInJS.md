@@ -22,9 +22,8 @@ So in fact, our main problem is the "object". To non-"object", just do the norma
 
 - Traverse all the properties of the object,
 - If the property is "object", it requires special treatment.
-  - If the "object" is so special to be an Array, then create a new array and copy all the things in it.
+  - If the "object" is so special to be an Array, then create a new array and deep-copy all the things in it.
   - If the "object" is non-Array, call Deep Copy method recursively.
-  - Special attention!! Here I haven't done deep-copy for the objects in arrays. If you need this in your practical application,the following code should to be modified.
 - If non-"object", just do the normal assignment.
 
 Here is my realization:
@@ -40,7 +39,7 @@ Object.prototype.DeepCopy = function () {
         if (Object.prototype.toString.call(this[attr]) === '[object Array]') {
           obj[attr] = [];
           for (i=0; i<this[attr].length; i++) {
-            obj[attr].push(this[attr][i]);
+            obj[attr].push(this[attr][i].DeepCopy());
           }
         } else {
           obj[attr] = this[attr].DeepCopy();
@@ -54,6 +53,16 @@ Object.prototype.DeepCopy = function () {
 };
 {% endhighlight %}
 
+If the browser support **ECMAScript 5**, for clone all properties of the attributes you can use the code below
+{% highlight javascript %}
+Object.defineProperty(obj, attr, Object.getOwnPropertyDescriptor(this, attr));
+{% endhighlight %}
+to replace
+{% highlight javascript %}
+obj[attr] = this[attr];
+{% endhighlight %}
+
+<br/>
 The advantage of implementing DeepCopy on Object.prototype is that all objects inherit this method. The downside is that some libraries will rewrite Object, so conflicts sometimes occur. And specific usage is as follows:
 
 {% highlight javascript %}

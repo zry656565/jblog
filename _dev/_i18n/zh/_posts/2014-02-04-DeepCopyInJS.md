@@ -15,6 +15,7 @@ typeof(1)       //"number"
 typeof("1")     //"string"
 typeof({})      //"object"
 typeof([])      //"object"
+typeof(null)    //"object"
 typeof(function(){})  //"function"
 {% endhighlight %}
 
@@ -22,9 +23,8 @@ typeof(function(){})  //"function"
 
 - 遍历所有该对象的属性，
 - 如果该属性是"object"则需要特殊处理，
-  - 如果这个object对象比较特殊，是一个数组，那就创建一个新的数组并复制数组里的东西
+  - 如果这个object对象比较特殊，是一个数组，那就创建一个新的数组并深复制数组里的元素
   - 如果这个object对象是个非数组对象，那直接再对它递归调用深复制方法即可。
-  - 特别注意！！此处我针对数组内的对象没有进行深复制，如果在你的实际应用中有需要要对下面的代码进行一定的修改。
 - 如果不是"object"，则直接正常复制就行。
 
 下面就是我的实现了：
@@ -37,10 +37,13 @@ Object.prototype.DeepCopy = function () {
   for (attr in this) {
     if (this.hasOwnProperty(attr)) {
       if (typeof(this[attr]) === "object") {
-        if (Object.prototype.toString.call(this[attr]) === '[object Array]') {
+        if (this[attr] === null) {
+          obj[attr] = null;
+        }
+        else if (Object.prototype.toString.call(this[attr]) === '[object Array]') {
           obj[attr] = [];
           for (i=0; i<this[attr].length; i++) {
-            obj[attr].push(this[attr][i]);
+            obj[attr].push(this[attr][i].DeepCopy());
           }
         } else {
           obj[attr] = this[attr].DeepCopy();
@@ -54,6 +57,16 @@ Object.prototype.DeepCopy = function () {
 };
 {% endhighlight %}
 
+如果浏览器支持**ECMAScript 5**的话，为了深复制对象属性的所有特性，可以使用
+{% highlight javascript %}
+Object.defineProperty(obj, attr, Object.getOwnPropertyDescriptor(this, attr));
+{% endhighlight %}
+来替代
+{% highlight javascript %}
+obj[attr] = this[attr];
+{% endhighlight %}
+
+<br/>
 直接在Object.prototype上实现该方法的好处是，所有对象都会继承该方法。坏处是某些库也会改写Object对象，所以有时会发生冲突。这是需要注意的。具体使用方法如下：
 
 {% highlight javascript %}
@@ -68,5 +81,6 @@ console.log(b.x);   //3
 console.log(c.x);   //1
 {% endhighlight %}
 
-<br><br><hr>
+---
+
 **转载请注明出处：[jerryzou.com](http://jerryzou.com)**

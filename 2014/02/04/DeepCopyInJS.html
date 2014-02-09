@@ -53,9 +53,8 @@
 <li>If the property is &ldquo;object&rdquo;, it requires special treatment.
 
 <ul>
-<li>If the &ldquo;object&rdquo; is so special to be an Array, then create a new array and copy all the things in it.</li>
+<li>If the &ldquo;object&rdquo; is so special to be an Array, then create a new array and deep-copy all the things in it.</li>
 <li>If the &ldquo;object&rdquo; is non-Array, call Deep Copy method recursively.</li>
-<li>Special attention!! Here I haven&rsquo;t done deep-copy for the objects in arrays. If you need this in your practical application,the following code should to be modified.</li>
 </ul>
 </li>
 <li>If non-&ldquo;object&rdquo;, just do the normal assignment.</li>
@@ -74,7 +73,7 @@
         <span class="k">if</span> <span class="p">(</span><span class="nb">Object</span><span class="p">.</span><span class="nx">prototype</span><span class="p">.</span><span class="nx">toString</span><span class="p">.</span><span class="nx">call</span><span class="p">(</span><span class="k">this</span><span class="p">[</span><span class="nx">attr</span><span class="p">])</span> <span class="o">===</span> <span class="s1">&#39;[object Array]&#39;</span><span class="p">)</span> <span class="p">{</span>
           <span class="nx">obj</span><span class="p">[</span><span class="nx">attr</span><span class="p">]</span> <span class="o">=</span> <span class="p">[];</span>
           <span class="k">for</span> <span class="p">(</span><span class="nx">i</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span> <span class="nx">i</span><span class="o">&lt;</span><span class="k">this</span><span class="p">[</span><span class="nx">attr</span><span class="p">].</span><span class="nx">length</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
-            <span class="nx">obj</span><span class="p">[</span><span class="nx">attr</span><span class="p">].</span><span class="nx">push</span><span class="p">(</span><span class="k">this</span><span class="p">[</span><span class="nx">attr</span><span class="p">][</span><span class="nx">i</span><span class="p">]);</span>
+            <span class="nx">obj</span><span class="p">[</span><span class="nx">attr</span><span class="p">].</span><span class="nx">push</span><span class="p">(</span><span class="k">this</span><span class="p">[</span><span class="nx">attr</span><span class="p">][</span><span class="nx">i</span><span class="p">].</span><span class="nx">DeepCopy</span><span class="p">());</span>
           <span class="p">}</span>
         <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
           <span class="nx">obj</span><span class="p">[</span><span class="nx">attr</span><span class="p">]</span> <span class="o">=</span> <span class="k">this</span><span class="p">[</span><span class="nx">attr</span><span class="p">].</span><span class="nx">DeepCopy</span><span class="p">();</span>
@@ -89,7 +88,20 @@
 </code></pre></div>
 
 
-<p>The advantage of implementing DeepCopy on Object.prototype is that all objects inherit this method. The downside is that some libraries will rewrite Object, so conflicts sometimes occur. And specific usage is as follows:</p>
+<p>If the browser support <strong>ECMAScript 5</strong>, for clone all properties of the attributes you can use the code below</p>
+
+<div class="highlight"><pre><code class="javascript"><span class="nb">Object</span><span class="p">.</span><span class="nx">defineProperty</span><span class="p">(</span><span class="nx">obj</span><span class="p">,</span> <span class="nx">attr</span><span class="p">,</span> <span class="nb">Object</span><span class="p">.</span><span class="nx">getOwnPropertyDescriptor</span><span class="p">(</span><span class="k">this</span><span class="p">,</span> <span class="nx">attr</span><span class="p">));</span>
+</code></pre></div>
+
+
+<p>to replace</p>
+
+<div class="highlight"><pre><code class="javascript"><span class="nx">obj</span><span class="p">[</span><span class="nx">attr</span><span class="p">]</span> <span class="o">=</span> <span class="k">this</span><span class="p">[</span><span class="nx">attr</span><span class="p">];</span>
+</code></pre></div>
+
+
+<p><br/>
+The advantage of implementing DeepCopy on Object.prototype is that all objects inherit this method. The downside is that some libraries will rewrite Object, so conflicts sometimes occur. And specific usage is as follows:</p>
 
 <div class="highlight"><pre><code class="javascript"><span class="nb">Object</span><span class="p">.</span><span class="nx">prototype</span><span class="p">.</span><span class="nx">DeepCopy</span> <span class="o">=</span> <span class="kd">function</span> <span class="p">()</span> <span class="p">{</span> <span class="p">...</span> <span class="p">}</span>
 <span class="kd">var</span> <span class="nx">a</span> <span class="o">=</span> <span class="p">{</span> <span class="nx">x</span><span class="o">:</span><span class="mi">1</span> <span class="p">};</span>

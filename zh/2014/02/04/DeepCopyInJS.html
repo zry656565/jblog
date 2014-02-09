@@ -42,6 +42,7 @@
 <span class="k">typeof</span><span class="p">(</span><span class="s2">&quot;1&quot;</span><span class="p">)</span>     <span class="c1">//&quot;string&quot;</span>
 <span class="k">typeof</span><span class="p">({})</span>      <span class="c1">//&quot;object&quot;</span>
 <span class="k">typeof</span><span class="p">([])</span>      <span class="c1">//&quot;object&quot;</span>
+<span class="k">typeof</span><span class="p">(</span><span class="kc">null</span><span class="p">)</span>    <span class="c1">//&quot;object&quot;</span>
 <span class="k">typeof</span><span class="p">(</span><span class="kd">function</span><span class="p">(){})</span>  <span class="c1">//&quot;function&quot;</span>
 </code></pre></div>
 
@@ -53,9 +54,8 @@
 <li>如果该属性是"object"则需要特殊处理，
 
 <ul>
-<li>如果这个object对象比较特殊，是一个数组，那就创建一个新的数组并复制数组里的东西</li>
+<li>如果这个object对象比较特殊，是一个数组，那就创建一个新的数组并深复制数组里的元素</li>
 <li>如果这个object对象是个非数组对象，那直接再对它递归调用深复制方法即可。</li>
-<li>特别注意！！此处我针对数组内的对象没有进行深复制，如果在你的实际应用中有需要要对下面的代码进行一定的修改。</li>
 </ul>
 </li>
 <li>如果不是"object"，则直接正常复制就行。</li>
@@ -71,10 +71,13 @@
   <span class="k">for</span> <span class="p">(</span><span class="nx">attr</span> <span class="k">in</span> <span class="k">this</span><span class="p">)</span> <span class="p">{</span>
     <span class="k">if</span> <span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="nx">hasOwnProperty</span><span class="p">(</span><span class="nx">attr</span><span class="p">))</span> <span class="p">{</span>
       <span class="k">if</span> <span class="p">(</span><span class="k">typeof</span><span class="p">(</span><span class="k">this</span><span class="p">[</span><span class="nx">attr</span><span class="p">])</span> <span class="o">===</span> <span class="s2">&quot;object&quot;</span><span class="p">)</span> <span class="p">{</span>
-        <span class="k">if</span> <span class="p">(</span><span class="nb">Object</span><span class="p">.</span><span class="nx">prototype</span><span class="p">.</span><span class="nx">toString</span><span class="p">.</span><span class="nx">call</span><span class="p">(</span><span class="k">this</span><span class="p">[</span><span class="nx">attr</span><span class="p">])</span> <span class="o">===</span> <span class="s1">&#39;[object Array]&#39;</span><span class="p">)</span> <span class="p">{</span>
+        <span class="k">if</span> <span class="p">(</span><span class="k">this</span><span class="p">[</span><span class="nx">attr</span><span class="p">]</span> <span class="o">===</span> <span class="kc">null</span><span class="p">)</span> <span class="p">{</span>
+          <span class="nx">obj</span><span class="p">[</span><span class="nx">attr</span><span class="p">]</span> <span class="o">=</span> <span class="kc">null</span><span class="p">;</span>
+        <span class="p">}</span>
+        <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="nb">Object</span><span class="p">.</span><span class="nx">prototype</span><span class="p">.</span><span class="nx">toString</span><span class="p">.</span><span class="nx">call</span><span class="p">(</span><span class="k">this</span><span class="p">[</span><span class="nx">attr</span><span class="p">])</span> <span class="o">===</span> <span class="s1">&#39;[object Array]&#39;</span><span class="p">)</span> <span class="p">{</span>
           <span class="nx">obj</span><span class="p">[</span><span class="nx">attr</span><span class="p">]</span> <span class="o">=</span> <span class="p">[];</span>
           <span class="k">for</span> <span class="p">(</span><span class="nx">i</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span> <span class="nx">i</span><span class="o">&lt;</span><span class="k">this</span><span class="p">[</span><span class="nx">attr</span><span class="p">].</span><span class="nx">length</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
-            <span class="nx">obj</span><span class="p">[</span><span class="nx">attr</span><span class="p">].</span><span class="nx">push</span><span class="p">(</span><span class="k">this</span><span class="p">[</span><span class="nx">attr</span><span class="p">][</span><span class="nx">i</span><span class="p">]);</span>
+            <span class="nx">obj</span><span class="p">[</span><span class="nx">attr</span><span class="p">].</span><span class="nx">push</span><span class="p">(</span><span class="k">this</span><span class="p">[</span><span class="nx">attr</span><span class="p">][</span><span class="nx">i</span><span class="p">].</span><span class="nx">DeepCopy</span><span class="p">());</span>
           <span class="p">}</span>
         <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
           <span class="nx">obj</span><span class="p">[</span><span class="nx">attr</span><span class="p">]</span> <span class="o">=</span> <span class="k">this</span><span class="p">[</span><span class="nx">attr</span><span class="p">].</span><span class="nx">DeepCopy</span><span class="p">();</span>
@@ -89,7 +92,20 @@
 </code></pre></div>
 
 
-<p>直接在Object.prototype上实现该方法的好处是，所有对象都会继承该方法。坏处是某些库也会改写Object对象，所以有时会发生冲突。这是需要注意的。具体使用方法如下：</p>
+<p>如果浏览器支持<strong>ECMAScript 5</strong>的话，为了深复制对象属性的所有特性，可以使用</p>
+
+<div class="highlight"><pre><code class="javascript"><span class="nb">Object</span><span class="p">.</span><span class="nx">defineProperty</span><span class="p">(</span><span class="nx">obj</span><span class="p">,</span> <span class="nx">attr</span><span class="p">,</span> <span class="nb">Object</span><span class="p">.</span><span class="nx">getOwnPropertyDescriptor</span><span class="p">(</span><span class="k">this</span><span class="p">,</span> <span class="nx">attr</span><span class="p">));</span>
+</code></pre></div>
+
+
+<p>来替代</p>
+
+<div class="highlight"><pre><code class="javascript"><span class="nx">obj</span><span class="p">[</span><span class="nx">attr</span><span class="p">]</span> <span class="o">=</span> <span class="k">this</span><span class="p">[</span><span class="nx">attr</span><span class="p">];</span>
+</code></pre></div>
+
+
+<p><br/>
+直接在Object.prototype上实现该方法的好处是，所有对象都会继承该方法。坏处是某些库也会改写Object对象，所以有时会发生冲突。这是需要注意的。具体使用方法如下：</p>
 
 <div class="highlight"><pre><code class="javascript"><span class="nb">Object</span><span class="p">.</span><span class="nx">prototype</span><span class="p">.</span><span class="nx">DeepCopy</span> <span class="o">=</span> <span class="kd">function</span> <span class="p">()</span> <span class="p">{</span> <span class="p">...</span> <span class="p">}</span>
 <span class="kd">var</span> <span class="nx">a</span> <span class="o">=</span> <span class="p">{</span> <span class="nx">x</span><span class="o">:</span><span class="mi">1</span> <span class="p">};</span>
@@ -103,8 +119,9 @@
 </code></pre></div>
 
 
-<p><br><br><hr>
-<strong>转载请注明出处：<a href="http://jerryzou.com">jerryzou.com</a></strong></p>
+<hr />
+
+<p><strong>转载请注明出处：<a href="http://jerryzou.com">jerryzou.com</a></strong></p>
 </div>
     <!-- <div class="breaker"></div> -->
     <div class="breaker"></div>
