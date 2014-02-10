@@ -1,0 +1,197 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Jerry's Blog</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <script src="/res/js/jquery-1.11.0.min.js"></script>
+    <link rel="stylesheet" media="screen, projection" href="/res/css/screen.css" type="text/css">
+    <link rel="stylesheet" href="/res/css/polar-clock.css" type="text/css">
+    <link rel="shortcut icon" href="/res/images/favicon.ico">
+  </head>
+  <body>
+    <header>
+      <h1 class="logo">
+        <a href="/home">
+        <img src='/res/images/jerry_title.png' width="240" height="50" alt="Jerry's Blog"></a>
+      </h1>
+      <ul class="navigation">
+        
+          
+          <li><a href="/projects/" >Projects</a></li>
+          <li><a href="/archive/" >Archive</a></li>
+          <li><a href="/about/" >About me</a></li>
+          <li><a href="/special/" >Special</a></li>
+          <li><a href="/zh/home/index.html" >中文</a></li>
+        
+      </ul>
+    </header>
+
+    <!--div class="wrapper content"-->
+      <div class="posts">
+  <div class="content full-bleed" id="recent-posts">
+  
+    <a href="/2014/02/04/DeepCopyInJS.html" class="post-excerpt">
+      <div class="padded-content">
+        <div class="title">Deep Copy in Javascript</div>
+      
+        <!-- <div class="title">Deep Copy in Javascript</div> -->
+        <span class="info" datetime="">
+          Feb 2014
+        </span>
+        
+        <span class="body">In this article, I will show you how to realize a deep-copy method for javascript.</span>
+        
+      <!-- post.photo_url -->
+      </div>
+    </a>
+  
+    <a href="/2014/02/01/HearthStoneTroubleShooting.html" class="post-excerpt photo">
+      <div class="padded-content">
+        <div class="title">Hearth Stone Trouble Shooting</div>
+      
+        <div class="image" style="background-image:url('/res/images/HearthstoneBack.jpg')"></div>
+      <!-- post.photo_url -->
+      </div>
+    </a>
+  
+    <a href="/2013/12/21/HowToLearnJS.html" class="post-excerpt">
+      <div class="padded-content">
+        <div class="title">How To Learn Javascript</div>
+      
+        <!-- <div class="title">How To Learn Javascript</div> -->
+        <span class="info" datetime="">
+          Dec 2013
+        </span>
+        
+        <span class="body">In this article, I will give some suggestions for javascript beginners...</span>
+        
+      <!-- post.photo_url -->
+      </div>
+    </a>
+  
+    <a href="/2013/12/16/blogisopen.html" class="post-excerpt">
+      <div class="padded-content">
+        <div class="title">Jerry's Blog Came to the World</div>
+      
+        <!-- <div class="title">Jerry's Blog Came to the World</div> -->
+        <span class="info" datetime="">
+          Dec 2013
+        </span>
+        
+        <span class="body">Jerry's Blog was established. And Thanks to Rasmus Andersson's theme...</span>
+        
+      <!-- post.photo_url -->
+      </div>
+    </a>
+  
+    <a href="/2013/11/18/TipsForC.html" class="post-excerpt">
+      <div class="padded-content">
+        <div class="title">Tips For Language C</div>
+      
+        <!-- <div class="title">Tips For Language C</div> -->
+        <span class="info" datetime="">
+          Nov 2013
+        </span>
+        
+        <span class="body">When reading Dennis M.Ritchie's "C Programming Language", I wrote down some simple tips. Hope that's useful to you guys.</span>
+        
+      <!-- post.photo_url -->
+      </div>
+    </a>
+  
+    <a href="/2013/11/04/StorageMethod.html" class="post-excerpt">
+      <div class="padded-content">
+        <div class="title">Big End? or Small End?</div>
+      
+        <!-- <div class="title">Big End? or Small End?</div> -->
+        <span class="info" datetime="">
+          Nov 2013
+        </span>
+        
+        <span class="body">How to judge whether the storage method of your CPU is big-end or small-end?</span>
+        
+      <!-- post.photo_url -->
+      </div>
+    </a>
+  
+    <a href="/2013/07/15/KinectConfig.html" class="post-excerpt">
+      <div class="padded-content">
+        <div class="title">Kinect for Windows SDK Environment Config</div>
+      
+        <!-- <div class="title">Kinect for Windows SDK Environment Config</div> -->
+        <span class="info" datetime="">
+          Jul 2013
+        </span>
+        
+        <span class="body">Kinect for Windows SDK (C++) Environment Config in Visual Studio 2010</span>
+        
+      <!-- post.photo_url -->
+      </div>
+    </a>
+  
+    <div class="breaker"></div>
+    <div class="end">
+      <a href="/archive/">More...</a>
+    </div>
+  </div>
+</div>
+<script src="/res/js/resize-grid.js"></script>
+    <!--/div-->
+    
+    
+    <footer>
+      <p>
+        <a rel="license" href="http://creativecommons.org/licenses/by/3.0/deed.en_US" class="cc">
+            <img src="/res/images/cc-cc.png" class="cc">
+            <img src="/res/images/cc-by.png" class="cc">
+        </a>
+        This work is licensed under a<a rel="license" href="http://creativecommons.org/licenses/by/3.0/deed.en_US"> Creative Commons License</a>
+      </p>
+    </footer>
+    
+
+    <script type="text/javascript">
+
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-47842677-1']);
+        _gaq.push(['_trackPageview']);
+
+        (function() {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+
+    </script>
+    
+    <script>
+  // curry pre < code to be able to get prettified
+  // If the first line is
+  //   #!-langname\n
+  // Then that line is removed from the code and "langname" is given to prettify.
+  // If "langname" is "none", that prettify is not applied at all.
+  var n,i,L,cn,lang,v = document.getElementsByTagName('pre');
+  var m,lang_re = /^#\!-([a-zA-Z0-9_-]+)\n/;
+  for (i=0,L=v.length;i<L;++i) {
+    n = v.item(i);
+    if ((cn = n.firstChild) && cn.nodeName == 'CODE') {
+      lang = null;
+      if (cn.firstChild.nodeType === Node.TEXT_NODE) {
+        m = lang_re.exec(cn.firstChild.nodeValue);
+        if (m) {
+          lang = m[1].toLowerCase();
+          cn.firstChild.nodeValue = cn.firstChild.nodeValue.substr(m[0].length);
+          if (lang === 'none') {
+            continue;
+          }
+        }
+      }
+      n.setAttribute('class', 'prettyprint'+(lang ? ' lang-' + lang : ''));
+    }
+  }
+</script>
+<script async src="/res/js/prettify.js"></script>
+
+  </body>
+</html>
