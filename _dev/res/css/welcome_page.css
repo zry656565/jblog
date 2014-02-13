@@ -2,8 +2,12 @@ body {
     background-color: #333;
     width: 1215px;
     height: 610px;
-    margin: 0 auto;
-    margin-top: 25px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto auto;
 }
 
 div.lang_background{
