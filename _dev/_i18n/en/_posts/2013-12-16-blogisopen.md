@@ -3,7 +3,6 @@ layout: post
 date: 2013-12-16 10:00:00 UTC
 title: Jerry's Blog Came to the World
 duoshuo_comment: true
-enVersion: true
 description: Jerry's Blog was established. And Thanks to Rasmus Andersson's theme...
 categories: en posts
 ---

@@ -29,11 +29,6 @@ h1,h2,h3,h4,h5,h6 {
   margin-bottom: 1em;
 }
 
-h1,h2 { font-size: 200%; }
-h3 { font-size: 180%; }
-h4 { font-size: 165%; }
-h5, h6 { font-size: 150%; }
-
 a { text-decoration:none; }
 a:link, a:active { color:#316d96; }
 a:visited { color:#7e5494; }
@@ -111,7 +106,7 @@ div.content.photo {
   margin: 0;
 }
   div.content:not(.sub) h1:first-child {
-    margin-top:0; font-size:300%;
+    margin-top:0;
   }
   
   div.content img, div.content iframe { display:block; max-width:100%; margin:1em 0; }

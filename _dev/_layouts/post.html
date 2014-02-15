@@ -4,18 +4,17 @@ layout: default
 <div class="content{% if page.photo_url %} photo-post{% endif %}">
   <div class="post single">
     <h1>{{ page.title }}</h1>
-    <span class="info" datetime="{{ page.date | date: "%Y-%m-%d" }}">
-      {{ page.date | date: "%b %d, %Y" }}
-    </span>
+    <p class="info" datetime="{{ page.date | date: "%Y-%m-%d" }}">
+      {{ page.date | date: "%b %d, %Y" }}<br/>
+      <small>
+        {{ page.description }}
+      </small>
+    </p>
     <div class="body">
-        <p>
-            <em><small>
-                {{ page.description }}
-            </small></em>
-        </p>
-        {% unless page.enVersion %}
+
+        {% if page.noEnVersion %}
             {% include NoEnVersion.html %}
-        {% endunless %}
+        {% endif %}
 
         {{ content }}
 

@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>博客建立</title>
+    <title>当多个CSS文件对同一个元素属性进行设置，会发生什么？</title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <script src="/res/js/jquery-1.11.0.min.js"></script>
     <link rel="stylesheet" media="screen, projection" href="/res/css/screen.css" type="text/css">
@@ -33,7 +33,7 @@
           <li><a href="/zh/archive/" >文章</a></li>
           <li><a href="/zh/about/" >关于我</a></li>
           <li><a href="/zh/special/" >特别</a></li>
-          <li><a href="/2013/12/16/blogisopen.html" >English</a></li>
+          <li><a href="/2014/02/15/cssParseOrder.html" >English</a></li>
         
       </ul>
     </header>
@@ -41,33 +41,57 @@
     <!--div class="wrapper content"-->
       <div class="content">
   <div class="post single">
-    <h1>博客建立</h1>
-    <p class="info" datetime="2013-12-16">
-      Dec 16, 2013<br/>
+    <h1>当多个CSS文件对同一个元素属性进行设置，会发生什么？</h1>
+    <p class="info" datetime="2014-02-15">
+      Feb 15, 2014<br/>
       <small>
-        今天我的博客终于搞定了，首先要谢谢Rasmus Andersson开源了他的博客代码……
+        多处CSS文件对同一个元素或者类的样式进行修改的情况屡见不鲜，以至于在代码量成几何倍增加时，有时会让人产生迷惑感。本文将解释当多个CSS文件对同一个元素属性进行设置，会发生什么？
       </small>
     </p>
     <div class="body">
 
         
 
-        <p>今天我的博客终于搞定了，首先要谢谢Rasmus Andersson开源了他的博客代码，我才能把博客做成现在这样。
-如果你喜爱这个博客，可以通过点击<a href="https://github.com/zry656565/jblog/">这里</a>来获取源代码。</p>
+        <p>CSS作为Web前端的三剑客之一，有着极为重要的地位。它使得页面的表现与内容很好地分离开来，如今各大浏览器对它的支持也日趋完善起来。</p>
 
-<div class="highlight"><pre><code class="javascript"><span class="kd">var</span> <span class="nx">JerryBlog</span> <span class="o">=</span> <span class="p">{</span>
-  <span class="nx">print</span><span class="o">:</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
-    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;Hello, world.&quot;</span><span class="p">);</span>
-  <span class="p">}</span>
-<span class="p">};</span>
-<span class="nx">JerryBlog</span><span class="p">.</span><span class="nx">print</span><span class="p">();</span>
+<p>但是多处CSS文件对同一个元素或者类的样式进行修改的情况屡见不鲜，以至于在代码量成几何倍增加时，有时会让人产生迷惑感。下面举个例子：</p>
+
+<div class="highlight"><pre><code class="html"><span class="c">&lt;!-- test.html --&gt;</span>
+<span class="nt">&lt;head&gt;</span>
+    ...
+    <span class="nt">&lt;link</span> <span class="na">href=</span><span class="s">&quot;res/css/test1.css&quot;</span> <span class="na">type=</span><span class="s">&quot;text/css&quot;</span> <span class="na">rel=</span><span class="s">&quot;stylesheet&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;link</span> <span class="na">href=</span><span class="s">&quot;res/css/test2.css&quot;</span> <span class="na">type=</span><span class="s">&quot;text/css&quot;</span> <span class="na">rel=</span><span class="s">&quot;stylesheet&quot;</span><span class="nt">&gt;</span>
+<span class="nt">&lt;/head&gt;</span>
 </code></pre></div>
 
 
 
 
+<div class="highlight"><pre><code class="css"><span class="c">/* test1.css */</span>
+<span class="nt">body</span> <span class="p">{</span> <span class="k">background</span><span class="o">:</span> <span class="nb">yellow</span><span class="p">;</span> <span class="p">}</span>
+<span class="nt">body</span> <span class="p">{</span> <span class="k">background</span><span class="o">:</span> <span class="nb">blue</span><span class="p">;</span> <span class="p">}</span>
+</code></pre></div>
+
+
+
+
+<div class="highlight"><pre><code class="css"><span class="c">/* test2.css */</span>
+<span class="nt">body</span> <span class="p">{</span> <span class="k">background</span><span class="o">:</span> <span class="nb">black</span><span class="p">;</span> <span class="p">}</span>
+<span class="nt">body</span> <span class="p">{</span> <span class="k">background</span><span class="o">:</span> <span class="nb">red</span><span class="p">;</span> <span class="p">}</span>
+</code></pre></div>
+
+
+<p>这里有四个地方对body元素的背景进行设置。在实际解析中，哪次设置将会被采用呢？</p>
+
+<p>答案是最后一次，也就是test2.css中值为red的那次设置。因为<strong>在样式中对同一个元素的属性发生重复设置时，后一次会覆盖前一次</strong>。在例子中，如果test1.css的引入顺序在test2.css之后的话，则会发现背景颜色编程蓝色了。</p>
+
 
         
+    <br/><hr/>
+    
+        <b>转载请注明出处：<a href="http://jerryzou.com">jerryzou.com</a></b>
+    
+
     </div>
 
       

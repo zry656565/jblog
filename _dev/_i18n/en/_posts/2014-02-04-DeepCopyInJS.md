@@ -3,7 +3,6 @@ layout: post
 date: 2014-02-04 21:33:00 UTC
 title: Deep Copy in Javascript
 description: In this article, I will show you how to realize a deep-copy method for javascript.
-enVersion: true
 footer: true
 duoshuo_comment: true
 categories: en posts
