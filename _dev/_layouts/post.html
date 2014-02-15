@@ -3,30 +3,45 @@ layout: default
 ---
 <div class="content{% if page.photo_url %} photo-post{% endif %}">
   <div class="post single">
-    {% unless page.photo_url %}
     <h1>{{ page.title }}</h1>
     <span class="info" datetime="{{ page.date | date: "%Y-%m-%d" }}">
       {{ page.date | date: "%b %d, %Y" }}
     </span>
-    {% endunless %}
     <div class="body">
         <p>
             <em><small>
                 {{ page.description }}
             </small></em>
         </p>
-        {% if site.lang == "en" && page.enVersion == "false" %}
+        {% unless page.enVersion %}
             {% include NoEnVersion.html %}
-        {% endif %}
+        {% endunless %}
 
         {{ content }}
 
         {% include footer.html %}
     </div>
+
+      {% if page.duoshuo_comment %}
+      <div class="comment-container">
+          <!-- Duoshuo Comment BEGIN -->
+          <div class="ds-thread"></div>
+          <script type="text/javascript">
+              var duoshuoQuery = {short_name:"jerryzou"};
+              (function() {
+                  var ds = document.createElement('script');
+                  ds.type = 'text/javascript';ds.async = true;
+                  ds.src = 'http://static.duoshuo.com/embed.js';
+                  ds.charset = 'UTF-8';
+                  (document.getElementsByTagName('head')[0]
+                          || document.getElementsByTagName('body')[0]).appendChild(ds);
+              })();
+          </script>
+          <!-- Duoshuo Comment END -->
+      </div>
+      {% endif %}
+
     <!-- <div class="breaker"></div> -->
     <div class="breaker"></div>
-    <!-- <info class="after">
-<div class="fb-like" data-href="http://rsms.me{{ page.url }}" data-send="false" data-width="550" data-show-faces="false" data-font="arial"></div>
-    </info> -->
   </div>
 </div>

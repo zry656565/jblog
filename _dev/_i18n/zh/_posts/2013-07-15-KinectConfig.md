@@ -4,6 +4,7 @@ date: 2013-07-15 15:37:00 UTC
 title: Kinect for Windows SDK的环境配置
 description: 本文介绍了Kinect for Windows SDK在Visual Studio 2010中的环境配置（C++版本）的配置方法，所使用的SDK版本为1.7。如果版本不一样可能配置过程有些许差别。
 footer: true
+duoshuo_comment: true
 categories: zh posts
 ---
 

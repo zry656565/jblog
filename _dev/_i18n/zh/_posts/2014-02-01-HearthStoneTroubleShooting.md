@@ -5,6 +5,7 @@ title: 《炉石传说》无法运行的常见错误
 description: 本文针对炉石传说无法运行的两个常见问题：“无法连接到战网服务”、“正在初始化...”进行解答。
 photo_url: /res/images/HearthstoneBack.jpg
 footer: true
+duoshuo_comment: true
 categories: zh posts
 ---
 

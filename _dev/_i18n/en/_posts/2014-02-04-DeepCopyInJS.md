@@ -5,6 +5,7 @@ title: Deep Copy in Javascript
 description: In this article, I will show you how to realize a deep-copy method for javascript.
 enVersion: true
 footer: true
+duoshuo_comment: true
 categories: en posts
 ---
 
